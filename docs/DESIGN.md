@@ -1,6 +1,6 @@
 # DESIGN (Phase 1, for Gokul's approval before any app code)
 
-Status: DRAFT 2026-10-31. Layout option: TO BE PICKED (prototypes in `docs/design/prototypes/`). Inputs: KICKOFF Phase 1, `docs/PORTFOLIO-ADMIN-SPEC.md` (features + answers), references Vercel, Linear, Supabase Studio, Stripe; "working features first".
+Status: APPROVED layout 2026-10-31: **Option A (Rail)**, Gokul. Prototype: `docs/design/prototypes/a-rail.html`. Inputs: KICKOFF Phase 1, `docs/PORTFOLIO-ADMIN-SPEC.md` (features + answers), references Vercel, Linear, Supabase Studio, Stripe; "working features first".
 
 ## 1. Product
 - Subject: one owner's platform of apps (hub, portfolio, gspace, studio, gym). Admin = the place where content, people and config of every app are managed.
@@ -78,4 +78,4 @@ Same content in all three (portfolio posts list, light/dark, desktop/mobile):
 - **B. Header**: top bar with breadcrumb app switcher (`Gokul / Portfolio / Posts`) + horizontal section tabs, full-width content. Closest to Vercel. Most content space; app switch is a dropdown.
 - **C. Split**: one sidebar listing apps as expandable groups + list/detail split (select a row, preview/edit on the right). Closest to Linear inbox / Stripe detail. Fastest for reviewing many items (messages, comments, posts).
 Open them: `python3 -m http.server 4310` in the repo root (or the `design` entry in `.claude/launch.json`), then http://localhost:4310/docs/design/prototypes/a-rail.html (links to B and C bottom-right). Static HTML on the real tokens; data is sample text. Interactions: status chips, search, row select + bulk bar, Cmd/Ctrl+K palette, theme toggle, B app menu, C open a post; resize to phone width for mobile.
-Decision: TO BE UPDATED after Gokul picks (can mix, e.g. A shell + C split for inbox screens).
+Decision (Gokul, 2026-10-31): **A · Rail**. Desktop: app rail (coloured marks, platform at top) + section sidebar + content. Phone: top bar (app mark, search, theme) + bottom tabs (Apps, top sections, More) + card lists. B and C kept only as reference.

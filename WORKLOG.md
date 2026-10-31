@@ -11,7 +11,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Step 2 (2026-10-31): Phase 0 spec `docs/PORTFOLIO-ADMIN-SPEC.md` (data, API, UI per feature, mapping proposal, 11 questions). Key facts: old TOTP not implemented (nothing to migrate); roles/permissions never enforced server-side.
 
 ## In progress / next
-- Phase 1: `docs/DESIGN.md` drafted + 3 prototypes (`docs/design/prototypes/`: A rail, B header, C split). Waiting for Gokul to pick; then finalise DESIGN.md and start Phase 2a. Full order: `.claude-session.json` sprint.todo_next.
+- Phase 2a next: shell (Option A rail layout) + Supabase login (@supabase/ssr). Needs Supabase URL + anon key in `.env.local` (Gokul adds them himself). Full order: `.claude-session.json` sprint.todo_next.
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).
@@ -22,6 +22,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Vercel project: `gokul-admin`.
 - Design: working features first; references Vercel, Linear, Supabase Studio, Stripe (Phase 1 shows options).
 - Admin is internal: noindex, no public legal footer pages.
+- Layout: Option A Rail (DESIGN.md section 7), per-app accent colours.
 - Phase 0 answers (spec section 7): delegated admin (super admin -> app admins -> app admins grant permissions to editors; per-app permissions needed), comments live + moderate, audit log 90 days, messages never auto-deleted, one platform todo board, uploads to Supabase Storage, restore = preview then update, slugs locked after publish, ideas + posts one pipeline, old bugs fixed only in new admin.
 
 ## Blockers / requests to other repos
