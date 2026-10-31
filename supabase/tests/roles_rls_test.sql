@@ -1,6 +1,7 @@
 -- RLS test for 20261031120000_roles_permissions.sql. Run in the Supabase SQL editor AFTER the migration.
 -- Everything happens inside one transaction that ROLLS BACK: no users or rows are left behind.
--- Success = the final notice "ALL ROLE/RLS TESTS PASSED". Any failure stops with "FAIL: ...".
+-- Success = one result row "ALL ROLE/RLS TESTS PASSED". Any failure stops with "FAIL: ...".
+-- Every DO block spans several lines: the Supabase SQL editor mangles one-line $$ blocks.
 -- Fake users: A super admin, B portfolio admin, C portfolio editor (member), D outsider.
 
 begin;
@@ -116,5 +117,6 @@ do $$ begin
 end $$;
 
 reset role;
-do $$ begin raise notice 'ALL ROLE/RLS TESTS PASSED'; end $$;
 rollback;
+-- Only reached if every check above passed.
+select 'ALL ROLE/RLS TESTS PASSED' as result;

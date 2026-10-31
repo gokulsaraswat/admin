@@ -72,8 +72,8 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793463222.222071,
-    "seen": 1793463223.580669,
+    "mtime": 1793463306.346817,
+    "seen": 1793463307.80762,
     "ast_hash": "4c56132bae0b11e2227502341cd99d43",
     "semantic_hash": ""
   },
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793463215.2180989,
-    "seen": 1793463220.0265641,
-    "ast_hash": "e4aa93afeb9f1d7894f2a9945519360b",
+    "mtime": 1793463303.6053998,
+    "seen": 1793463307.807625,
+    "ast_hash": "70fe2748128566e90e286f71c8ead7f2",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
@@ -279,6 +279,24 @@
     "mtime": 1793460944.7767043,
     "seen": 1793460993.6241732,
     "ast_hash": "fde92f6c7475c9f7d72ecd0f98920085",
+    "semantic_hash": ""
+  },
+  "supabase/bootstrap_super_admin.sql": {
+    "mtime": 1793463119.0918164,
+    "seen": 1793463307.8076138,
+    "ast_hash": "f88dcb5cdfee72410132beb68f8e55da",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/20261031120000_roles_permissions.sql": {
+    "mtime": 1793463063.6226459,
+    "seen": 1793463307.807615,
+    "ast_hash": "d66f02d107c35d36fedaea1f78bb0b5d",
+    "semantic_hash": ""
+  },
+  "supabase/tests/roles_rls_test.sql": {
+    "mtime": 1793463099.9268074,
+    "seen": 1793463307.807616,
+    "ast_hash": "a1b8f2a43894c44338fc22b7539761ed",
     "semantic_hash": ""
   }
 }
