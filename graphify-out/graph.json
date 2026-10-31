@@ -4,6 +4,58 @@
   "graph": {},
   "nodes": [
     {
+      "id": "src_app_login_actions_signinstate",
+      "label": "SignInState",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "signinstate",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_components_app_mark_appmarkprops",
+      "label": "AppMarkProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "appmarkprops",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_lib_apps_appmeta",
+      "label": "AppMeta",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "appmeta",
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_lib_apps_managedappid",
+      "label": "ManagedAppId",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "managedappid",
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L3"
+    },
+    {
       "id": "docs_design_prototypes_shared_drawpalette",
       "label": "drawPalette()",
       "_callable": true,
@@ -64,16 +116,184 @@
       "source_location": "L17"
     },
     {
-      "id": "src_app_page_home",
-      "label": "Home()",
+      "id": "src_app_login_actions_signin",
+      "label": "signIn()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "signin()",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_app_login_actions_signout",
+      "label": "signOut()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "signout()",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_app_login_login_form_loginform",
+      "label": "LoginForm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "loginform()",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_app_login_page_loginpage",
+      "label": "LoginPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "loginpage()",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_app_robots_robots",
+      "label": "robots()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "robots()",
+      "source_file": "src/app/robots.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_shell_current_user_currentuser",
+      "label": "CurrentUser()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "currentuser()",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_lib_supabase_env_required",
+      "label": "required()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "required()",
+      "source_file": "src/lib/supabase/env.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_supabase_env_supabaseenv",
+      "label": "supabaseEnv()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "supabaseenv()",
+      "source_file": "src/lib/supabase/env.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_lib_supabase_server_createclient",
+      "label": "createClient()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "createclient()",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_proxy_proxy",
+      "label": "proxy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "proxy()",
+      "source_file": "src/proxy.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_app_admin_layout_adminlayout",
+      "label": "AdminLayout()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "page.tsx",
+      "community_name": "(admin)/layout.tsx",
       "file_type": "code",
-      "norm_label": "home()",
-      "source_file": "src/app/page.tsx",
-      "source_location": "L1"
+      "norm_label": "adminlayout()",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_app_admin_page_overview",
+      "label": "Overview()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "overview()",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_components_app_mark_appmark",
+      "label": "AppMark()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "appmark()",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L19"
+    },
+    {
+      "id": "src_components_shell_rail_rail",
+      "label": "Rail()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "rail()",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_components_theme_toggle_themetoggle",
+      "label": "ThemeToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "themetoggle()",
+      "source_file": "src/components/theme-toggle.tsx",
+      "source_location": "L3"
     },
     {
       "id": "src_app_layout_rootlayout",
@@ -81,23 +301,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "file_type": "code",
       "norm_label": "rootlayout()",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L21"
-    },
-    {
-      "id": "src_app_robots_robots",
-      "label": "robots()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "robots()",
-      "source_file": "src/app/robots.ts",
-      "source_location": "L3"
+      "source_location": "L22"
     },
     {
       "id": "docs_master_worklog",
@@ -429,7 +637,7 @@
       "file_type": "code",
       "norm_label": "description",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L30"
     },
     {
       "id": "package_engines",
@@ -440,7 +648,7 @@
       "file_type": "code",
       "norm_label": "engines",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L32"
     },
     {
       "id": "package_engines_node",
@@ -451,7 +659,7 @@
       "file_type": "code",
       "norm_label": "node",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L33"
     },
     {
       "id": "package_license",
@@ -462,7 +670,7 @@
       "file_type": "code",
       "norm_label": "license",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L31"
     },
     {
       "id": "package_name",
@@ -561,7 +769,7 @@
       "file_type": "concept",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L25"
     },
     {
       "id": "ref_eslint_config_next",
@@ -572,7 +780,7 @@
       "file_type": "concept",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L26"
     },
     {
       "id": "ref_gokulsaraswat_ui",
@@ -583,18 +791,7 @@
       "file_type": "concept",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L12"
-    },
-    {
-      "id": "ref_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L13"
     },
     {
       "id": "ref_react_dom",
@@ -604,6 +801,17 @@
       "community_name": "package.json",
       "file_type": "concept",
       "norm_label": "react-dom",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "ref_supabase_supabase_js",
+      "label": "@supabase/supabase-js",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@supabase/supabase-js",
       "source_file": "package.json",
       "source_location": "L15"
     },
@@ -616,7 +824,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L27"
     },
     {
       "id": "ref_tailwindcss_turbopack",
@@ -627,7 +835,7 @@
       "file_type": "concept",
       "norm_label": "@tailwindcss/turbopack",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L21"
     },
     {
       "id": "ref_types_node",
@@ -638,7 +846,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L22"
     },
     {
       "id": "ref_types_react",
@@ -649,7 +857,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L23"
     },
     {
       "id": "ref_types_react_dom",
@@ -660,7 +868,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L24"
     },
     {
       "id": "ref_typescript",
@@ -671,7 +879,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L28"
     },
     {
       "id": "docs_kickoff_prompt",
@@ -890,78 +1098,6 @@
       "source_location": "L1"
     },
     {
-      "id": "docs_portfolio_admin_spec",
-      "label": "PORTFOLIO-ADMIN-SPEC.md",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "portfolio-admin-spec.md",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_1_1_auth_today_custom_not_supabase_auth",
-      "label": "1.1 Auth today (custom, NOT Supabase Auth)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.1 auth today (custom, not supabase auth)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_1_2_operation_log_audit",
-      "label": "1.2 Operation log (audit)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.2 operation log (audit)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L21"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_1_3_shared_conventions",
-      "label": "1.3 Shared conventions",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.3 shared conventions",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L27"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_1_cross_cutting",
-      "label": "1. Cross-cutting",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. cross-cutting",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L7"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_2_tables_prisma_old_supabase_project",
-      "label": "2. Tables (Prisma, old Supabase project)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. tables (prisma, old supabase project)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L33"
-    },
-    {
       "id": "docs_portfolio_admin_spec_4_10_todos_todo_manager_tsx",
       "label": "4.10 Todos (`todo-manager.tsx`)",
       "_origin": "ast",
@@ -1154,54 +1290,6 @@
       "source_location": "L141"
     },
     {
-      "id": "docs_portfolio_admin_spec_5_new_admin_how_each_feature_maps_proposal_for_phase_1",
-      "label": "5. New admin: how each feature maps (proposal, for Phase 1)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. new admin: how each feature maps (proposal, for phase 1)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L207"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_6_security_findings_in_bestportofolio",
-      "label": "6. Security findings in bestportofolio",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "6. security findings in bestportofolio",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L225"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_7_answers_gokul_2026_10_31",
-      "label": "7. Answers (Gokul, 2026-10-31)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "7. answers (gokul, 2026-10-31)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L228"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
-      "label": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "4. Admin UI features (what the screens do)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "portfolio admin spec (phase 0, read-only)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L1"
-    },
-    {
       "id": "docs_design_prototypes_shared",
       "label": "shared.js",
       "_origin": "ast",
@@ -1301,7 +1389,7 @@
       "node_kind": "heading",
       "norm_label": "2. current target directory tree",
       "source_file": ".project-architecture.md",
-      "source_location": "L17"
+      "source_location": "L36"
     },
     {
       "id": "project_architecture_3_low_level_design_lld_solid_class_schemas",
@@ -1313,7 +1401,7 @@
       "node_kind": "heading",
       "norm_label": "3. low-level design (lld) & solid class schemas",
       "source_file": ".project-architecture.md",
-      "source_location": "L30"
+      "source_location": "L55"
     },
     {
       "id": "project_architecture_codebase_blueprint_structural_graph",
@@ -1403,11 +1491,176 @@
       "source_location": "L1"
     },
     {
+      "id": "next_config",
+      "label": "next.config.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "next.config.ts",
+      "source_file": "next.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "next_config_nextconfig",
+      "label": "nextConfig",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "nextconfig",
+      "source_file": "next.config.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_app_login_actions",
+      "label": "actions.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "actions.ts",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_login_login_form",
+      "label": "login-form.tsx",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "login-form.tsx",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_login_page",
+      "label": "login/page.tsx",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "login/page.tsx",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_login_page_metadata",
+      "label": "metadata",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "metadata",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_app_robots",
+      "label": "robots.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "robots.ts",
+      "source_file": "src/app/robots.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_shell_current_user",
+      "label": "current-user.tsx",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "current-user.tsx",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_supabase_env",
+      "label": "env.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "env.ts",
+      "source_file": "src/lib/supabase/env.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_supabase_server",
+      "label": "server.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "server.ts",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_proxy",
+      "label": "proxy.ts",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "proxy.ts",
+      "source_file": "src/proxy.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_proxy_config",
+      "label": "config",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "config",
+      "source_file": "src/proxy.ts",
+      "source_location": "L41"
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "concept",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "concept",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "ref_supabase_ssr",
+      "label": "@supabase/ssr",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "concept",
+      "norm_label": "@supabase/ssr",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
       "id": "docs_architecture",
       "label": "ARCHITECTURE.md",
       "_origin": "ast",
       "community": 17,
-      "community_name": "ARCHITECTURE: admin",
+      "community_name": "next",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "architecture.md",
@@ -1419,7 +1672,7 @@
       "label": "ARCHITECTURE: admin",
       "_origin": "ast",
       "community": 17,
-      "community_name": "ARCHITECTURE: admin",
+      "community_name": "next",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "architecture: admin",
@@ -1431,7 +1684,7 @@
       "label": "HLD",
       "_origin": "ast",
       "community": 17,
-      "community_name": "ARCHITECTURE: admin",
+      "community_name": "next",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "hld",
@@ -1443,12 +1696,12 @@
       "label": "LLD",
       "_origin": "ast",
       "community": 17,
-      "community_name": "ARCHITECTURE: admin",
+      "community_name": "next",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "lld",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L15"
+      "source_location": "L20"
     },
     {
       "id": "agents",
@@ -1804,15 +2057,175 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_page",
-      "label": "page.tsx",
+      "id": "src_app_admin_layout",
+      "label": "(admin)/layout.tsx",
       "_origin": "ast",
       "community": 23,
-      "community_name": "page.tsx",
+      "community_name": "(admin)/layout.tsx",
       "file_type": "code",
-      "norm_label": "page.tsx",
-      "source_file": "src/app/page.tsx",
+      "norm_label": "(admin)/layout.tsx",
+      "source_file": "src/app/(admin)/layout.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "src_app_admin_page",
+      "label": "(admin)/page.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "(admin)/page.tsx",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_app_mark",
+      "label": "app-mark.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "app-mark.tsx",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_app_mark_bg",
+      "label": "bg",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "bg",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_shell_rail",
+      "label": "rail.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "rail.tsx",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_theme_toggle",
+      "label": "theme-toggle.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "theme-toggle.tsx",
+      "source_file": "src/components/theme-toggle.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_apps",
+      "label": "apps.ts",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "apps.ts",
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_apps_managedapps",
+      "label": "managedApps",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "code",
+      "norm_label": "managedapps",
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "ref_gokulsaraswat_config",
+      "label": "@gokulsaraswat/config",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "(admin)/layout.tsx",
+      "file_type": "concept",
+      "norm_label": "@gokulsaraswat/config",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "docs_portfolio_admin_spec",
+      "label": "PORTFOLIO-ADMIN-SPEC.md",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "portfolio-admin-spec.md",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_1_auth_today_custom_not_supabase_auth",
+      "label": "1.1 Auth today (custom, NOT Supabase Auth)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.1 auth today (custom, not supabase auth)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_2_operation_log_audit",
+      "label": "1.2 Operation log (audit)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.2 operation log (audit)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_3_shared_conventions",
+      "label": "1.3 Shared conventions",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.3 shared conventions",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_cross_cutting",
+      "label": "1. Cross-cutting",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. cross-cutting",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_2_tables_prisma_old_supabase_project",
+      "label": "2. Tables (Prisma, old Supabase project)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. tables (prisma, old supabase project)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L33"
     },
     {
       "id": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
@@ -1825,6 +2238,42 @@
       "norm_label": "3. api by feature (server truth)",
       "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
       "source_location": "L52"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_5_new_admin_how_each_feature_maps_proposal_for_phase_1",
+      "label": "5. New admin: how each feature maps (proposal, for Phase 1)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. new admin: how each feature maps (proposal, for phase 1)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L207"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_6_security_findings_in_bestportofolio",
+      "label": "6. Security findings in bestportofolio",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. security findings in bestportofolio",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L225"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_7_answers_gokul_2026_10_31",
+      "label": "7. Answers (Gokul, 2026-10-31)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. answers (gokul, 2026-10-31)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L228"
     },
     {
       "id": "docs_portfolio_admin_spec_backup_restore_api_backup",
@@ -1909,6 +2358,18 @@
       "norm_label": "misc",
       "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
       "source_location": "L138"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "label": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "portfolio admin spec (phase 0, read-only)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L1"
     },
     {
       "id": "docs_portfolio_admin_spec_profile_site_settings_api_profile_api_settings",
@@ -2102,6 +2563,17 @@
       "source_location": "L11"
     },
     {
+      "id": "package_dependencies_gokulsaraswat_config",
+      "label": "@gokulsaraswat/config",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/config",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
       "id": "package_dependencies_gokulsaraswat_ui",
       "label": "@gokulsaraswat/ui",
       "_origin": "ast",
@@ -2110,7 +2582,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L12"
+      "source_location": "L13"
     },
     {
       "id": "package_dependencies_next",
@@ -2121,7 +2593,7 @@
       "file_type": "code",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L13"
+      "source_location": "L16"
     },
     {
       "id": "package_dependencies_react",
@@ -2132,7 +2604,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L17"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -2142,6 +2614,28 @@
       "community_name": "dependencies",
       "file_type": "code",
       "norm_label": "react-dom",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "package_dependencies_supabase_ssr",
+      "label": "@supabase/ssr",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@supabase/ssr",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "package_dependencies_supabase_supabase_js",
+      "label": "@supabase/supabase-js",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@supabase/supabase-js",
       "source_file": "package.json",
       "source_location": "L15"
     },
@@ -2446,35 +2940,13 @@
       "source_location": "L103"
     },
     {
-      "id": "next_config",
-      "label": "next.config.ts",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "next.config.ts",
-      "source_file": "next.config.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "next_config_nextconfig",
-      "label": "nextConfig",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "layout.tsx",
-      "file_type": "code",
-      "norm_label": "nextconfig",
-      "source_file": "next.config.ts",
-      "source_location": "L3"
-    },
-    {
       "id": "src_app_layout",
-      "label": "layout.tsx",
+      "label": "app/layout.tsx",
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "file_type": "code",
-      "norm_label": "layout.tsx",
+      "norm_label": "app/layout.tsx",
       "source_file": "src/app/layout.tsx",
       "source_location": "L1"
     },
@@ -2483,55 +2955,55 @@
       "label": "geistMono",
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "file_type": "code",
       "norm_label": "geistmono",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L10"
+      "source_location": "L11"
     },
     {
       "id": "src_app_layout_geistsans",
       "label": "geistSans",
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "file_type": "code",
       "norm_label": "geistsans",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L5"
+      "source_location": "L6"
     },
     {
       "id": "src_app_layout_metadata",
       "label": "metadata",
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "file_type": "code",
       "norm_label": "metadata",
       "source_file": "src/app/layout.tsx",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
-      "id": "src_app_robots",
-      "label": "robots.ts",
+      "id": "src_lib_theme",
+      "label": "theme.ts",
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "file_type": "code",
-      "norm_label": "robots.ts",
-      "source_file": "src/app/robots.ts",
+      "norm_label": "theme.ts",
+      "source_file": "src/lib/theme.ts",
       "source_location": "L1"
     },
     {
-      "id": "ref_next",
-      "label": "next",
+      "id": "src_lib_theme_themescript",
+      "label": "themeScript",
       "_origin": "ast",
       "community": 5,
-      "community_name": "layout.tsx",
-      "file_type": "concept",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L13"
+      "community_name": "app/layout.tsx",
+      "file_type": "code",
+      "norm_label": "themescript",
+      "source_file": "src/lib/theme.ts",
+      "source_location": "L2"
     },
     {
       "id": "package_devdependencies",
@@ -2542,7 +3014,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L20"
     },
     {
       "id": "package_devdependencies_eslint",
@@ -2553,7 +3025,7 @@
       "file_type": "code",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L25"
     },
     {
       "id": "package_devdependencies_eslint_config_next",
@@ -2564,7 +3036,7 @@
       "file_type": "code",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L26"
     },
     {
       "id": "package_devdependencies_tailwindcss",
@@ -2575,7 +3047,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L27"
     },
     {
       "id": "package_devdependencies_tailwindcss_turbopack",
@@ -2586,7 +3058,7 @@
       "file_type": "code",
       "norm_label": "@tailwindcss/turbopack",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L21"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -2597,7 +3069,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L22"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -2608,7 +3080,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L23"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -2619,7 +3091,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L24"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -2630,7 +3102,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L28"
     },
     {
       "id": "readme",
@@ -2762,7 +3234,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos",
       "source_file": "WORKLOG.md",
-      "source_location": "L27"
+      "source_location": "L29"
     },
     {
       "id": "worklog_current_state_2026_10_31",
@@ -2786,7 +3258,7 @@
       "node_kind": "heading",
       "norm_label": "decisions (gokul, 2026-10-31)",
       "source_file": "WORKLOG.md",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "worklog_done",
@@ -2810,7 +3282,7 @@
       "node_kind": "heading",
       "norm_label": "in progress / next",
       "source_file": "WORKLOG.md",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "worklog_reminders",
@@ -2822,7 +3294,7 @@
       "node_kind": "heading",
       "norm_label": "reminders",
       "source_file": "WORKLOG.md",
-      "source_location": "L34"
+      "source_location": "L36"
     },
     {
       "id": "worklog_worklog_admin",
@@ -2882,7 +3354,7 @@
       "node_kind": "heading",
       "norm_label": "hub `config.json` publish location (agreed with gokul 2026-10-31)",
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L18"
+      "source_location": "L20"
     },
     {
       "id": "docs_contracts_owns_supabase_new_platform_project",
@@ -2894,7 +3366,7 @@
       "node_kind": "heading",
       "norm_label": "owns (supabase, new platform project)",
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L14"
+      "source_location": "L16"
     },
     {
       "id": "docs_contracts_to_be_updated",
@@ -2906,7 +3378,7 @@
       "node_kind": "heading",
       "norm_label": "to be updated",
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L21"
+      "source_location": "L23"
     },
     {
       "id": "docs_contracts_user_roles_migration_rls_owned_here_not_applied_yet",
@@ -2918,14 +3390,14 @@
       "node_kind": "heading",
       "norm_label": "`user_roles` (migration + rls owned here; not applied yet)",
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L15"
+      "source_location": "L17"
     },
     {
       "id": "src_app_globals",
       "label": "src_app_globals",
       "_origin": "semantic",
       "community": 5,
-      "community_name": "layout.tsx",
+      "community_name": "app/layout.tsx",
       "external": true,
       "file_type": "concept",
       "norm_label": "src_app_globals",
@@ -2968,6 +3440,90 @@
       "context": "call",
       "source_file": "docs/design/prototypes/shared.js",
       "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions_signin",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions_signout",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions_signout",
+      "target": "src_app_login_actions_signout",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user_currentuser",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_env_supabaseenv",
+      "target": "src_lib_supabase_env_required",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/lib/supabase/env.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_server_createclient",
+      "target": "src_lib_supabase_env_supabaseenv",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy_proxy",
+      "target": "src_lib_supabase_env_supabaseenv",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/proxy.ts",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -3055,8 +3611,20 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_app_mark_appmarkprops",
+      "target": "src_lib_apps_managedappid",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
       "source": "package",
-      "target": "ref_gokulsaraswat_ui",
+      "target": "ref_gokulsaraswat_config",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3068,7 +3636,7 @@
     },
     {
       "source": "package",
-      "target": "ref_next",
+      "target": "ref_gokulsaraswat_ui",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3080,7 +3648,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_supabase_ssr",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3092,7 +3660,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_supabase_supabase_js",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3104,7 +3672,31 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss_turbopack",
+      "target": "ref_next",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_react",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3116,31 +3708,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_node",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_types_react",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_types_react_dom",
+      "target": "ref_tailwindcss_turbopack",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3152,7 +3720,7 @@
     },
     {
       "source": "package",
-      "target": "ref_eslint",
+      "target": "ref_types_node",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3164,7 +3732,7 @@
     },
     {
       "source": "package",
-      "target": "ref_eslint_config_next",
+      "target": "ref_types_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3176,7 +3744,7 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss",
+      "target": "ref_types_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3188,7 +3756,7 @@
     },
     {
       "source": "package",
-      "target": "ref_typescript",
+      "target": "ref_eslint",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3196,6 +3764,270 @@
       "context": "import",
       "source_file": "package.json",
       "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_eslint_config_next",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_tailwindcss",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_typescript",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_app_mark_appmark",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_shell_current_user_currentuser",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_shell_rail_rail",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_theme_toggle_themetoggle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_page",
+      "target": "src_components_app_mark_appmark",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_page",
+      "target": "src_lib_apps_managedapps",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout",
+      "target": "src_lib_theme_themescript",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_login_form",
+      "target": "src_app_login_actions_signin",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_login_form",
+      "target": "src_app_login_actions_signinstate",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_page",
+      "target": "src_app_login_login_form_loginform",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_app_mark",
+      "target": "src_lib_apps_managedappid",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user",
+      "target": "src_app_login_actions_signout",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_components_app_mark_appmark",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_components_theme_toggle_themetoggle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_lib_apps_managedapps",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_server",
+      "target": "src_lib_supabase_env_supabaseenv",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_lib_supabase_env_supabaseenv",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/proxy.ts",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -3236,6 +4068,90 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_admin_layout",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_app_mark",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_shell_current_user",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_shell_rail",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_layout",
+      "target": "src_components_theme_toggle",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_page",
+      "target": "src_components_app_mark",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_page",
+      "target": "src_lib_apps",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_layout",
       "target": "ref_next",
       "relation": "imports_from",
@@ -3250,7 +4166,7 @@
     },
     {
       "source": "src_app_layout",
-      "target": "src_app_globals",
+      "target": "src_lib_theme",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3258,6 +4174,91 @@
       "context": "import",
       "source_file": "src/app/layout.tsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_layout",
+      "target": "src_app_globals",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions",
+      "target": "src_lib_supabase_server",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_login_form",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_login_form",
+      "target": "src_app_login_actions",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_page",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L1",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_page",
+      "target": "src_app_login_login_form",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -3271,6 +4272,176 @@
       "source_file": "src/app/robots.ts",
       "source_location": "L1",
       "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_app_mark",
+      "target": "src_lib_apps",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L1",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user",
+      "target": "src_app_login_actions",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user",
+      "target": "src_lib_supabase_server",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_components_app_mark",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_components_theme_toggle",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_lib_apps",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_apps",
+      "target": "ref_gokulsaraswat_config",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L1",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_server",
+      "target": "ref_supabase_ssr",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_server",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_server",
+      "target": "src_lib_supabase_env",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy",
+      "target": "ref_supabase_ssr",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/proxy.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/proxy.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_lib_supabase_env",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/proxy.ts",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -3435,7 +4606,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L15",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3468,7 +4639,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3490,7 +4661,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L15",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3501,7 +4672,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3512,7 +4683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/CONTRACTS.md",
-      "source_location": "L21",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -4727,17 +5898,6 @@
     },
     {
       "source": "package",
-      "target": "package_devdependencies",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
       "target": "package_name",
       "relation": "contains",
       "_origin": "ast",
@@ -4749,35 +5909,13 @@
     },
     {
       "source": "package",
-      "target": "package_description",
+      "target": "package_devdependencies",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "package_license",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L28",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "package_engines",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -4789,6 +5927,39 @@
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_description",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_license",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_engines",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -4815,7 +5986,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_gokulsaraswat_ui",
+      "target": "package_dependencies_gokulsaraswat_config",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4826,7 +5997,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
+      "target": "package_dependencies_gokulsaraswat_ui",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4837,7 +6008,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_supabase_ssr",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4848,7 +6019,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_supabase_supabase_js",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4858,8 +6029,30 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss_turbopack",
+      "source": "package_dependencies",
+      "target": "package_dependencies_next",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4870,29 +6063,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom",
+      "target": "package_devdependencies_tailwindcss_turbopack",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4903,7 +6074,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint",
+      "target": "package_devdependencies_types_node",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4914,7 +6085,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_config_next",
+      "target": "package_devdependencies_types_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4925,7 +6096,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss",
+      "target": "package_devdependencies_types_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4936,13 +6107,46 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript",
+      "target": "package_devdependencies_eslint",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_config_next",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -4953,7 +6157,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -5019,18 +6223,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L17",
-      "weight": 1.0
-    },
-    {
-      "source": "project_architecture_codebase_blueprint_structural_graph",
-      "target": "project_architecture_3_low_level_design_lld_solid_class_schemas",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".project-architecture.md",
-      "source_location": "L30",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -5042,6 +6235,17 @@
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "project_architecture_codebase_blueprint_structural_graph",
+      "target": "project_architecture_3_low_level_design_lld_solid_class_schemas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".project-architecture.md",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -5144,6 +6348,28 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_admin_layout",
+      "target": "src_app_admin_layout_adminlayout",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/(admin)/layout.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_admin_page",
+      "target": "src_app_admin_page_overview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_layout",
       "target": "src_app_layout_geistmono",
       "relation": "contains",
@@ -5151,7 +6377,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -5162,7 +6388,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -5173,7 +6399,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -5184,18 +6410,73 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/layout.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
-      "source": "src_app_page",
-      "target": "src_app_page_home",
+      "source": "src_app_login_actions",
+      "target": "src_app_login_actions_signout",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/app/page.tsx",
-      "source_location": "L1",
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions",
+      "target": "src_app_login_actions_signinstate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_actions",
+      "target": "src_app_login_actions_signin",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/login/actions.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_login_form",
+      "target": "src_app_login_login_form_loginform",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_page",
+      "target": "src_app_login_page_metadata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_login_page",
+      "target": "src_app_login_page_loginpage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/login/page.tsx",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -5207,6 +6488,171 @@
       "confidence_score": 1.0,
       "source_file": "src/app/robots.ts",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_app_mark",
+      "target": "src_components_app_mark_appmarkprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_app_mark",
+      "target": "src_components_app_mark_appmark",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_app_mark",
+      "target": "src_components_app_mark_bg",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/app-mark.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user",
+      "target": "src_components_shell_current_user_currentuser",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_rail",
+      "target": "src_components_shell_rail_rail",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theme_toggle",
+      "target": "src_components_theme_toggle_themetoggle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/theme-toggle.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_apps",
+      "target": "src_lib_apps_managedapps",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_apps",
+      "target": "src_lib_apps_managedappid",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_apps",
+      "target": "src_lib_apps_appmeta",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/apps.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_env",
+      "target": "src_lib_supabase_env_required",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/supabase/env.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_env",
+      "target": "src_lib_supabase_env_supabaseenv",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/supabase/env.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_supabase_server",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_theme",
+      "target": "src_lib_theme_themescript",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/theme.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_proxy_config",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/proxy.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "src_proxy",
+      "target": "src_proxy_proxy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/proxy.ts",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -5437,7 +6883,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -5448,7 +6894,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -5459,7 +6905,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -5470,7 +6916,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L34",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -5527,8 +6973,56 @@
       "source_file": "sync-architecture.sh",
       "source_location": "L14",
       "weight": 1.0
+    },
+    {
+      "source": "src_app_login_login_form_loginform",
+      "target": "src_app_login_actions_signin",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/app/login/login-form.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_lld",
+      "target": "src_components_shell_current_user_currentuser",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "CurrentUser",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_lld",
+      "target": "src_components_theme_toggle_themetoggle",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "ThemeToggle",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_lld",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "createClient()",
+      "source_file": "docs/ARCHITECTURE.md",
+      "source_location": "L21",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8d455b11eafebbe51688da56dff6facd142f6d91"
+  "built_at_commit": "1f6bce9ed8da76ad65f9869ab1ec2e2f10338502"
 }

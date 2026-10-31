@@ -6,8 +6,10 @@ What this repo exposes and expects. Master: platform/docs/CONTRACTS.md (the mast
 | Package | Version | Used for |
 |---|---|---|
 | `@gokulsaraswat/ui` | ^0.1.0 | `tokens.css` + `tailwind.css` imported in `src/app/globals.css` |
-| `@gokulsaraswat/config` | 0.1.0 | not installed yet (login/roles slice) |
+| `@gokulsaraswat/config` | 0.1.0 | `AppId` for the app list (`src/lib/apps.ts`) |
 | `@gokulsaraswat/auth` | 0.1.0 | not installed yet (login/roles slice) |
+
+Also: `@supabase/ssr` 0.12.x, `@supabase/supabase-js` 2.118.x.
 
 Install: `.npmrc` with `${NODE_AUTH_TOKEN}` (read:packages).
 

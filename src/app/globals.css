@@ -2,6 +2,22 @@
 @import "@gokulsaraswat/ui/tokens.css";
 @import "@gokulsaraswat/ui/tailwind.css";
 
+:root {
+  --app-portfolio: oklch(0.6 0.13 165);
+  --app-hub: oklch(0.62 0.17 250);
+  --app-gspace: oklch(0.58 0.2 300);
+  --app-studio: oklch(0.72 0.15 75);
+  --app-gym: oklch(0.62 0.19 30);
+}
+
+@theme inline {
+  --color-app-portfolio: var(--app-portfolio);
+  --color-app-hub: var(--app-hub);
+  --color-app-gspace: var(--app-gspace);
+  --color-app-studio: var(--app-studio);
+  --color-app-gym: var(--app-gym);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

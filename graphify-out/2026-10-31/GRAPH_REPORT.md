@@ -1,17 +1,17 @@
 # Graph Report - admin  (2026-10-31)
 
 ## Corpus Check
-- 28 files · ~18,462 words
+- 30 files · ~22,580 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 7 file(s) not represented in the graph (top: (none) 4, .example 1, .ico 1)
+- Unclassified: 8 file(s) not represented in the graph (top: (none) 4, .css 2, .example 1)
 
 ## Summary
-- 229 nodes · 212 edges · 26 communities (20 shown, 6 thin omitted)
+- 249 nodes · 233 edges · 27 communities (21 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8d455b11`
+- Built from commit: `1f6bce9e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -30,7 +30,7 @@
 - Repo Kit (every repo must have these)
 - Supabase setup for the platform (owner checklist + DRAFT SQL)
 - 4. Admin UI features (what the screens do)
-- scripts
+- shared.js
 - Codebase Blueprint & Structural Graph
 - sync-architecture.sh
 - ARCHITECTURE: admin
@@ -40,7 +40,8 @@
 - PLANNING-CHAT-PROMPT.md
 - SECURITY.md
 - 3. API by feature (server truth)
-- PORTFOLIO ADMIN SPEC (Phase 0, read-only)
+- DESIGN (Phase 1, for Gokul's approval before any app code)
+- dependencies
 
 ## God Nodes (most connected - your core abstractions)
 1. `WORKLOG` - 19 edges
@@ -49,10 +50,10 @@
 4. `3. API by feature (server truth)` - 14 edges
 5. `🤖 System Architecture & Co-Worker Protocol` - 10 edges
 6. `REPO SECTIONS` - 9 edges
-7. `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` - 8 edges
-8. `admin` - 8 edges
-9. `WORKLOG: admin` - 7 edges
-10. `To-do` - 5 edges
+7. `DESIGN (Phase 1, for Gokul's approval before any app code)` - 8 edges
+8. `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` - 8 edges
+9. `admin` - 8 edges
+10. `WORKLOG: admin` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -60,7 +61,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (26 total, 6 thin omitted)
+## Communities (27 total, 6 thin omitted)
 
 ### Community 0 - "WORKLOG"
 Cohesion: 0.08
@@ -68,7 +69,7 @@ Nodes (23): Agreed order, Architecture (agreed 2026-10-31), Cleanup scan: `/clea
 
 ### Community 1 - "package.json"
 Cohesion: 0.08
-Nodes (24): eslintConfig, dependencies, @gokulsaraswat/ui, next, react, react-dom, description, engines (+16 more)
+Nodes (24): eslintConfig, description, engines, node, license, name, private, scripts (+16 more)
 
 ### Community 2 - "compilerOptions"
 Cohesion: 0.11
@@ -115,12 +116,12 @@ Cohesion: 0.33
 Nodes (5): Decision: which project (UPDATED 2026-10-31, supersedes "reuse portfolio's"), DRAFT SQL (review with Gokul; run in the SQL editor or as a migration in the admin repo), Env vars (admin/.env.example must list these; values only in .env.local / Vercel), Gokul does in the Supabase dashboard (no secrets in chat), Supabase setup for the platform (owner checklist + DRAFT SQL)
 
 ### Community 13 - "4. Admin UI features (what the screens do)"
-Cohesion: 0.12
-Nodes (16): 4.10 Todos (`todo-manager.tsx`), 4.11 Users (`user-manager.tsx`), 4.12 Backup (`backup-manager.tsx`), 4.13 Settings (`profile-settings.tsx`), 4.14 AI chat bot / RAG (`rag-settings.tsx`), 4.15 Operation logs (`operation-logs-viewer.tsx`; `operation-logs-panel.tsx` is dead), 4.1 Shell, login, roles (`admin/page.tsx`, `admin-layout.tsx`), 4.2 Dashboard (`admin-dashboard.tsx`) (+8 more)
+Cohesion: 0.08
+Nodes (25): 1.1 Auth today (custom, NOT Supabase Auth), 1.2 Operation log (audit), 1.3 Shared conventions, 1. Cross-cutting, 2. Tables (Prisma, old Supabase project), 4.10 Todos (`todo-manager.tsx`), 4.11 Users (`user-manager.tsx`), 4.12 Backup (`backup-manager.tsx`) (+17 more)
 
-### Community 14 - "scripts"
-Cohesion: 0.40
-Nodes (5): scripts, build, dev, lint, start
+### Community 14 - "shared.js"
+Cohesion: 0.24
+Nodes (10): commands, drawPalette(), filters, openPalette(), posts, render(), state, statusCell() (+2 more)
 
 ### Community 15 - "Codebase Blueprint & Structural Graph"
 Cohesion: 0.40
@@ -138,29 +139,33 @@ Nodes (3): ARCHITECTURE: admin, HLD, LLD
 Cohesion: 0.14
 Nodes (14): 3. API by feature (server truth), Backup / restore (`/api/backup`), Blog ideas (`/api/blog-ideas`, `[id]`), Blogs (`/api/blogs`, `/api/blogs/[id]`), Comments (`/api/comments`, `[id]`), Courses + chapters (`/api/courses`, `[courseId]`, `[courseId]/chapters`, `[chapterId]`), Messages (`/api/contact`, `/api/messages`, `[id]`), Misc (+6 more)
 
-### Community 25 - "PORTFOLIO ADMIN SPEC (Phase 0, read-only)"
-Cohesion: 0.20
-Nodes (9): 1.1 Auth today (custom, NOT Supabase Auth), 1.2 Operation log (audit), 1.3 Shared conventions, 1. Cross-cutting, 2. Tables (Prisma, old Supabase project), 5. New admin: how each feature maps (proposal, for Phase 1), 6. Security findings in bestportofolio, 7. Answers (Gokul, 2026-10-31) (+1 more)
+### Community 25 - "DESIGN (Phase 1, for Gokul's approval before any app code)"
+Cohesion: 0.22
+Nodes (8): 1. Product, 2. Visual system, 3. Information architecture (routes), 4. Roles per screen (delegated admin, per spec answers), 5. Mobile (mobile-first), 6. Patterns (shared component kit, shadcn/ui style, copied into `src/components/ui`), 7. Layout options (pick one; prototypes), DESIGN (Phase 1, for Gokul's approval before any app code)
+
+### Community 26 - "dependencies"
+Cohesion: 0.40
+Nodes (5): dependencies, @gokulsaraswat/ui, next, react, react-dom
 
 ## Knowledge Gaps
-- **168 isolated node(s):** `Current state (2026-10-31)`, `Done`, `In progress / next`, `Decisions (Gokul, 2026-10-31)`, `Blockers / requests to other repos` (+163 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 190 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **180 isolated node(s):** `Current state (2026-10-31)`, `Done`, `In progress / next`, `Decisions (Gokul, 2026-10-31)`, `Blockers / requests to other repos` (+175 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 203 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` connect `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` to `3. API by feature (server truth)`, `4. Admin UI features (what the screens do)`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
-- **Why does `4. Admin UI features (what the screens do)` connect `4. Admin UI features (what the screens do)` to `PORTFOLIO ADMIN SPEC (Phase 0, read-only)`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `next` connect `layout.tsx` to `package.json`?**
+- **Why does `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` connect `4. Admin UI features (what the screens do)` to `3. API by feature (server truth)`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **Why does `next` connect `layout.tsx` to `package.json`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `Current state (2026-10-31)`, `Done`, `In progress / next` to the rest of the system?**
-  _168 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _180 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `WORKLOG` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+- **Should `REPO SECTIONS` be split into smaller, more focused modules?**
+  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._

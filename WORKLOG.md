@@ -7,11 +7,12 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Not built: Supabase client/login, `user_roles` SQL (draft only in docs/SUPABASE-SETUP.md, not applied), app switcher, sections, config publisher. Not deployed to Vercel.
 
 ## Done
+- Step 6 (2026-10-31): Phase 2a code (see current state).
 - Step 1 (2026-10-31): repo kit. See `.claude-session.json` sprint.done[0].
 - Step 2 (2026-10-31): Phase 0 spec `docs/PORTFOLIO-ADMIN-SPEC.md` (data, API, UI per feature, mapping proposal, 11 questions). Key facts: old TOTP not implemented (nothing to migrate); roles/permissions never enforced server-side.
 
 ## In progress / next
-- Phase 2a next: shell (Option A rail layout) + Supabase login (@supabase/ssr). Needs Supabase URL + anon key in `.env.local` (Gokul adds them himself). Full order: `.claude-session.json` sprint.todo_next.
+- Phase 2a CODE DONE, RUNTIME NOT VERIFIED: login + session proxy + rail shell build/lint clean. Blocked: `.env.local` has no `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` yet (only NODE_AUTH_TOKEN). After Gokul adds them: run app, verify redirect to /login, wrong password message, Gokul signs in himself, sign out. Full order: `.claude-session.json` sprint.todo_next.
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).
