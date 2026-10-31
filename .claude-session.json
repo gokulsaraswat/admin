@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-31",
+  "sys": {
+    "mode": "Personal Project",
+    "scale": "Midscale (Next.js modulith, route group per app)",
+    "stack": [
+      "Node 24",
+      "npm",
+      "Next.js 16.4.3 (App Router)",
+      "React 19.3",
+      "TypeScript 5",
+      "Tailwind v4",
+      "@gokulsaraswat/ui 0.1.0",
+      "Supabase Auth + supabase-js (planned)"
+    ],
+    "architectural_pattern": "Super admin: shell + app switcher; one lazy route group per app; RLS as the enforcement layer"
+  },
+  "sprint": {
+    "goal": "Phase 0 portfolio admin spec, then Phase 1 design, then Phase 2 platform-only slices.",
+    "bugs": [],
+    "done": [
+      "Step 1 (2026-10-31): repo kit: .gitignore, Next.js 16.4.3 scaffold (create-next-app defaults, src/, Tailwind v4, ESLint), @gokulsaraswat/ui tokens in globals.css, noindex + robots disallow, .npmrc (NODE_AUTH_TOKEN), .nvmrc 24 + engines, CLAUDE.md (platform text + admin section + graphify), AGENTS.md, README, WORKLOG, docs/CONTRACTS.md, docs/ARCHITECTURE.md, .env.example, LICENSE (all rights reserved), SECURITY.md, PR template, CI (lint + build). Verified: clean npm ci + lint + build."
+    ],
+    "todo_next": [
+      "Phase 0: docs/PORTFOLIO-ADMIN-SPEC.md from bestportofolio src/components/admin + src/app/api/* + prisma/schema.prisma (read-only; keep all features)",
+      "Phase 1: IA, roles per screen, mobile-first, component kit on @gokulsaraswat/ui tokens; 2-3 prototype options for Gokul to pick",
+      "Phase 2a: shell + Supabase login (@supabase/ssr)",
+      "Phase 2b: user_roles migration + RLS (show SQL first, max effort)",
+      "Phase 2c: app switcher (route group per app, lazy)",
+      "Phase 2d: config.json publisher (public-config/hub/config.json)",
+      "Later (own plan, ask Gokul): portfolio data migration to the new Supabase project; then portfolio sections (blogs first); MDX editor (needs @gokulsaraswat/mdx); re-invite AdminUsers + TOTP; remove old portfolio admin last"
+    ]
+  }
+}
