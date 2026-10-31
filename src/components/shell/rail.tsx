@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { AppMark } from "@/components/app-mark";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { managedApps } from "@/lib/apps";
+import type { AppMeta } from "@/lib/apps";
 
-export function Rail() {
+export function Rail({ apps }: { apps: readonly AppMeta[] }) {
   return (
     <nav aria-label="Apps" className="hidden w-14 flex-col items-center gap-2 border-r border-sidebar-border bg-sidebar py-3 md:flex">
       <Link
@@ -14,7 +14,7 @@ export function Rail() {
       >
         <AppMark app="platform" letter="G" />
       </Link>
-      {managedApps.map((app) => (
+      {apps.map((app) => (
         <span key={app.id} title={`${app.name}: not set up yet`} className="grid size-10 place-items-center rounded-lg">
           <AppMark app={app.id} letter={app.mark} dimmed />
           <span className="sr-only">{app.name} (not set up yet)</span>

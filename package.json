@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gokulsaraswat/auth": "^0.1.0",
     "@gokulsaraswat/config": "^0.1.0",
     "@gokulsaraswat/ui": "^0.1.0",
     "@supabase/ssr": "^0.12.7",

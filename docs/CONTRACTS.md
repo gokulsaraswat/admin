@@ -7,7 +7,7 @@ What this repo exposes and expects. Master: platform/docs/CONTRACTS.md (the mast
 |---|---|---|
 | `@gokulsaraswat/ui` | ^0.1.0 | `tokens.css` + `tailwind.css` imported in `src/app/globals.css` |
 | `@gokulsaraswat/config` | 0.1.0 | `AppId` for the app list (`src/lib/apps.ts`) |
-| `@gokulsaraswat/auth` | 0.1.0 | not installed yet (login/roles slice) |
+| `@gokulsaraswat/auth` | 0.1.0 | `getUserRoles`, `hasRole`, `isSuperAdmin` in `src/lib/session.ts` |
 
 Also: `@supabase/ssr` 0.12.x, `@supabase/supabase-js` 2.118.x.
 

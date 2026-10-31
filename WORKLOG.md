@@ -13,7 +13,9 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 ## In progress / next
 - Phase 2a DONE (2026-10-31): login + session proxy + rail shell verified: signed-out -> /login, made-up account -> "Email or password is incorrect." (real Supabase reply), Gokul signed in (Overview) and out in his Chrome; login page checked at 375 px light/dark. Not seen by Claude: signed-in shell on phone (needs Gokul's session).
-- Phase 2b DB DONE (2026-10-31): migration `20261031120000_roles_permissions.sql` APPLIED to gokul-platform by Gokul (SQL editor), bootstrap made Gokul super_admin (1 row), `supabase/tests/roles_rls_test.sql` PASSED on the real project. Next: app reads roles (shell shows only allowed apps, no-access screen).
+- Phase 2b DB DONE (2026-10-31): migration `20261031120000_roles_permissions.sql` APPLIED to gokul-platform by Gokul (SQL editor), bootstrap made Gokul super_admin (1 row), `supabase/tests/roles_rls_test.sql` PASSED on the real project. 
+- Phase 2b APP DONE (2026-10-31): `src/lib/session.ts` (`getSession`, React cache, `@gokulsaraswat/auth` getUserRoles/hasRole/isSuperAdmin) -> shell shows only allowed apps, "Super admin" label, no-access screen, (admin)/error.tsx. Verified by Gokul in Chrome as super admin (5 apps + label). NOT verified: no-access screen (needs a user without roles).
+- Next: Phase 2c app switcher (route group per app, lazy) - ask Gokul first.
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).

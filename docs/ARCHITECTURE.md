@@ -9,17 +9,19 @@ Browser --> Vercel (Next.js 16 App Router, project gokul-admin)
                           signed out -> /login, signed in on /login -> /
   src/app/layout.tsx      root: Geist fonts, noindex, theme script (saved theme or system)
   src/app/login/          email + password form -> server action signIn (supabase.auth.signInWithPassword); signOut
-  src/app/(admin)/        shell (Option A rail, docs/DESIGN.md): app rail + platform sidebar + content; mobile top bar
+  src/app/(admin)/        Suspense -> Shell (src/components/shell/shell.tsx): getSession() -> rail with the user's apps,
+                          platform sidebar, email + Super admin label; no roles -> no-access screen; error.tsx retry
     page.tsx              Overview: list of managed apps (all "not set up yet")
   src/app/robots.ts       disallow all
         |
         v
   Supabase (new platform project gokul-platform): Auth + user_roles, permissions, user_permissions with RLS
-  (supabase/migrations/, applied via SQL editor; not yet read by the app).
+  (supabase/migrations/, applied via SQL editor). App reads own roles via @gokulsaraswat/auth getUserRoles.
 ```
 
 ## LLD
 - Supabase clients: `src/lib/supabase/server.ts` (`createClient()` with Next `cookies()`), env read lazily in `src/lib/supabase/env.ts` so CI builds without secrets. Session checked with `auth.getClaims()`.
+- `src/lib/session.ts` `getSession()`: claims + user_roles once per request (React `cache`); `apps` = managed apps where hasRole(member).
 - Proxy is convenience, not security: data access will be enforced by RLS (Phase 2b).
 - `next.config.ts`: `cacheComponents` on, so request-time data (session) renders inside `<Suspense>` (`CurrentUser`).
 - Apps list: `src/lib/apps.ts` typed from `@gokulsaraswat/config` `AppId` (minus `admin`); colours `--app-<id>` in `globals.css` -> Tailwind `bg-app-<id>`.

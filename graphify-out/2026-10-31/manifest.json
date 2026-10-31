@@ -1,8 +1,8 @@
 {
   ".claude-session.json": {
-    "mtime": 1793462314.1176295,
-    "seen": 1793462317.834547,
-    "ast_hash": "1f78f1025738debe9dd7f5ef037b23a1",
+    "mtime": 1793463649.69681,
+    "seen": 1793463653.4718451,
+    "ast_hash": "29f38c8c59cb60ecae086e4ba4fe52d4",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793462316.5837984,
-    "seen": 1793462317.834574,
-    "ast_hash": "e48fda67569e21b85920312ae0733e41",
+    "mtime": 1793463652.2140164,
+    "seen": 1793463653.4718752,
+    "ast_hash": "4c56132bae0b11e2227502341cd99d43",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -108,21 +108,21 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793462314.1135552,
-    "seen": 1793462317.834578,
-    "ast_hash": "5a56ffe269ee48742177d6163ab2ac00",
+    "mtime": 1793463649.6931446,
+    "seen": 1793463653.47188,
+    "ast_hash": "cfeedbf21c29f258316008e53a120a90",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
-    "mtime": 1793460989.2465055,
-    "seen": 1793460993.624183,
-    "ast_hash": "d20a587efebd8767e39c138a31f02590",
+    "mtime": 1793463649.696131,
+    "seen": 1793463653.47188,
+    "ast_hash": "00057908509aac98a1ac0a94d22e3fd3",
     "semantic_hash": ""
   },
   "docs/CONTRACTS.md": {
-    "mtime": 1793460989.2484415,
-    "seen": 1793460993.624183,
-    "ast_hash": "0be5d72ffe9e0bf60dbdedad329e2ff6",
+    "mtime": 1793463649.6949828,
+    "seen": 1793463653.471881,
+    "ast_hash": "f1e2f73dec8d4173b620971bc5e68e41",
     "semantic_hash": ""
   },
   "docs/KICKOFF-PROMPT.md": {
@@ -132,9 +132,9 @@
     "semantic_hash": ""
   },
   "docs/SUPABASE-SETUP.md": {
-    "mtime": 1793458956.528063,
-    "seen": 1793459058.353232,
-    "ast_hash": "384573f7665acc5affc7ec7c28000a4b",
+    "mtime": 1793463119.468382,
+    "seen": 1793463220.0266728,
+    "ast_hash": "8fce20bec7181d143efab274e663f63b",
     "semantic_hash": ""
   },
   "docs/master/PLANNING-CHAT-PROMPT.md": {
@@ -279,6 +279,24 @@
     "mtime": 1793460944.7767043,
     "seen": 1793460993.6241732,
     "ast_hash": "fde92f6c7475c9f7d72ecd0f98920085",
+    "semantic_hash": ""
+  },
+  "supabase/bootstrap_super_admin.sql": {
+    "mtime": 1793463119.0918164,
+    "seen": 1793463307.8076138,
+    "ast_hash": "f88dcb5cdfee72410132beb68f8e55da",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/20261031120000_roles_permissions.sql": {
+    "mtime": 1793463063.6226459,
+    "seen": 1793463307.807615,
+    "ast_hash": "d66f02d107c35d36fedaea1f78bb0b5d",
+    "semantic_hash": ""
+  },
+  "supabase/tests/roles_rls_test.sql": {
+    "mtime": 1793463562.0379202,
+    "seen": 1793463653.471871,
+    "ast_hash": "fe5ad36016f3f502fbe2bd423ee49993",
     "semantic_hash": ""
   }
 }

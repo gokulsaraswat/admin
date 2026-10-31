@@ -1,7 +1,7 @@
 # Graph Report - admin  (2026-10-31)
 
 ## Corpus Check
-- 43 files · ~24,126 words
+- 46 files · ~26,238 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 8 file(s) not represented in the graph (top: (none) 4, .css 2, .example 1)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0f6febe0`
+- Built from commit: `19643072`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -111,7 +111,7 @@ Nodes (7): Blockers / requests to other repos, Current state (2026-10-31), Decis
 
 ### Community 9 - "Owns (Supabase, new platform project)"
 Cohesion: 0.29
-Nodes (6): CONTRACTS: admin, Expects (packages), Hub `config.json` publish location (agreed with Gokul 2026-10-31), Owns (Supabase, new platform project), TO BE UPDATED, `user_roles` (migration + RLS owned here; NOT applied yet)
+Nodes (6): CONTRACTS: admin, Expects (packages), Hub `config.json` publish location (agreed with Gokul 2026-10-31), Owns (Supabase, new platform project), TO BE UPDATED, `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)
 
 ### Community 10 - "Kickoff prompt: admin"
 Cohesion: 0.33
@@ -123,7 +123,7 @@ Nodes (5): Definition of done (any step), Deploy-ready rules (every repo), Maste
 
 ### Community 12 - "Supabase setup for the platform (owner checklist + DRAFT SQL)"
 Cohesion: 0.33
-Nodes (5): Decision: which project (UPDATED 2026-10-31, supersedes "reuse portfolio's"), DRAFT SQL (review with Gokul; run in the SQL editor or as a migration in the admin repo), Env vars (admin/.env.example must list these; values only in .env.local / Vercel), Gokul does in the Supabase dashboard (no secrets in chat), Supabase setup for the platform (owner checklist + DRAFT SQL)
+Nodes (5): Decision: which project (UPDATED 2026-10-31, supersedes "reuse portfolio's"), DRAFT SQL (SUPERSEDED 2026-10-31), Env vars (admin/.env.example must list these; values only in .env.local / Vercel), Gokul does in the Supabase dashboard (no secrets in chat), Supabase setup for the platform (owner checklist + DRAFT SQL)
 
 ### Community 13 - "4. Admin UI features (what the screens do)"
 Cohesion: 0.12
