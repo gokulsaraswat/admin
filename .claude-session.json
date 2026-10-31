@@ -18,19 +18,17 @@
   },
   "sprint": {
     "goal": "Phase 2 platform-only slices: shell+login, roles+RLS, switcher, config publisher.",
-    "bugs": [
-      "Phase 2a runtime unverified until Supabase keys are in .env.local"
-    ],
+    "bugs": [],
     "done": [
       "Step 1 (2026-10-31): repo kit: .gitignore, Next.js 16.4.3 scaffold (create-next-app defaults, src/, Tailwind v4, ESLint), @gokulsaraswat/ui tokens in globals.css, noindex + robots disallow, .npmrc (NODE_AUTH_TOKEN), .nvmrc 24 + engines, CLAUDE.md (platform text + admin section + graphify), AGENTS.md, README, WORKLOG, docs/CONTRACTS.md, docs/ARCHITECTURE.md, .env.example, LICENSE (all rights reserved), SECURITY.md, PR template, CI (lint + build). Verified: clean npm ci + lint + build.",
       "Step 2 (2026-10-31): Phase 0 docs/PORTFOLIO-ADMIN-SPEC.md from bestportofolio @7168b56 (schema, all API routes read directly; UI components via 2 read-only subagents, key claims spot-checked). Security findings kept local-only (docs/private/, git-ignored).",
       "Step 3 (2026-10-31): Phase 0 answers recorded (spec section 7 + WORKLOG decisions). Security fix delegated to bestportofolio session `portfolio-security`.",
       "Step 4 (2026-10-31): Phase 1 draft: docs/DESIGN.md (IA/routes, roles per screen incl. delegated admin, mobile, patterns, per-app accent colour) + 3 static prototypes on real tokens, checked in browser at 1280x800 and 375x812, light + dark (fixed textarea colour, chip wrap, split toolbar overflow).",
       "Step 5 (2026-10-31): Gokul picked layout Option A (Rail); DESIGN.md approved.",
-      "Step 6 (2026-10-31): Phase 2a code: @supabase/ssr server client + src/proxy.ts (getClaims, redirects), /login (useActionState + server action signIn/signOut), (admin) rail shell (Option A) + Overview, theme toggle, per-app colours, @gokulsaraswat/config AppId. Build + lint clean. NOT runtime-verified: Supabase URL/anon key missing in .env.local."
+      "Step 6 (2026-10-31): Phase 2a code: @supabase/ssr server client + src/proxy.ts (getClaims, redirects), /login (useActionState + server action signIn/signOut), (admin) rail shell (Option A) + Overview, theme toggle, per-app colours, @gokulsaraswat/config AppId. Build + lint clean. NOT runtime-verified: Supabase URL/anon key missing in .env.local.",
+      "Step 7 (2026-10-31): Phase 2a verified (see WORKLOG). Sign-in errors split: invalid_credentials vs unavailable (logged server-side)."
     ],
     "todo_next": [
-      "Phase 2a verify: with keys in .env.local, check /login redirect, wrong-password error, Gokul signs in, sign out, mobile + dark",
       "Phase 2b: user_roles + per-app permissions (delegated admin: app admins manage their app's members/permissions) migration + RLS (show SQL first, max effort)",
       "Phase 2c: app switcher (route group per app, lazy)",
       "Phase 2d: config.json publisher (public-config/hub/config.json)",

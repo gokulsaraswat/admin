@@ -12,7 +12,8 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Step 2 (2026-10-31): Phase 0 spec `docs/PORTFOLIO-ADMIN-SPEC.md` (data, API, UI per feature, mapping proposal, 11 questions). Key facts: old TOTP not implemented (nothing to migrate); roles/permissions never enforced server-side.
 
 ## In progress / next
-- Phase 2a CODE DONE, RUNTIME NOT VERIFIED: login + session proxy + rail shell build/lint clean. Blocked: `.env.local` has no `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` yet (only NODE_AUTH_TOKEN). After Gokul adds them: run app, verify redirect to /login, wrong password message, Gokul signs in himself, sign out. Full order: `.claude-session.json` sprint.todo_next.
+- Phase 2a DONE (2026-10-31): login + session proxy + rail shell verified: signed-out -> /login, made-up account -> "Email or password is incorrect." (real Supabase reply), Gokul signed in (Overview) and out in his Chrome; login page checked at 375 px light/dark. Not seen by Claude: signed-in shell on phone (needs Gokul's session).
+- Next: Phase 2b `user_roles` + per-app permissions SQL + RLS (show SQL first).
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).
@@ -34,5 +35,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Gokul: replace the token in `.env.local` with a classic token scoped to `read:packages` ONLY (current one has full account scopes), no quotes; revoke the old one. Use the new one for Vercel.
 
 ## Reminders
+- Local testing: the Browser-pane preview server (port 3000) has no outgoing network, so Supabase calls fail there ("fetch failed"). Run `npx next start -p 3001` from a shell and open :3001 instead.
+- Supabase keys live in `admin/.env` (git-ignored; Gokul's choice), `.env.local` is empty.
 - `npm audit`: 16 moderate, all dev-only (minimatch via eslint plugins). Revisit when eslint-config-next updates.
 - SQL review points for the `user_roles` slice: last-super-admin lock-out guard; drop storage "public read" policy (lets anyone list the bucket; public buckets serve files without it); revoke `execute` on `is_super_admin()` from public/anon; `(select auth.uid())` in policies; add per-app role helper for `content`/`app_config`.

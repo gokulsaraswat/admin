@@ -12,7 +12,11 @@ export async function signIn(_prev: SignInState, formData: FormData): Promise<Si
 
   const supabase = await createClient();
   const { error } = await supabase.auth.signInWithPassword({ email, password });
-  if (error) return { error: "Email or password is incorrect.", email };
+  if (error?.code === "invalid_credentials") return { error: "Email or password is incorrect.", email };
+  if (error) {
+    console.error("signIn failed:", error.code, error.message);
+    return { error: "Sign-in is unavailable right now. Try again in a minute.", email };
+  }
 
   redirect("/");
 }
