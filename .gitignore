@@ -17,3 +17,6 @@ next-env.d.ts
 .DS_Store
 .vercel/
 supabase/.temp/
+
+# local-only notes (e.g. unfixed security findings)
+docs/private/

@@ -1,8 +1,8 @@
 {
   ".claude-session.json": {
-    "mtime": 1793458956.2109468,
-    "seen": 1793459058.353209,
-    "ast_hash": "70d106994f3640aff903d5e2c88c8e5b",
+    "mtime": 1793459576.4561882,
+    "seen": 1793459579.7461371,
+    "ast_hash": "7165b9d57e28d46c090fbcb0f562e7fe",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
@@ -78,9 +78,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793459056.7092986,
-    "seen": 1793459058.353225,
-    "ast_hash": "ff3c164766bf35e6a65999d12b6344d5",
+    "mtime": 1793459578.5362895,
+    "seen": 1793459579.746152,
+    "ast_hash": "afbf0a413fb5d8f4169386822be783cc",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -102,9 +102,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1793458935.0970788,
-    "seen": 1793459058.353228,
-    "ast_hash": "f5cef2d8a89060477cffd845a9e4ed95",
+    "mtime": 1793459177.0685194,
+    "seen": 1793459181.681087,
+    "ast_hash": "b241475b06b75821c190b560d64b983a",
     "semantic_hash": ""
   },
   "SECURITY.md": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793458955.8722236,
-    "seen": 1793459058.353229,
-    "ast_hash": "02f1331d5db0556b9e8fd5e9df59a2c6",
+    "mtime": 1793459576.455305,
+    "seen": 1793459579.7461572,
+    "ast_hash": "761eb1ba4c98b385022299eba097a32d",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
@@ -165,6 +165,12 @@
     "mtime": 1793457855.2953362,
     "seen": 1793459058.353235,
     "ast_hash": "1f450ae872bfd18870c92df1fc1d6b36",
+    "semantic_hash": ""
+  },
+  "docs/PORTFOLIO-ADMIN-SPEC.md": {
+    "mtime": 1793459544.8969293,
+    "seen": 1793459579.74616,
+    "ast_hash": "820196182387b6f42b472f500430b22d",
     "semantic_hash": ""
   }
 }

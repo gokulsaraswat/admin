@@ -8,9 +8,10 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 ## Done
 - Step 1 (2026-10-31): repo kit. See `.claude-session.json` sprint.done[0].
+- Step 2 (2026-10-31): Phase 0 spec `docs/PORTFOLIO-ADMIN-SPEC.md` (data, API, UI per feature, mapping proposal, 11 questions). Key facts: old TOTP not implemented (nothing to migrate); roles/permissions never enforced server-side.
 
 ## In progress / next
-- Phase 0: `docs/PORTFOLIO-ADMIN-SPEC.md` (read-only spec of bestportofolio admin + API). Then Phase 1 design (2-3 options), then Phase 2 slices. Full order: `.claude-session.json` sprint.todo_next.
+- Phase 0 answers: Gokul answers spec section 7 questions. Then Phase 1 design (2-3 options), then Phase 2 slices. Full order: `.claude-session.json` sprint.todo_next.
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).
@@ -23,6 +24,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Admin is internal: noindex, no public legal footer pages.
 
 ## Blockers / requests to other repos
+- **URGENT bestportofolio (security)**: findings in local-only `docs/private/SECURITY-FINDINGS.md` (git-ignored, not public until fixed). One is critical and confirmed live on bestportofolio.vercel.app (2026-10-31): fix in bestportofolio + Gokul rotates the OLD Supabase project's DB password.
 - platform (master CONTRACTS.md, Hub `config.json`): record bucket `public-config`, path `hub/config.json` (agreed 2026-10-31). Admin does not edit platform.
 - Gokul (GitHub UI, needs repo admin): set repo description, topics, branch protection on main.
 - Gokul: replace the token in `.env.local` with a classic token scoped to `read:packages` ONLY (current one has full account scopes), no quotes; revoke the old one. Use the new one for Vercel.

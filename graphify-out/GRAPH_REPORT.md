@@ -1,14 +1,19 @@
 # Graph Report - admin  (2026-10-31)
 
 ## Corpus Check
-- 27 files · ~14,554 words
+- 28 files · ~18,358 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 4, .example 1, .ico 1)
 
 ## Summary
-- 189 nodes · 173 edges · 24 communities (18 shown, 6 thin omitted)
+- 229 nodes · 212 edges · 26 communities (20 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `244deb9f`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - WORKLOG
@@ -24,7 +29,7 @@
 - Kickoff prompt: admin
 - Repo Kit (every repo must have these)
 - Supabase setup for the platform (owner checklist + DRAFT SQL)
-- dependencies
+- 4. Admin UI features (what the screens do)
 - scripts
 - Codebase Blueprint & Structural Graph
 - sync-architecture.sh
@@ -34,18 +39,20 @@
 - COLLABORATORS.md
 - PLANNING-CHAT-PROMPT.md
 - SECURITY.md
+- 3. API by feature (server truth)
+- PORTFOLIO ADMIN SPEC (Phase 0, read-only)
 
 ## God Nodes (most connected - your core abstractions)
 1. `WORKLOG` - 19 edges
 2. `compilerOptions` - 16 edges
-3. `🤖 System Architecture & Co-Worker Protocol` - 10 edges
-4. `REPO SECTIONS` - 9 edges
-5. `admin` - 8 edges
-6. `WORKLOG: admin` - 7 edges
-7. `scripts` - 5 edges
-8. `Supabase setup for the platform (owner checklist + DRAFT SQL)` - 5 edges
-9. `Kickoff Prompts` - 5 edges
-10. `Repo Kit (every repo must have these)` - 5 edges
+3. `4. Admin UI features (what the screens do)` - 16 edges
+4. `3. API by feature (server truth)` - 14 edges
+5. `🤖 System Architecture & Co-Worker Protocol` - 10 edges
+6. `REPO SECTIONS` - 9 edges
+7. `admin` - 8 edges
+8. `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` - 8 edges
+9. `WORKLOG: admin` - 7 edges
+10. `scripts` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - None detected - all connections are within the same source files.
@@ -53,15 +60,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (24 total, 6 thin omitted)
+## Communities (26 total, 6 thin omitted)
 
 ### Community 0 - "WORKLOG"
 Cohesion: 0.08
 Nodes (23): Agreed order, Architecture (agreed 2026-10-31), Cleanup scan: `/cleanscan` (Claude slash command), Commit + push everything: `/gitmd` (Claude slash command), Current focus, Decisions, Dropped, Far later (+15 more)
 
 ### Community 1 - "package.json"
-Cohesion: 0.10
-Nodes (19): eslintConfig, description, engines, node, license, name, private, version (+11 more)
+Cohesion: 0.08
+Nodes (24): eslintConfig, dependencies, @gokulsaraswat/ui, next, react, react-dom, description, engines (+16 more)
 
 ### Community 2 - "compilerOptions"
 Cohesion: 0.11
@@ -107,9 +114,9 @@ Nodes (5): Definition of done (any step), Deploy-ready rules (every repo), Maste
 Cohesion: 0.33
 Nodes (5): Decision: which project (UPDATED 2026-10-31, supersedes "reuse portfolio's"), DRAFT SQL (review with Gokul; run in the SQL editor or as a migration in the admin repo), Env vars (admin/.env.example must list these; values only in .env.local / Vercel), Gokul does in the Supabase dashboard (no secrets in chat), Supabase setup for the platform (owner checklist + DRAFT SQL)
 
-### Community 13 - "dependencies"
-Cohesion: 0.40
-Nodes (5): dependencies, @gokulsaraswat/ui, next, react, react-dom
+### Community 13 - "4. Admin UI features (what the screens do)"
+Cohesion: 0.12
+Nodes (16): 4.10 Todos (`todo-manager.tsx`), 4.11 Users (`user-manager.tsx`), 4.12 Backup (`backup-manager.tsx`), 4.13 Settings (`profile-settings.tsx`), 4.14 AI chat bot / RAG (`rag-settings.tsx`), 4.15 Operation logs (`operation-logs-viewer.tsx`; `operation-logs-panel.tsx` is dead), 4.1 Shell, login, roles (`admin/page.tsx`, `admin-layout.tsx`), 4.2 Dashboard (`admin-dashboard.tsx`) (+8 more)
 
 ### Community 14 - "scripts"
 Cohesion: 0.40
@@ -127,25 +134,33 @@ Nodes (3): edge(), node(), sync-architecture.sh script
 Cohesion: 0.50
 Nodes (3): ARCHITECTURE: admin, HLD, LLD
 
+### Community 24 - "3. API by feature (server truth)"
+Cohesion: 0.14
+Nodes (14): 3. API by feature (server truth), Backup / restore (`/api/backup`), Blog ideas (`/api/blog-ideas`, `[id]`), Blogs (`/api/blogs`, `/api/blogs/[id]`), Comments (`/api/comments`, `[id]`), Courses + chapters (`/api/courses`, `[courseId]`, `[courseId]/chapters`, `[chapterId]`), Messages (`/api/contact`, `/api/messages`, `[id]`), Misc (+6 more)
+
+### Community 25 - "PORTFOLIO ADMIN SPEC (Phase 0, read-only)"
+Cohesion: 0.20
+Nodes (9): 1.1 Auth today (custom, NOT Supabase Auth), 1.2 Operation log (audit), 1.3 Shared conventions, 1. Cross-cutting, 2. Tables (Prisma, old Supabase project), 5. New admin: how each feature maps (proposal, for Phase 1), 6. Security findings in bestportofolio, 7. Questions for Gokul (+1 more)
+
 ## Knowledge Gaps
-- **133 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+128 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 154 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **168 isolated node(s):** `eslintConfig`, `nextConfig`, `name`, `version`, `private` (+163 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 190 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` connect `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` to `3. API by feature (server truth)`, `4. Admin UI features (what the screens do)`?**
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+- **Why does `4. Admin UI features (what the screens do)` connect `4. Admin UI features (what the screens do)` to `PORTFOLIO ADMIN SPEC (Phase 0, read-only)`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `next` connect `layout.tsx` to `package.json`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `package.json`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `eslintConfig`, `nextConfig`, `name` to the rest of the system?**
-  _133 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _168 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `WORKLOG` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `REPO SECTIONS` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
