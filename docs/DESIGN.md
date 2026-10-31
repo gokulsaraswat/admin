@@ -64,7 +64,7 @@ Status: APPROVED layout 2026-10-31: **Option A (Rail)**, Gokul. Prototype: `docs
 
 ## 6. Patterns (shared component kit, shadcn/ui style, copied into `src/components/ui`)
 - Data table: server pagination + sort + filter via URL, column visibility, row select + bulk actions with a result summary ("12 published, 1 failed"), sticky header, card layout on phone.
-- Forms: react-hook-form + zod schemas shared with the server action (one schema = client + server validation, same rules as spec section 3). Inline errors under fields, dirty tracking, "Unsaved changes" guard.
+- Forms: validate with the shared zod schema on the client (live, inline errors) AND again in the server action. 2026-10-31: `@hookform/resolvers` failed to install (peer conflict via @typeschema/effect), so small forms (Hub config) use `schema.safeParse` + React state; adopt react-hook-form only when a form needs it. Schemas shared with the server action (one schema = client + server validation, same rules as spec section 3). Inline errors under fields, dirty tracking, "Unsaved changes" guard.
 - Data: TanStack Query; optimistic updates for toggles (publish, read, replied) with rollback; skeletons that match the final layout; no spinners for lists.
 - Command palette (Cmd/Ctrl+K): jump to any app/section, search items by title, run actions ("New post", "Switch to dark").
 - Dark mode: system default + toggle, stored per user.

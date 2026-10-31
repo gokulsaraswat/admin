@@ -72,8 +72,8 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793464564.7277615,
-    "seen": 1793464566.731589,
+    "mtime": 1793464568.9431584,
+    "seen": 1793464570.0443242,
     "ast_hash": "4403b027f772dd170fc0fa46b321b435",
     "semantic_hash": ""
   },
@@ -277,20 +277,20 @@
   },
   "supabase/bootstrap_super_admin.sql": {
     "mtime": 1793463119.0918164,
-    "seen": 1793464002.465178,
-    "ast_hash": "",
+    "seen": 1793464570.044319,
+    "ast_hash": "f88dcb5cdfee72410132beb68f8e55da",
     "semantic_hash": ""
   },
   "supabase/migrations/20261031120000_roles_permissions.sql": {
     "mtime": 1793463063.6226459,
-    "seen": 1793464002.465179,
-    "ast_hash": "",
+    "seen": 1793464570.04432,
+    "ast_hash": "d66f02d107c35d36fedaea1f78bb0b5d",
     "semantic_hash": ""
   },
   "supabase/tests/roles_rls_test.sql": {
     "mtime": 1793463562.0379202,
-    "seen": 1793464002.46518,
-    "ast_hash": "",
+    "seen": 1793464570.044321,
+    "ast_hash": "fe5ad36016f3f502fbe2bd423ee49993",
     "semantic_hash": ""
   },
   "src/app/(admin)/error.tsx": {
