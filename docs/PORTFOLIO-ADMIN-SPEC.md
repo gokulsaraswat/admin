@@ -225,16 +225,15 @@ Nothing here is decided beyond the KICKOFF decisions; Phase 1 designs it, Gokul 
 ## 6. Security findings in bestportofolio
 Several findings (one critical). Details kept local-only in `docs/private/SECURITY-FINDINGS.md` (git-ignored) until fixed in bestportofolio; then moved here.
 
-## 7. Questions for Gokul
-Answers get recorded here and in WORKLOG decisions.
-1. Who uses the portfolio admin besides you? Need per-section editors (blog editor, course editor...) or just admin/member per app?
-2. Comments: keep "live immediately, moderate after", or add an approval queue?
-3. Audit log retention: keep last 1000 entries, 90 days, or keep all?
-4. Messages: keep optional auto-delete after N days (min 30)? Which default?
-5. Todos: one platform-wide todo board (linked to any app) or portfolio-only?
-6. Backup: keep JSON export/import (per app), and should restore update existing rows or skip them?
-7. Embeds/images: move uploads to Supabase Storage instead of base64 text in the DB?
-8. Slugs: stop auto-changing a slug when the title changes after publishing (protects public URLs)?
-9. Blog `status` column (default `published`) and `BlogIdea.status`: are they the same pipeline? Unify?
-10. Known bugs (chapter linking, unreachable comments, fake dashboard numbers): fix in the new admin only (old admin retires), right?
-11. Security findings in section 6: fix them in bestportofolio now (separate session), especially `/api/test`?
+## 7. Answers (Gokul, 2026-10-31)
+1. Users: Gokul + editors. **Delegated admin**: super admin makes portfolio admins; portfolio admins grant permissions inside portfolio to editors. Needs per-app permissions (finer than admin/member) -> `role_permissions` (or equivalent) is now REQUIRED before multi-user portfolio sections; `user_roles` policies must let an app's admins manage that app's rows (never `super_admin`).
+2. Comments: live immediately, moderate after (spam filter kept).
+3. Audit log: keep 90 days.
+4. Messages: never auto-delete (manual single / bulk / all-read only).
+5. Todos: one platform-wide board, todos link to any app, filter per app.
+6. Backup restore: dry-run preview, then update existing rows (no duplicates).
+7. Uploads: Supabase Storage, store URL only.
+8. Slugs: auto from title while draft; locked after publish (manual edit only).
+9. Blog ideas + posts: one pipeline idea -> drafting -> review -> published, linked.
+10. Old admin bugs: fixed in the new admin only.
+11. Security findings: fixed now in a separate bestportofolio session (`portfolio-security`); Gokul rotates the old project's DB password.
