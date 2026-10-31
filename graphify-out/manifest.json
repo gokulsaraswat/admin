@@ -72,8 +72,8 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793463306.346817,
-    "seen": 1793463307.80762,
+    "mtime": 1793463582.8716202,
+    "seen": 1793463584.153315,
     "ast_hash": "4c56132bae0b11e2227502341cd99d43",
     "semantic_hash": ""
   },
@@ -296,7 +296,7 @@
   "supabase/tests/roles_rls_test.sql": {
     "mtime": 1793463099.9268074,
     "seen": 1793463307.807616,
-    "ast_hash": "a1b8f2a43894c44338fc22b7539761ed",
+    "ast_hash": "",
     "semantic_hash": ""
   }
 }

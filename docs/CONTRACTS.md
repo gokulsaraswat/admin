@@ -14,7 +14,7 @@ Also: `@supabase/ssr` 0.12.x, `@supabase/supabase-js` 2.118.x.
 Install: `.npmrc` with `${NODE_AUTH_TOKEN}` (read:packages).
 
 ## Owns (Supabase, new platform project)
-### `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, NOT applied yet)
+### `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)
 | Table | Columns | Rules |
 |---|---|---|
 | `user_roles` | `user_id uuid` -> `auth.users` (cascade), `app text` (`*` or app id), `role text`, `created_at` | PK `(user_id, app)`; `super_admin` iff `app='*'` (matches master CONTRACTS) |

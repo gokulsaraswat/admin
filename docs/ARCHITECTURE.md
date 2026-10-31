@@ -14,7 +14,8 @@ Browser --> Vercel (Next.js 16 App Router, project gokul-admin)
   src/app/robots.ts       disallow all
         |
         v
-  Supabase (new platform project): Auth only so far. No tables yet.
+  Supabase (new platform project gokul-platform): Auth + user_roles, permissions, user_permissions with RLS
+  (supabase/migrations/, applied via SQL editor; not yet read by the app).
 ```
 
 ## LLD
