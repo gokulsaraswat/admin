@@ -29,10 +29,10 @@
       "Step 7 (2026-10-31): Phase 2a verified (see WORKLOG). Sign-in errors split: invalid_credentials vs unavailable (logged server-side).",
       "Step 8 (2026-10-31): Phase 2b SQL drafted (roles, permission catalog, user_permissions, helpers, RLS, last-super-admin guard, 18 portfolio permissions) + rollback-only RLS test + bootstrap; verified in PGlite incl. mutation checks. Not applied.",
       "Step 9 (2026-10-31): Phase 2b SQL applied to gokul-platform by Gokul; bootstrap super_admin OK; RLS test PASSED on the real project (test fixed: Supabase editor mangles one-line DO blocks).",
-      "Step 10 (2026-10-31): app reads roles: getSession (cached) via @gokulsaraswat/auth; shell shows allowed apps, Super admin label, no-access screen, error boundary. Verified by Gokul as super admin; no-access path unverified."
+      "Step 10 (2026-10-31): app reads roles: getSession (cached) via @gokulsaraswat/auth; shell shows allowed apps, Super admin label, no-access screen, error boundary. Verified by Gokul as super admin; no-access path unverified.",
+      "Step 11 (2026-10-31): Phase 2c app switcher: rail links, per-area sidebars, AppArea access guard, phone menu, Portfolio/Hub empty-state sections, cross-app import lint rule. Verified by Gokul (desktop, phone, 404)."
     ],
     "todo_next": [
-      "Phase 2c: app switcher (route group per app, lazy; an app's admin never loads another's code)",
       "Phase 2c: app switcher (route group per app, lazy)",
       "Phase 2d: config.json publisher (public-config/hub/config.json)",
       "Later (own plan, ask Gokul): portfolio data migration to the new Supabase project; then portfolio sections (blogs first); MDX editor (needs @gokulsaraswat/mdx); re-invite AdminUsers + TOTP; remove old portfolio admin last"

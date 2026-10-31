@@ -1,17 +1,17 @@
 # Graph Report - admin  (2026-10-31)
 
 ## Corpus Check
-- 46 files · ~26,238 words
+- 49 files · ~26,723 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 8 file(s) not represented in the graph (top: (none) 4, .css 2, .example 1)
 
 ## Summary
-- 290 nodes · 320 edges · 27 communities (22 shown, 5 thin omitted)
+- 302 nodes · 344 edges · 28 communities (22 shown, 6 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `19643072`
+- Built from commit: `4164324d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,7 +39,7 @@
 - COLLABORATORS.md
 - PLANNING-CHAT-PROMPT.md
 - SECURITY.md
-- (admin)/layout.tsx
+- shell.tsx
 - 3. API by feature (server truth)
 - DESIGN (Phase 1, for Gokul's approval before any app code)
 - dependencies
@@ -49,8 +49,8 @@
 2. `4. Admin UI features (what the screens do)` - 16 edges
 3. `compilerOptions` - 16 edges
 4. `3. API by feature (server truth)` - 14 edges
-5. `🤖 System Architecture & Co-Worker Protocol` - 10 edges
-6. `next` - 9 edges
+5. `next` - 10 edges
+6. `🤖 System Architecture & Co-Worker Protocol` - 10 edges
 7. `REPO SECTIONS` - 9 edges
 8. `createClient()` - 8 edges
 9. `PORTFOLIO ADMIN SPEC (Phase 0, read-only)` - 8 edges
@@ -63,15 +63,15 @@
   docs/ARCHITECTURE.md → src/components/shell/current-user.tsx
 - `LLD` --references--> `createClient()`  [INFERRED]
   docs/ARCHITECTURE.md → src/lib/supabase/server.ts
-- `LoginForm()` --indirect_call--> `signIn()`  [INFERRED]
-  src/app/login/login-form.tsx → src/app/login/actions.ts
-- `proxy()` --calls--> `supabaseEnv()`  [EXTRACTED]
-  src/proxy.ts → src/lib/supabase/env.ts
+- `Overview()` --calls--> `getSession`  [EXTRACTED]
+  src/app/(admin)/page.tsx → src/lib/session.ts
+- `getSession` --calls--> `createClient()`  [EXTRACTED]
+  src/lib/session.ts → src/lib/supabase/server.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (27 total, 5 thin omitted)
+## Communities (28 total, 6 thin omitted)
 
 ### Community 0 - "WORKLOG"
 Cohesion: 0.08
@@ -143,11 +143,11 @@ Nodes (3): edge(), node(), sync-architecture.sh script
 
 ### Community 17 - "next"
 Cohesion: 0.11
-Nodes (18): ARCHITECTURE: admin, HLD, LLD, nextConfig, next, react, @supabase/ssr, signIn() (+10 more)
+Nodes (18): ARCHITECTURE: admin, HLD, LLD, nextConfig, next, @supabase/ssr, signIn(), SignInState (+10 more)
 
-### Community 23 - "(admin)/layout.tsx"
-Cohesion: 0.22
-Nodes (9): @gokulsaraswat/config, AppMark(), AppMarkProps, bg, Rail(), ThemeToggle(), AppMeta, ManagedAppId (+1 more)
+### Community 23 - "shell.tsx"
+Cohesion: 0.15
+Nodes (17): @gokulsaraswat/auth, @gokulsaraswat/config, react, ref_server_only, Overview(), AppMark(), AppMarkProps, bg (+9 more)
 
 ### Community 24 - "3. API by feature (server truth)"
 Cohesion: 0.08
@@ -158,25 +158,25 @@ Cohesion: 0.22
 Nodes (8): 1. Product, 2. Visual system, 3. Information architecture (routes), 4. Roles per screen (delegated admin, per spec answers), 5. Mobile (mobile-first), 6. Patterns (shared component kit, shadcn/ui style, copied into `src/components/ui`), 7. Layout options (pick one; prototypes), DESIGN (Phase 1, for Gokul's approval before any app code)
 
 ### Community 26 - "dependencies"
-Cohesion: 0.25
-Nodes (8): dependencies, @gokulsaraswat/config, @gokulsaraswat/ui, next, react, react-dom, @supabase/ssr, @supabase/supabase-js
+Cohesion: 0.22
+Nodes (9): dependencies, @gokulsaraswat/auth, @gokulsaraswat/config, @gokulsaraswat/ui, next, react, react-dom, @supabase/ssr (+1 more)
 
 ## Knowledge Gaps
-- **186 isolated node(s):** `Current state (2026-10-31)`, `Done`, `In progress / next`, `Decisions (Gokul, 2026-10-31)`, `Blockers / requests to other repos` (+181 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 210 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **188 isolated node(s):** `1. High-Level Design (HLD) Topology`, `2. Current Target Directory Tree`, `3. Low-Level Design (LLD) & SOLID Class Schemas`, `Current state (2026-10-31)`, `Done` (+183 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 214 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `package.json`, `app/layout.tsx`, `(admin)/layout.tsx`?**
-  _High betweenness centrality (0.049) - this node is a cross-community bridge._
+- **Why does `next` connect `next` to `package.json`, `app/layout.tsx`, `shell.tsx`?**
+  _High betweenness centrality (0.052) - this node is a cross-community bridge._
+- **Why does `dependencies` connect `dependencies` to `package.json`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `devDependencies` to `package.json`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `dependencies` to `package.json`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **What connects `Current state (2026-10-31)`, `Done`, `In progress / next` to the rest of the system?**
-  _186 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `1. High-Level Design (HLD) Topology`, `2. Current Target Directory Tree`, `3. Low-Level Design (LLD) & SOLID Class Schemas` to the rest of the system?**
+  _188 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `WORKLOG` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**

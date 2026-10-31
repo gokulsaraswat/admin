@@ -17,13 +17,26 @@
       "source_location": "L6"
     },
     {
+      "id": "src_components_shell_current_user_currentuserprops",
+      "label": "CurrentUserProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "next",
+      "file_type": "code",
+      "norm_label": "currentuserprops",
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L3"
+    },
+    {
       "id": "src_components_app_mark_appmarkprops",
       "label": "AppMarkProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "appmarkprops",
       "source_file": "src/components/app-mark.tsx",
@@ -36,7 +49,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "appmeta",
       "source_file": "src/lib/apps.ts",
@@ -49,11 +62,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "managedappid",
       "source_file": "src/lib/apps.ts",
       "source_location": "L3"
+    },
+    {
+      "id": "src_lib_session_session",
+      "label": "Session",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "code",
+      "norm_label": "session",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L8"
     },
     {
       "id": "docs_design_prototypes_shared_drawpalette",
@@ -185,7 +211,7 @@
       "file_type": "code",
       "norm_label": "currentuser()",
       "source_file": "src/components/shell/current-user.tsx",
-      "source_location": "L4"
+      "source_location": "L8"
     },
     {
       "id": "src_lib_supabase_env_required",
@@ -241,11 +267,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "adminlayout()",
       "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L7"
+      "source_location": "L4"
     },
     {
       "id": "src_app_admin_page_overview",
@@ -253,7 +279,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "overview()",
       "source_file": "src/app/(admin)/page.tsx",
@@ -265,7 +291,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "appmark()",
       "source_file": "src/components/app-mark.tsx",
@@ -277,11 +303,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "rail()",
       "source_file": "src/components/shell/rail.tsx",
       "source_location": "L6"
+    },
+    {
+      "id": "src_components_shell_shell_shell",
+      "label": "Shell()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "code",
+      "norm_label": "shell()",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_components_shell_shell_shellfallback",
+      "label": "ShellFallback()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "code",
+      "norm_label": "shellfallback()",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L53"
     },
     {
       "id": "src_components_theme_toggle_themetoggle",
@@ -289,10 +339,22 @@
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "themetoggle()",
       "source_file": "src/components/theme-toggle.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_app_admin_error_adminerror",
+      "label": "AdminError()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "error.tsx",
+      "file_type": "code",
+      "norm_label": "adminerror()",
+      "source_file": "src/app/(admin)/error.tsx",
       "source_location": "L3"
     },
     {
@@ -637,7 +699,7 @@
       "file_type": "code",
       "norm_label": "description",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "package_engines",
@@ -648,7 +710,7 @@
       "file_type": "code",
       "norm_label": "engines",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L33"
     },
     {
       "id": "package_engines_node",
@@ -659,7 +721,7 @@
       "file_type": "code",
       "norm_label": "node",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L34"
     },
     {
       "id": "package_license",
@@ -670,7 +732,7 @@
       "file_type": "code",
       "norm_label": "license",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L32"
     },
     {
       "id": "package_name",
@@ -769,7 +831,7 @@
       "file_type": "concept",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "ref_eslint_config_next",
@@ -780,7 +842,7 @@
       "file_type": "concept",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "ref_gokulsaraswat_ui",
@@ -791,7 +853,7 @@
       "file_type": "concept",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "ref_react_dom",
@@ -802,7 +864,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "ref_supabase_supabase_js",
@@ -813,7 +875,7 @@
       "file_type": "concept",
       "norm_label": "@supabase/supabase-js",
       "source_file": "package.json",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "ref_tailwindcss",
@@ -824,7 +886,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "ref_tailwindcss_turbopack",
@@ -835,7 +897,7 @@
       "file_type": "concept",
       "norm_label": "@tailwindcss/turbopack",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "ref_types_node",
@@ -846,7 +908,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "ref_types_react",
@@ -857,7 +919,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "ref_types_react_dom",
@@ -868,7 +930,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "ref_typescript",
@@ -879,7 +941,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "docs_kickoff_prompt",
@@ -1389,7 +1451,7 @@
       "node_kind": "heading",
       "norm_label": "2. current target directory tree",
       "source_file": ".project-architecture.md",
-      "source_location": "L36"
+      "source_location": "L39"
     },
     {
       "id": "project_architecture_3_low_level_design_lld_solid_class_schemas",
@@ -1401,7 +1463,7 @@
       "node_kind": "heading",
       "norm_label": "3. low-level design (lld) & solid class schemas",
       "source_file": ".project-architecture.md",
-      "source_location": "L58"
+      "source_location": "L61"
     },
     {
       "id": "project_architecture_codebase_blueprint_structural_graph",
@@ -1631,17 +1693,6 @@
       "file_type": "concept",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L16"
-    },
-    {
-      "id": "ref_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "next",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": "package.json",
       "source_location": "L17"
     },
     {
@@ -1653,7 +1704,7 @@
       "file_type": "concept",
       "norm_label": "@supabase/ssr",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "docs_architecture",
@@ -1701,7 +1752,7 @@
       "node_kind": "heading",
       "norm_label": "lld",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "agents",
@@ -2061,7 +2112,7 @@
       "label": "(admin)/layout.tsx",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "(admin)/layout.tsx",
       "source_file": "src/app/(admin)/layout.tsx",
@@ -2072,7 +2123,7 @@
       "label": "(admin)/page.tsx",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "(admin)/page.tsx",
       "source_file": "src/app/(admin)/page.tsx",
@@ -2083,7 +2134,7 @@
       "label": "app-mark.tsx",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "app-mark.tsx",
       "source_file": "src/components/app-mark.tsx",
@@ -2094,7 +2145,7 @@
       "label": "bg",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "bg",
       "source_file": "src/components/app-mark.tsx",
@@ -2105,10 +2156,21 @@
       "label": "rail.tsx",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "rail.tsx",
       "source_file": "src/components/shell/rail.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_shell_shell",
+      "label": "shell.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "code",
+      "norm_label": "shell.tsx",
+      "source_file": "src/components/shell/shell.tsx",
       "source_location": "L1"
     },
     {
@@ -2116,7 +2178,7 @@
       "label": "theme-toggle.tsx",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "theme-toggle.tsx",
       "source_file": "src/components/theme-toggle.tsx",
@@ -2127,7 +2189,7 @@
       "label": "apps.ts",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "apps.ts",
       "source_file": "src/lib/apps.ts",
@@ -2138,10 +2200,43 @@
       "label": "managedApps",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "code",
       "norm_label": "managedapps",
       "source_file": "src/lib/apps.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_lib_session",
+      "label": "session.ts",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "code",
+      "norm_label": "session.ts",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_lib_session_getsession",
+      "label": "getSession",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "code",
+      "norm_label": "getsession",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "ref_gokulsaraswat_auth",
+      "label": "@gokulsaraswat/auth",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "concept",
+      "norm_label": "@gokulsaraswat/auth",
+      "source_file": "package.json",
       "source_location": "L12"
     },
     {
@@ -2149,11 +2244,22 @@
       "label": "@gokulsaraswat/config",
       "_origin": "ast",
       "community": 23,
-      "community_name": "(admin)/layout.tsx",
+      "community_name": "shell.tsx",
       "file_type": "concept",
       "norm_label": "@gokulsaraswat/config",
       "source_file": "package.json",
-      "source_location": "L12"
+      "source_location": "L13"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "file_type": "concept",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L18"
     },
     {
       "id": "docs_portfolio_admin_spec",
@@ -2563,6 +2669,17 @@
       "source_location": "L11"
     },
     {
+      "id": "package_dependencies_gokulsaraswat_auth",
+      "label": "@gokulsaraswat/auth",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/auth",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
       "id": "package_dependencies_gokulsaraswat_config",
       "label": "@gokulsaraswat/config",
       "_origin": "ast",
@@ -2571,7 +2688,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/config",
       "source_file": "package.json",
-      "source_location": "L12"
+      "source_location": "L13"
     },
     {
       "id": "package_dependencies_gokulsaraswat_ui",
@@ -2582,7 +2699,7 @@
       "file_type": "code",
       "norm_label": "@gokulsaraswat/ui",
       "source_file": "package.json",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "package_dependencies_next",
@@ -2593,7 +2710,7 @@
       "file_type": "code",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "package_dependencies_react",
@@ -2604,7 +2721,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -2615,7 +2732,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L19"
     },
     {
       "id": "package_dependencies_supabase_ssr",
@@ -2626,7 +2743,7 @@
       "file_type": "code",
       "norm_label": "@supabase/ssr",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L15"
     },
     {
       "id": "package_dependencies_supabase_supabase_js",
@@ -2637,7 +2754,18 @@
       "file_type": "code",
       "norm_label": "@supabase/supabase-js",
       "source_file": "package.json",
-      "source_location": "L15"
+      "source_location": "L16"
+    },
+    {
+      "id": "src_app_admin_error",
+      "label": "error.tsx",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "error.tsx",
+      "file_type": "code",
+      "norm_label": "error.tsx",
+      "source_file": "src/app/(admin)/error.tsx",
+      "source_location": "L1"
     },
     {
       "id": "docs_master_prompts",
@@ -3014,7 +3142,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
       "id": "package_devdependencies_eslint",
@@ -3025,7 +3153,7 @@
       "file_type": "code",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "package_devdependencies_eslint_config_next",
@@ -3036,7 +3164,7 @@
       "file_type": "code",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "package_devdependencies_tailwindcss",
@@ -3047,7 +3175,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "package_devdependencies_tailwindcss_turbopack",
@@ -3058,7 +3186,7 @@
       "file_type": "code",
       "norm_label": "@tailwindcss/turbopack",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -3069,7 +3197,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -3080,7 +3208,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L24"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -3091,7 +3219,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -3102,7 +3230,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L29"
     },
     {
       "id": "readme",
@@ -3234,7 +3362,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos",
       "source_file": "WORKLOG.md",
-      "source_location": "L30"
+      "source_location": "L32"
     },
     {
       "id": "worklog_current_state_2026_10_31",
@@ -3258,7 +3386,7 @@
       "node_kind": "heading",
       "norm_label": "decisions (gokul, 2026-10-31)",
       "source_file": "WORKLOG.md",
-      "source_location": "L18"
+      "source_location": "L20"
     },
     {
       "id": "worklog_done",
@@ -3294,7 +3422,7 @@
       "node_kind": "heading",
       "norm_label": "reminders",
       "source_file": "WORKLOG.md",
-      "source_location": "L37"
+      "source_location": "L39"
     },
     {
       "id": "worklog_worklog_admin",
@@ -3393,6 +3521,18 @@
       "source_location": "L17"
     },
     {
+      "id": "ref_server_only",
+      "label": "ref_server_only",
+      "_origin": "semantic",
+      "community": 23,
+      "community_name": "shell.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_server_only",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "src_app_globals",
       "label": "src_app_globals",
       "_origin": "semantic",
@@ -3443,6 +3583,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_admin_page_overview",
+      "target": "src_lib_session_getsession",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/(admin)/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_login_actions_signin",
       "target": "src_lib_supabase_server_createclient",
       "relation": "calls",
@@ -3479,15 +3631,27 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_shell_current_user_currentuser",
+      "source": "src_components_shell_shell_shell",
+      "target": "src_lib_session_getsession",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session_getsession",
       "target": "src_lib_supabase_server_createclient",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "src/components/shell/current-user.tsx",
-      "source_location": "L5",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -3624,7 +3788,7 @@
     },
     {
       "source": "package",
-      "target": "ref_gokulsaraswat_config",
+      "target": "ref_gokulsaraswat_auth",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3636,7 +3800,7 @@
     },
     {
       "source": "package",
-      "target": "ref_gokulsaraswat_ui",
+      "target": "ref_gokulsaraswat_config",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3648,7 +3812,7 @@
     },
     {
       "source": "package",
-      "target": "ref_supabase_ssr",
+      "target": "ref_gokulsaraswat_ui",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3660,7 +3824,7 @@
     },
     {
       "source": "package",
-      "target": "ref_supabase_supabase_js",
+      "target": "ref_supabase_ssr",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3672,7 +3836,7 @@
     },
     {
       "source": "package",
-      "target": "ref_next",
+      "target": "ref_supabase_supabase_js",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3684,7 +3848,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_next",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3696,7 +3860,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3708,19 +3872,19 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss_turbopack",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
       "source": "package",
-      "target": "ref_types_node",
+      "target": "ref_tailwindcss_turbopack",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3732,7 +3896,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react",
+      "target": "ref_types_node",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3744,7 +3908,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react_dom",
+      "target": "ref_types_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3756,7 +3920,7 @@
     },
     {
       "source": "package",
-      "target": "ref_eslint",
+      "target": "ref_types_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3768,7 +3932,7 @@
     },
     {
       "source": "package",
-      "target": "ref_eslint_config_next",
+      "target": "ref_eslint",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3780,7 +3944,7 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss",
+      "target": "ref_eslint_config_next",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3792,7 +3956,7 @@
     },
     {
       "source": "package",
-      "target": "ref_typescript",
+      "target": "ref_tailwindcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3803,8 +3967,20 @@
       "weight": 1.0
     },
     {
+      "source": "package",
+      "target": "ref_typescript",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_admin_layout",
-      "target": "src_components_app_mark_appmark",
+      "target": "src_components_shell_shell_shell",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3816,38 +3992,14 @@
     },
     {
       "source": "src_app_admin_layout",
-      "target": "src_components_shell_current_user_currentuser",
+      "target": "src_components_shell_shell_shellfallback",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_admin_layout",
-      "target": "src_components_shell_rail_rail",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_admin_layout",
-      "target": "src_components_theme_toggle_themetoggle",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L5",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -3864,7 +4016,7 @@
     },
     {
       "source": "src_app_admin_page",
-      "target": "src_lib_apps_managedapps",
+      "target": "src_lib_session_getsession",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3959,18 +4111,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_shell_current_user",
-      "target": "src_lib_supabase_server_createclient",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/shell/current-user.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_shell_rail",
       "target": "src_components_app_mark_appmark",
       "relation": "imports",
@@ -3996,7 +4136,7 @@
     },
     {
       "source": "src_components_shell_rail",
-      "target": "src_lib_apps_managedapps",
+      "target": "src_lib_apps_appmeta",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4004,6 +4144,102 @@
       "context": "import",
       "source_file": "src/components/shell/rail.tsx",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_app_mark_appmark",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_shell_current_user_currentuser",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_shell_rail_rail",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_theme_toggle_themetoggle",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_lib_session_getsession",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_apps_appmeta",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_apps_managedapps",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_supabase_server_createclient",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -4081,7 +4317,7 @@
     },
     {
       "source": "src_app_admin_layout",
-      "target": "src_components_app_mark",
+      "target": "src_components_shell_shell",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4089,42 +4325,6 @@
       "context": "import",
       "source_file": "src/app/(admin)/layout.tsx",
       "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_admin_layout",
-      "target": "src_components_shell_current_user",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_admin_layout",
-      "target": "src_components_shell_rail",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_admin_layout",
-      "target": "src_components_theme_toggle",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -4141,7 +4341,7 @@
     },
     {
       "source": "src_app_admin_page",
-      "target": "src_lib_apps",
+      "target": "src_lib_session",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4300,18 +4500,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_shell_current_user",
-      "target": "src_lib_supabase_server",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/shell/current-user.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_shell_rail",
       "target": "ref_next",
       "relation": "imports_from",
@@ -4357,6 +4545,92 @@
       "context": "import",
       "source_file": "src/components/shell/rail.tsx",
       "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L1",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_app_mark",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_shell_current_user",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_shell_rail",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_theme_toggle",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_lib_session",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -4370,6 +4644,79 @@
       "source_file": "src/lib/apps.ts",
       "source_location": "L1",
       "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "ref_server_only",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "ref_gokulsaraswat_auth",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "ref_gokulsaraswat_config",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_apps",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_supabase_server",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -4606,7 +4953,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -5915,7 +6262,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5937,7 +6284,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -5948,7 +6295,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -5959,7 +6306,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -5986,7 +6333,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_gokulsaraswat_config",
+      "target": "package_dependencies_gokulsaraswat_auth",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5997,7 +6344,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_gokulsaraswat_ui",
+      "target": "package_dependencies_gokulsaraswat_config",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6008,7 +6355,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_supabase_ssr",
+      "target": "package_dependencies_gokulsaraswat_ui",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6019,7 +6366,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_supabase_supabase_js",
+      "target": "package_dependencies_supabase_ssr",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6030,7 +6377,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
+      "target": "package_dependencies_supabase_supabase_js",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6041,7 +6388,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_next",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6052,13 +6399,24 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -6069,7 +6427,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -6080,7 +6438,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -6091,7 +6449,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -6102,7 +6460,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -6113,7 +6471,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -6124,7 +6482,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -6135,7 +6493,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -6146,7 +6504,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -6157,7 +6515,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -6223,7 +6581,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L36",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -6245,7 +6603,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L58",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -6348,6 +6706,17 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_admin_error",
+      "target": "src_app_admin_error_adminerror",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/(admin)/error.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_admin_layout",
       "target": "src_app_admin_layout_adminlayout",
       "relation": "contains",
@@ -6355,7 +6724,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/(admin)/layout.tsx",
-      "source_location": "L7",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -6525,13 +6894,24 @@
     },
     {
       "source": "src_components_shell_current_user",
+      "target": "src_components_shell_current_user_currentuserprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/shell/current-user.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_current_user",
       "target": "src_components_shell_current_user_currentuser",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/shell/current-user.tsx",
-      "source_location": "L4",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -6543,6 +6923,28 @@
       "confidence_score": 1.0,
       "source_file": "src/components/shell/rail.tsx",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_shell_shell_shellfallback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_shell_shell",
+      "target": "src_components_shell_shell_shell",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/shell/shell.tsx",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -6587,6 +6989,28 @@
       "confidence_score": 1.0,
       "source_file": "src/lib/apps.ts",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_session_getsession",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/session.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_lib_session",
+      "target": "src_lib_session_session",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/session.ts",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -6894,7 +7318,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L18",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -6905,7 +7329,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -6916,7 +7340,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -6995,7 +7419,7 @@
       "confidence_score": 0.95,
       "context": "CurrentUser",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -7007,7 +7431,7 @@
       "confidence_score": 0.95,
       "context": "ThemeToggle",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -7019,10 +7443,10 @@
       "confidence_score": 0.95,
       "context": "createClient()",
       "source_file": "docs/ARCHITECTURE.md",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1964307259696c09c7ad17fbbe75ef86ea1ec835"
+  "built_at_commit": "4164324d5f9926242058eb8657c21a06d272fbb6"
 }
