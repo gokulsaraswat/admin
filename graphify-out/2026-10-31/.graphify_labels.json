@@ -12,7 +12,7 @@
   "10": "Kickoff prompt: admin",
   "11": "Repo Kit (every repo must have these)",
   "12": "Supabase setup for the platform (owner checklist + DRAFT SQL)",
-  "13": "dependencies",
+  "13": "4. Admin UI features (what the screens do)",
   "14": "scripts",
   "15": "Codebase Blueprint & Structural Graph",
   "16": "sync-architecture.sh",
@@ -22,5 +22,7 @@
   "20": "COLLABORATORS.md",
   "21": "PLANNING-CHAT-PROMPT.md",
   "22": "SECURITY.md",
-  "23": "page.tsx"
+  "23": "page.tsx",
+  "24": "3. API by feature (server truth)",
+  "25": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)"
 }

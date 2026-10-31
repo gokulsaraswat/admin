@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Option C · Split</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .shell { display: grid; grid-template-columns: 240px 380px 1fr; height: 100vh; }
+  .side { background: var(--sidebar); border-right: 1px solid var(--sidebar-border); padding: 12px 8px; overflow: auto; display: flex; flex-direction: column; gap: 2px; }
+  .side .search { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 8px; color: var(--muted-foreground); }
+  .side details { margin-top: 4px; }
+  .side summary { list-style: none; display: flex; align-items: center; gap: 8px; height: 32px; padding: 0 8px; border-radius: var(--radius-md); cursor: pointer; font-weight: 500; }
+  .side summary::-webkit-details-marker { display: none; }
+  .side summary:hover { background: var(--sidebar-accent); }
+  .side summary small { margin-left: auto; color: var(--muted-foreground); font-weight: 400; }
+  .side details a { display: flex; justify-content: space-between; height: 30px; align-items: center; padding: 0 8px 0 36px; border-radius: var(--radius-md); }
+  .side details a:hover { background: var(--sidebar-accent); }
+  .side details a[aria-current="page"] { background: var(--sidebar-accent); font-weight: 500; box-shadow: inset 2px 0 0 var(--app-accent); }
+  .side .n { color: var(--muted-foreground); font-size: var(--text-xs); }
+  .side .bottom { margin-top: auto; display: flex; gap: 4px; padding-top: 8px; }
+  .list { border-right: 1px solid var(--border); display: flex; flex-direction: column; min-height: 0; }
+  .list header { padding: 12px 12px 8px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--border); }
+  .list header .row { display: flex; align-items: center; gap: 8px; }
+  .list h1 { margin: 0; font-size: var(--text-lg); font-weight: 600; flex: 1; }
+  .list .chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .list .scroll { overflow: auto; flex: 1; }
+  .cards { display: block; }
+  .card-row[aria-current="true"] { background: var(--accent); box-shadow: inset 2px 0 0 var(--app-accent); }
+  .card-row:hover { background: color-mix(in oklch, var(--accent) 60%, transparent); }
+  .detail { overflow: auto; }
+  .detail .bar { display: flex; align-items: center; gap: 8px; padding: 12px 24px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--background); }
+  .detail .bar .grow { flex: 1; }
+  .detail form { max-width: 720px; padding: 24px; display: grid; gap: 16px; }
+  .detail label { display: grid; gap: 6px; font-weight: 500; }
+  .detail label span { font-weight: 400; color: var(--muted-foreground); font-size: var(--text-xs); }
+  .detail .title-in { width: 100%; font-size: var(--text-2xl); font-weight: 600; border: 0; padding: 0; height: auto; background: transparent; outline: none; }
+  .detail .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .detail textarea { border: 1px solid var(--input); border-radius: var(--radius-md); padding: 10px; min-height: 160px; background: var(--background); font-family: var(--font-mono); font-size: 13px; line-height: 1.6; resize: vertical; }
+  .detail .empty { display: grid; place-items: center; height: 100%; color: var(--muted-foreground); padding: 24px; text-align: center; }
+  .back { display: none; }
+  @media (max-width: 1100px) { .shell { grid-template-columns: 200px 320px 1fr; } }
+  @media (max-width: 767px) {
+    .shell { grid-template-columns: 1fr; height: auto; }
+    .side { display: none; }
+    .list { border: 0; }
+    .detail { display: none; }
+    .shell.reading .list { display: none; }
+    .shell.reading .detail { display: block; }
+    .back { display: inline-flex; }
+    .detail .two { grid-template-columns: 1fr; }
+    .detail form { padding: 16px; }
+    .detail .bar { padding: 10px 12px; }
+    .detail .bar .status { margin-right: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="side" aria-label="Apps and sections">
+    <button class="btn ghost search" data-open-palette>Search <span class="kbd">⌘K</span></button>
+    <a href="#" style="display:flex;gap:8px;align-items:center;height:32px;padding:0 8px"><span class="mark sm" data-app="platform">G</span>Overview</a>
+    <details open>
+      <summary><span class="mark sm" data-app="portfolio">P</span>Portfolio</summary>
+      <a href="#" aria-current="page">Posts <span class="n">9</span></a>
+      <a href="#">Projects <span class="n">14</span></a>
+      <a href="#">Courses <span class="n">3</span></a>
+      <a href="#">Snippets <span class="n">42</span></a>
+      <a href="#">Messages <span class="n">4 unread</span></a>
+      <a href="#">Comments <span class="n">2 new</span></a>
+      <a href="#">Chatbot</a><a href="#">Site settings</a><a href="#">Backup</a>
+    </details>
+    <details><summary><span class="mark sm" data-app="hub">H</span>Hub</summary><a href="#">Config</a></details>
+    <details><summary><span class="mark sm" data-app="gspace">S</span>GSpace <small>soon</small></summary></details>
+    <details><summary><span class="mark sm" data-app="studio">M</span>Studio <small>soon</small></summary></details>
+    <details><summary><span class="mark sm" data-app="gym">Y</span>Gym <small>soon</small></summary></details>
+    <details><summary><span class="mark sm" data-app="platform">G</span>Platform</summary><a href="#">People and roles</a><a href="#">Audit log</a><a href="#">Todos</a></details>
+    <div class="bottom"><button class="btn ghost" data-theme>◐ Theme</button></div>
+  </nav>
+  <section class="list" aria-label="Posts">
+    <header>
+      <div class="row"><span class="mark sm show-sm" data-app="portfolio">P</span><h1>Posts</h1><button class="btn ghost icon show-sm" data-theme aria-label="Switch theme">◐</button><button class="btn primary">New</button></div>
+      <input class="input" placeholder="Search posts" data-search aria-label="Search posts">
+      <div class="chips" data-chips></div>
+      <div class="bulkbar" data-bulk><span data-count style="flex:1"></span><button class="btn">Publish</button><button class="btn" data-clear>Clear</button></div>
+    </header>
+    <div class="scroll"><div class="cards" data-cards></div></div>
+  </section>
+  <section class="detail" aria-label="Post" data-detail></section>
+</div>
+<aside class="option-note"><b>Option C · Split</b><br>Apps as groups in one sidebar + list and editor side by side. Like Linear inbox / Stripe. Click a post.<nav><a href="a-rail.html">A</a><a href="b-header.html">B</a><a href="c-split.html">C</a></nav></aside>
+<script src="shared.js"></script>
+<script>
+  state.active = 2;
+  const shell = document.querySelector(".shell");
+  document.addEventListener("click", e => {
+    if (e.target.closest(".card-row")) shell.classList.add("reading");
+    if (e.target.closest("[data-back]")) { shell.classList.remove("reading"); }
+  });
+  document.addEventListener("rendered", () => {
+    document.querySelectorAll(".card-row").forEach(r => r.setAttribute("aria-current", +r.dataset.id === state.active));
+    const p = posts.find(x => x.id === state.active);
+    const d = document.querySelector("[data-detail]");
+    if (!p) { d.innerHTML = `<div class="empty">Pick a post on the left to read or edit it.</div>`; return; }
+    const action = p.status === "published" ? "Unpublish" : p.status === "scheduled" ? "Publish now" : "Schedule";
+    d.innerHTML = `
+      <div class="bar">
+        <button class="btn ghost back" data-back aria-label="Back to posts">← Posts</button>
+        <span class="status" data-s="${p.status}">${statusLabel[p.status]}</span>
+        <span class="grow muted hide-sm">Edited ${p.updated} by ${p.author}</span>
+        <button class="btn hide-sm">Preview</button><button class="btn">${action}</button><button class="btn primary">Save</button>
+      </div>
+      <form onsubmit="return false">
+        <input class="input title-in" value="${p.title}" aria-label="Title">
+        <div class="two">
+          <label>URL <input class="input" value="/blog/${p.slug}"><span>${p.status === "published" ? "Locked after publishing. Edit only if you must." : "Fills in from the title until you publish."}</span></label>
+          <label>Category <input class="input" value="${p.category}"></label>
+        </div>
+        <label>Excerpt <input class="input" value="What happens when the same request arrives twice, and how to make that safe."></label>
+        <label>Content <textarea>## Why idempotency\n\nNetworks retry. Users double-click. Your API must give the same answer twice...</textarea><span>Markdown. Preview shows the real page with MDX components.</span></label>
+      </form>`;
+  });
+</script>
+</body>
+</html>

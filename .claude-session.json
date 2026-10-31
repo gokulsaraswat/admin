@@ -22,10 +22,11 @@
     "done": [
       "Step 1 (2026-10-31): repo kit: .gitignore, Next.js 16.4.3 scaffold (create-next-app defaults, src/, Tailwind v4, ESLint), @gokulsaraswat/ui tokens in globals.css, noindex + robots disallow, .npmrc (NODE_AUTH_TOKEN), .nvmrc 24 + engines, CLAUDE.md (platform text + admin section + graphify), AGENTS.md, README, WORKLOG, docs/CONTRACTS.md, docs/ARCHITECTURE.md, .env.example, LICENSE (all rights reserved), SECURITY.md, PR template, CI (lint + build). Verified: clean npm ci + lint + build.",
       "Step 2 (2026-10-31): Phase 0 docs/PORTFOLIO-ADMIN-SPEC.md from bestportofolio @7168b56 (schema, all API routes read directly; UI components via 2 read-only subagents, key claims spot-checked). Security findings kept local-only (docs/private/, git-ignored).",
-      "Step 3 (2026-10-31): Phase 0 answers recorded (spec section 7 + WORKLOG decisions). Security fix delegated to bestportofolio session `portfolio-security`."
+      "Step 3 (2026-10-31): Phase 0 answers recorded (spec section 7 + WORKLOG decisions). Security fix delegated to bestportofolio session `portfolio-security`.",
+      "Step 4 (2026-10-31): Phase 1 draft: docs/DESIGN.md (IA/routes, roles per screen incl. delegated admin, mobile, patterns, per-app accent colour) + 3 static prototypes on real tokens, checked in browser at 1280x800 and 375x812, light + dark (fixed textarea colour, chip wrap, split toolbar overflow)."
     ],
     "todo_next": [
-      "Phase 1: IA, roles per screen, mobile-first, component kit on @gokulsaraswat/ui tokens; 2-3 prototype options for Gokul to pick",
+      "Phase 1: Gokul picks layout option (A/B/C or mix); finalise DESIGN.md",
       "Phase 2a: shell + Supabase login (@supabase/ssr)",
       "Phase 2b: user_roles + per-app permissions (delegated admin: app admins manage their app's members/permissions) migration + RLS (show SQL first, max effort)",
       "Phase 2c: app switcher (route group per app, lazy)",

@@ -4,6 +4,66 @@
   "graph": {},
   "nodes": [
     {
+      "id": "docs_design_prototypes_shared_drawpalette",
+      "label": "drawPalette()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "drawpalette()",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L104"
+    },
+    {
+      "id": "docs_design_prototypes_shared_openpalette",
+      "label": "openPalette()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "openpalette()",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L95"
+    },
+    {
+      "id": "docs_design_prototypes_shared_render",
+      "label": "render()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "render()",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L28"
+    },
+    {
+      "id": "docs_design_prototypes_shared_statuscell",
+      "label": "statusCell()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "statuscell()",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L23"
+    },
+    {
+      "id": "docs_design_prototypes_shared_visible",
+      "label": "visible()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "visible()",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L17"
+    },
+    {
       "id": "src_app_page_home",
       "label": "Home()",
       "_callable": true,
@@ -361,61 +421,6 @@
       "source_location": "L1"
     },
     {
-      "id": "package_dependencies",
-      "label": "dependencies",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "dependencies",
-      "source_file": "package.json",
-      "source_location": "L11"
-    },
-    {
-      "id": "package_dependencies_gokulsaraswat_ui",
-      "label": "@gokulsaraswat/ui",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@gokulsaraswat/ui",
-      "source_file": "package.json",
-      "source_location": "L12"
-    },
-    {
-      "id": "package_dependencies_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
-      "id": "package_dependencies_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "react",
-      "source_file": "package.json",
-      "source_location": "L14"
-    },
-    {
-      "id": "package_dependencies_react_dom",
-      "label": "react-dom",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "react-dom",
-      "source_file": "package.json",
-      "source_location": "L15"
-    },
-    {
       "id": "package_description",
       "label": "description",
       "_origin": "ast",
@@ -480,6 +485,61 @@
       "norm_label": "private",
       "source_file": "package.json",
       "source_location": "L4"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "scripts",
+      "source_file": "package.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "build",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "dev",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "package_scripts_lint",
+      "label": "lint",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "lint",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "start",
+      "source_file": "package.json",
+      "source_location": "L8"
     },
     {
       "id": "package_version",
@@ -830,6 +890,78 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_portfolio_admin_spec",
+      "label": "PORTFOLIO-ADMIN-SPEC.md",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "portfolio-admin-spec.md",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_1_auth_today_custom_not_supabase_auth",
+      "label": "1.1 Auth today (custom, NOT Supabase Auth)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.1 auth today (custom, not supabase auth)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_2_operation_log_audit",
+      "label": "1.2 Operation log (audit)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.2 operation log (audit)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_3_shared_conventions",
+      "label": "1.3 Shared conventions",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.3 shared conventions",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_cross_cutting",
+      "label": "1. Cross-cutting",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. cross-cutting",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_2_tables_prisma_old_supabase_project",
+      "label": "2. Tables (Prisma, old Supabase project)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. tables (prisma, old supabase project)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L33"
+    },
+    {
       "id": "docs_portfolio_admin_spec_4_10_todos_todo_manager_tsx",
       "label": "4.10 Todos (`todo-manager.tsx`)",
       "_origin": "ast",
@@ -1022,59 +1154,118 @@
       "source_location": "L141"
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
+      "id": "docs_portfolio_admin_spec_5_new_admin_how_each_feature_maps_proposal_for_phase_1",
+      "label": "5. New admin: how each feature maps (proposal, for Phase 1)",
       "_origin": "ast",
-      "community": 14,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "package.json",
-      "source_location": "L5"
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. new admin: how each feature maps (proposal, for phase 1)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L207"
     },
     {
-      "id": "package_scripts_build",
-      "label": "build",
+      "id": "docs_portfolio_admin_spec_6_security_findings_in_bestportofolio",
+      "label": "6. Security findings in bestportofolio",
       "_origin": "ast",
-      "community": 14,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "build",
-      "source_file": "package.json",
-      "source_location": "L7"
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. security findings in bestportofolio",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L225"
     },
     {
-      "id": "package_scripts_dev",
-      "label": "dev",
+      "id": "docs_portfolio_admin_spec_7_answers_gokul_2026_10_31",
+      "label": "7. Answers (Gokul, 2026-10-31)",
       "_origin": "ast",
-      "community": 14,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "dev",
-      "source_file": "package.json",
-      "source_location": "L6"
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. answers (gokul, 2026-10-31)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L228"
     },
     {
-      "id": "package_scripts_lint",
-      "label": "lint",
+      "id": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "label": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
       "_origin": "ast",
-      "community": 14,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "lint",
-      "source_file": "package.json",
-      "source_location": "L9"
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "portfolio admin spec (phase 0, read-only)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L1"
     },
     {
-      "id": "package_scripts_start",
-      "label": "start",
+      "id": "docs_design_prototypes_shared",
+      "label": "shared.js",
       "_origin": "ast",
       "community": 14,
-      "community_name": "scripts",
+      "community_name": "shared.js",
       "file_type": "code",
-      "norm_label": "start",
-      "source_file": "package.json",
-      "source_location": "L8"
+      "norm_label": "shared.js",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_design_prototypes_shared_commands",
+      "label": "commands",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "commands",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L88"
+    },
+    {
+      "id": "docs_design_prototypes_shared_filters",
+      "label": "filters",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "filters",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L13"
+    },
+    {
+      "id": "docs_design_prototypes_shared_posts",
+      "label": "posts",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "posts",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_design_prototypes_shared_state",
+      "label": "state",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "state",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L15"
+    },
+    {
+      "id": "docs_design_prototypes_shared_statuslabel",
+      "label": "statusLabel",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "shared.js",
+      "file_type": "code",
+      "norm_label": "statuslabel",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L12"
     },
     {
       "id": "project_architecture",
@@ -1122,7 +1313,7 @@
       "node_kind": "heading",
       "norm_label": "3. low-level design (lld) & solid class schemas",
       "source_file": ".project-architecture.md",
-      "source_location": "L28"
+      "source_location": "L30"
     },
     {
       "id": "project_architecture_codebase_blueprint_structural_graph",
@@ -1792,124 +1983,167 @@
       "source_location": "L114"
     },
     {
-      "id": "docs_portfolio_admin_spec",
-      "label": "PORTFOLIO-ADMIN-SPEC.md",
+      "id": "docs_design",
+      "label": "DESIGN.md",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "page",
-      "norm_label": "portfolio-admin-spec.md",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "norm_label": "design.md",
+      "source_file": "docs/DESIGN.md",
       "source_location": "L1"
     },
     {
-      "id": "docs_portfolio_admin_spec_1_1_auth_today_custom_not_supabase_auth",
-      "label": "1.1 Auth today (custom, NOT Supabase Auth)",
+      "id": "docs_design_1_product",
+      "label": "1. Product",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "1.1 auth today (custom, not supabase auth)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L9"
+      "norm_label": "1. product",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L5"
     },
     {
-      "id": "docs_portfolio_admin_spec_1_2_operation_log_audit",
-      "label": "1.2 Operation log (audit)",
+      "id": "docs_design_2_visual_system",
+      "label": "2. Visual system",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "1.2 operation log (audit)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L21"
+      "norm_label": "2. visual system",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L10"
     },
     {
-      "id": "docs_portfolio_admin_spec_1_3_shared_conventions",
-      "label": "1.3 Shared conventions",
+      "id": "docs_design_3_information_architecture_routes",
+      "label": "3. Information architecture (routes)",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "1.3 shared conventions",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L27"
+      "norm_label": "3. information architecture (routes)",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L24"
     },
     {
-      "id": "docs_portfolio_admin_spec_1_cross_cutting",
-      "label": "1. Cross-cutting",
+      "id": "docs_design_4_roles_per_screen_delegated_admin_per_spec_answers",
+      "label": "4. Roles per screen (delegated admin, per spec answers)",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "1. cross-cutting",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L7"
+      "norm_label": "4. roles per screen (delegated admin, per spec answers)",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L48"
     },
     {
-      "id": "docs_portfolio_admin_spec_2_tables_prisma_old_supabase_project",
-      "label": "2. Tables (Prisma, old Supabase project)",
+      "id": "docs_design_5_mobile_mobile_first",
+      "label": "5. Mobile (mobile-first)",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "2. tables (prisma, old supabase project)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L33"
+      "norm_label": "5. mobile (mobile-first)",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L60"
     },
     {
-      "id": "docs_portfolio_admin_spec_5_new_admin_how_each_feature_maps_proposal_for_phase_1",
-      "label": "5. New admin: how each feature maps (proposal, for Phase 1)",
+      "id": "docs_design_6_patterns_shared_component_kit_shadcn_ui_style_copied_into_src_components_ui",
+      "label": "6. Patterns (shared component kit, shadcn/ui style, copied into `src/components/ui`)",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5. new admin: how each feature maps (proposal, for phase 1)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L207"
+      "norm_label": "6. patterns (shared component kit, shadcn/ui style, copied into `src/components/ui`)",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L65"
     },
     {
-      "id": "docs_portfolio_admin_spec_6_security_findings_in_bestportofolio",
-      "label": "6. Security findings in bestportofolio",
+      "id": "docs_design_7_layout_options_pick_one_prototypes",
+      "label": "7. Layout options (pick one; prototypes)",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "6. security findings in bestportofolio",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L225"
+      "norm_label": "7. layout options (pick one; prototypes)",
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L75"
     },
     {
-      "id": "docs_portfolio_admin_spec_7_questions_for_gokul",
-      "label": "7. Questions for Gokul",
+      "id": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "label": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "_origin": "ast",
       "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "community_name": "DESIGN (Phase 1, for Gokul's approval before any app code)",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "7. questions for gokul",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
-      "source_location": "L228"
-    },
-    {
-      "id": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
-      "label": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
-      "_origin": "ast",
-      "community": 25,
-      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "portfolio admin spec (phase 0, read-only)",
-      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "norm_label": "design (phase 1, for gokul's approval before any app code)",
+      "source_file": "docs/DESIGN.md",
       "source_location": "L1"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "dependencies",
+      "source_file": "package.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "package_dependencies_gokulsaraswat_ui",
+      "label": "@gokulsaraswat/ui",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "package_dependencies_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "package_dependencies_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "package_dependencies_react_dom",
+      "label": "react-dom",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "react-dom",
+      "source_file": "package.json",
+      "source_location": "L15"
     },
     {
       "id": "docs_master_prompts",
@@ -2528,7 +2762,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos",
       "source_file": "WORKLOG.md",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "worklog_current_state_2026_10_31",
@@ -2588,7 +2822,7 @@
       "node_kind": "heading",
       "norm_label": "reminders",
       "source_file": "WORKLOG.md",
-      "source_location": "L32"
+      "source_location": "L34"
     },
     {
       "id": "worklog_worklog_admin",
@@ -2701,6 +2935,42 @@
   ],
   "links": [
     {
+      "source": "docs_design_prototypes_shared_openpalette",
+      "target": "docs_design_prototypes_shared_drawpalette",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared_render",
+      "target": "docs_design_prototypes_shared_visible",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared_render",
+      "target": "docs_design_prototypes_shared_statuscell",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
       "source": "sync_architecture_node",
       "target": "sync_architecture_edge",
       "relation": "calls",
@@ -2734,6 +3004,54 @@
       "context": "call",
       "source_file": "sync-architecture.sh",
       "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_drawpalette",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_visible",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_render",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_openpalette",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -3195,6 +3513,160 @@
       "confidence_score": 1.0,
       "source_file": "docs/CONTRACTS.md",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design",
+      "target": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_2_visual_system",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_3_information_architecture_routes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_4_roles_per_screen_delegated_admin_per_spec_answers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_1_product",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_5_mobile_mobile_first",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_6_patterns_shared_component_kit_shadcn_ui_style_copied_into_src_components_ui",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_design_phase_1_for_gokul_s_approval_before_any_app_code",
+      "target": "docs_design_7_layout_options_pick_one_prototypes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DESIGN.md",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_posts",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_statuslabel",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_filters",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_state",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_statuscell",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_design_prototypes_shared",
+      "target": "docs_design_prototypes_shared_commands",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/design/prototypes/shared.js",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -4101,7 +4573,7 @@
     },
     {
       "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
-      "target": "docs_portfolio_admin_spec_7_questions_for_gokul",
+      "target": "docs_portfolio_admin_spec_7_answers_gokul_2026_10_31",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4558,7 +5030,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L28",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -4987,7 +5459,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -4998,7 +5470,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -5058,5 +5530,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "244deb9fa1492b0e12df4e323a344df8a171ac5a"
+  "built_at_commit": "8d455b11eafebbe51688da56dff6facd142f6d91"
 }

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Option B · Header</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .top { display: flex; align-items: center; gap: 6px; height: 52px; padding: 0 16px; border-bottom: 1px solid var(--border); position: relative; }
+  .crumb { display: flex; align-items: center; gap: 6px; }
+  .crumb .slash { color: var(--border); font-size: 20px; font-weight: 300; padding: 0 2px; }
+  .switch { display: inline-flex; align-items: center; gap: 8px; height: 34px; padding: 0 8px; border-radius: var(--radius-md); border: 0; background: transparent; cursor: pointer; font-weight: 500; }
+  .switch:hover { background: var(--accent); }
+  .switch .chev { color: var(--muted-foreground); font-size: 11px; }
+  .top .grow { flex: 1; }
+  .menu { position: absolute; top: 48px; left: 44px; width: 260px; background: var(--popover); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 6px; display: none; z-index: 20; }
+  .menu.on { display: block; }
+  .menu a { display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: var(--radius-md); }
+  .menu a:hover { background: var(--accent); }
+  .menu a small { margin-left: auto; color: var(--muted-foreground); }
+  .menu hr { border: 0; border-top: 1px solid var(--border); margin: 6px 0; }
+  .tabs { display: flex; gap: 2px; padding: 0 12px; border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none; }
+  .tabs a { position: relative; padding: 12px 10px; color: var(--muted-foreground); white-space: nowrap; }
+  .tabs a:hover { color: var(--foreground); }
+  .tabs a[aria-current="page"] { color: var(--foreground); font-weight: 500; }
+  .tabs a[aria-current="page"]::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: -1px; height: 2px; background: var(--app-accent); }
+  .tabs .n { font-size: var(--text-xs); color: var(--muted-foreground); margin-left: 4px; }
+  main { max-width: 1200px; margin: 0 auto; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+  .head { display: flex; align-items: end; gap: 12px; margin-bottom: 4px; }
+  .head h1 { margin: 0; font-size: var(--text-2xl); font-weight: 600; letter-spacing: -0.01em; }
+  .head p { margin: 4px 0 0; }
+  .head .grow { flex: 1; }
+  .avatar { width: 28px; height: 28px; border-radius: 50%; background: var(--secondary); display: grid; place-items: center; font-size: 12px; font-weight: 600; }
+  @media (max-width: 767px) {
+    main { padding: 16px 0 24px; gap: 8px; }
+    .head, main > .toolbar, main > .chips-wrap { padding: 0 16px; }
+    .head h1 { font-size: var(--text-xl); }
+    .chips-wrap { overflow-x: auto; }
+    .chips { flex-wrap: nowrap; }
+    .menu { left: 8px; right: 8px; width: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="crumb">
+    <span class="mark sm" data-app="platform">G</span>
+    <span class="slash">/</span>
+    <button class="switch" data-menu aria-haspopup="menu" aria-expanded="false"><span class="mark sm" data-app="portfolio">P</span>Portfolio <span class="chev">▼</span></button>
+  </div>
+  <span class="grow"></span>
+  <button class="btn hide-sm" data-open-palette>Search <span class="kbd">⌘K</span></button>
+  <button class="btn ghost icon show-sm" data-open-palette aria-label="Search">⌕</button>
+  <button class="btn ghost icon" data-theme aria-label="Switch theme">◐</button>
+  <span class="avatar" title="Gokul">G</span>
+  <div class="menu" role="menu">
+    <a href="#"><span class="mark sm" data-app="platform">G</span>Overview</a>
+    <hr>
+    <a href="#"><span class="mark sm" data-app="portfolio">P</span>Portfolio <small>current</small></a>
+    <a href="#"><span class="mark sm" data-app="hub">H</span>Hub</a>
+    <a href="#" class="muted"><span class="mark sm" data-app="gspace">S</span>GSpace <small>not connected</small></a>
+    <a href="#" class="muted"><span class="mark sm" data-app="studio">M</span>Studio <small>not connected</small></a>
+    <a href="#" class="muted"><span class="mark sm" data-app="gym">Y</span>Gym <small>not connected</small></a>
+    <hr>
+    <a href="#">People and roles</a>
+    <a href="#">Audit log</a>
+    <a href="#">Todos</a>
+  </div>
+</div>
+<nav class="tabs" aria-label="Portfolio sections">
+  <a href="#" aria-current="page">Posts</a><a href="#">Projects</a><a href="#">Courses</a><a href="#">Snippets</a>
+  <a href="#">Messages<span class="n">4</span></a><a href="#">Comments<span class="n">2</span></a>
+  <a href="#">Chatbot</a><a href="#">Settings</a><a href="#">Backup</a>
+</nav>
+<main>
+  <div class="head">
+    <div class="grow"><h1>Posts</h1><p class="muted">Ideas, drafts and published posts on the portfolio blog.</p></div>
+    <button class="btn primary">New post</button>
+  </div>
+  <div class="toolbar"><input class="input grow" placeholder="Search posts" data-search aria-label="Search posts"></div>
+  <div class="chips-wrap"><div class="chips" data-chips></div></div>
+  <div class="bulkbar" data-bulk>
+    <span data-count style="flex:1"></span>
+    <button class="btn">Publish</button><button class="btn">Move to review</button><button class="btn">Delete</button>
+    <button class="btn" data-clear>Clear</button>
+  </div>
+  <table class="data">
+    <thead><tr><th style="width:36px"><input type="checkbox" class="check" data-all aria-label="Select all"></th><th>Title</th><th>Status</th><th class="hide-sm">Category</th><th class="hide-sm">Author</th><th>Updated</th></tr></thead>
+    <tbody data-rows></tbody>
+  </table>
+  <div class="cards" data-cards></div>
+</main>
+<aside class="option-note"><b>Option B · Header</b><br>Breadcrumb app switcher + section tabs, full-width content. Like Vercel. Click "Portfolio ▼".<nav><a href="a-rail.html">A</a><a href="b-header.html">B</a><a href="c-split.html">C</a></nav></aside>
+<script src="shared.js"></script>
+<script>
+  const menu = document.querySelector(".menu"), trigger = document.querySelector("[data-menu]");
+  document.addEventListener("click", e => {
+    const open = e.target.closest("[data-menu]") ? !menu.classList.contains("on") : false;
+    if (!e.target.closest(".menu")) { menu.classList.toggle("on", open); trigger.setAttribute("aria-expanded", open); }
+  });
+</script>
+</body>
+</html>

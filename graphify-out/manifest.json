@@ -1,14 +1,14 @@
 {
   ".claude-session.json": {
-    "mtime": 1793459576.4561882,
-    "seen": 1793459579.7461371,
-    "ast_hash": "7165b9d57e28d46c090fbcb0f562e7fe",
+    "mtime": 1793460455.4390655,
+    "seen": 1793460459.408979,
+    "ast_hash": "67af1690df40d6625b8743871449b55a",
     "semantic_hash": ""
   },
   ".claude/launch.json": {
-    "mtime": 1793459007.05098,
-    "seen": 1793459058.3532128,
-    "ast_hash": "b15d3f777d504f743819ba01e4d58bf9",
+    "mtime": 1793460356.967611,
+    "seen": 1793460459.408982,
+    "ast_hash": "e07c040e73f1d2de552bab85396db7e9",
     "semantic_hash": ""
   },
   ".claude/settings.json": {
@@ -78,9 +78,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793459581.6846232,
-    "seen": 1793459583.036083,
-    "ast_hash": "afbf0a413fb5d8f4169386822be783cc",
+    "mtime": 1793460457.6660638,
+    "seen": 1793460459.4089978,
+    "ast_hash": "b804887ef8f54165a6d7d27b5253598a",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "WORKLOG.md": {
-    "mtime": 1793459576.455305,
-    "seen": 1793459579.7461572,
-    "ast_hash": "761eb1ba4c98b385022299eba097a32d",
+    "mtime": 1793460455.4381125,
+    "seen": 1793460459.409004,
+    "ast_hash": "9367caa2d2bfe4ad5cd918801653177d",
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE.md": {
@@ -168,9 +168,39 @@
     "semantic_hash": ""
   },
   "docs/PORTFOLIO-ADMIN-SPEC.md": {
-    "mtime": 1793459544.8969293,
-    "seen": 1793459579.74616,
-    "ast_hash": "820196182387b6f42b472f500430b22d",
+    "mtime": 1793460031.3070395,
+    "seen": 1793460035.675992,
+    "ast_hash": "8845e818f9f6a77ba52e7c65124c796a",
+    "semantic_hash": ""
+  },
+  "docs/design/prototypes/shared.js": {
+    "mtime": 1793460268.4259703,
+    "seen": 1793460459.4089868,
+    "ast_hash": "49de8b7d1243fac7d7c6b630141fef9f",
+    "semantic_hash": ""
+  },
+  "docs/DESIGN.md": {
+    "mtime": 1793460455.4364507,
+    "seen": 1793460459.409006,
+    "ast_hash": "77eba701a9e26c8a56e621896b48f6af",
+    "semantic_hash": ""
+  },
+  "docs/design/prototypes/a-rail.html": {
+    "mtime": 1793460294.2608616,
+    "seen": 1793460459.409009,
+    "ast_hash": "d9d3bcb9ba8b193a443243dfc8e5e899",
+    "semantic_hash": ""
+  },
+  "docs/design/prototypes/b-header.html": {
+    "mtime": 1793460317.1208763,
+    "seen": 1793460459.40901,
+    "ast_hash": "a08df03ed2b7d593b1f524e5e1fd0789",
+    "semantic_hash": ""
+  },
+  "docs/design/prototypes/c-split.html": {
+    "mtime": 1793460428.875176,
+    "seen": 1793460459.409011,
+    "ast_hash": "4de19b9b364bd262b9f496e63800de9f",
     "semantic_hash": ""
   }
 }

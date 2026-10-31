@@ -361,6 +361,61 @@
       "source_location": "L1"
     },
     {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "dependencies",
+      "source_file": "package.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "package_dependencies_gokulsaraswat_ui",
+      "label": "@gokulsaraswat/ui",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@gokulsaraswat/ui",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "package_dependencies_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "package_dependencies_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "package_dependencies_react_dom",
+      "label": "react-dom",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "react-dom",
+      "source_file": "package.json",
+      "source_location": "L15"
+    },
+    {
       "id": "package_description",
       "label": "description",
       "_origin": "ast",
@@ -775,59 +830,196 @@
       "source_location": "L1"
     },
     {
-      "id": "package_dependencies",
-      "label": "dependencies",
+      "id": "docs_portfolio_admin_spec_4_10_todos_todo_manager_tsx",
+      "label": "4.10 Todos (`todo-manager.tsx`)",
       "_origin": "ast",
       "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "dependencies",
-      "source_file": "package.json",
-      "source_location": "L11"
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.10 todos (`todo-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L185"
     },
     {
-      "id": "package_dependencies_gokulsaraswat_ui",
-      "label": "@gokulsaraswat/ui",
+      "id": "docs_portfolio_admin_spec_4_11_users_user_manager_tsx",
+      "label": "4.11 Users (`user-manager.tsx`)",
       "_origin": "ast",
       "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@gokulsaraswat/ui",
-      "source_file": "package.json",
-      "source_location": "L12"
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.11 users (`user-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L189"
     },
     {
-      "id": "package_dependencies_next",
-      "label": "next",
+      "id": "docs_portfolio_admin_spec_4_12_backup_backup_manager_tsx",
+      "label": "4.12 Backup (`backup-manager.tsx`)",
       "_origin": "ast",
       "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L13"
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.12 backup (`backup-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L192"
     },
     {
-      "id": "package_dependencies_react",
-      "label": "react",
+      "id": "docs_portfolio_admin_spec_4_13_settings_profile_settings_tsx",
+      "label": "4.13 Settings (`profile-settings.tsx`)",
       "_origin": "ast",
       "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "react",
-      "source_file": "package.json",
-      "source_location": "L14"
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.13 settings (`profile-settings.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L195"
     },
     {
-      "id": "package_dependencies_react_dom",
-      "label": "react-dom",
+      "id": "docs_portfolio_admin_spec_4_14_ai_chat_bot_rag_rag_settings_tsx",
+      "label": "4.14 AI chat bot / RAG (`rag-settings.tsx`)",
       "_origin": "ast",
       "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "react-dom",
-      "source_file": "package.json",
-      "source_location": "L15"
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.14 ai chat bot / rag (`rag-settings.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L199"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_15_operation_logs_operation_logs_viewer_tsx_operation_logs_panel_tsx_is_dead",
+      "label": "4.15 Operation logs (`operation-logs-viewer.tsx`; `operation-logs-panel.tsx` is dead)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.15 operation logs (`operation-logs-viewer.tsx`; `operation-logs-panel.tsx` is dead)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L204"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_1_shell_login_roles_admin_page_tsx_admin_layout_tsx",
+      "label": "4.1 Shell, login, roles (`admin/page.tsx`, `admin-layout.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.1 shell, login, roles (`admin/page.tsx`, `admin-layout.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L144"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_2_dashboard_admin_dashboard_tsx",
+      "label": "4.2 Dashboard (`admin-dashboard.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.2 dashboard (`admin-dashboard.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L150"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_3_blogs_blog_manager_tsx_seo_preview_tsx",
+      "label": "4.3 Blogs (`blog-manager.tsx`, `seo-preview.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.3 blogs (`blog-manager.tsx`, `seo-preview.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L155"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_4_blog_ideas_blog_ideas_manager_tsx",
+      "label": "4.4 Blog ideas (`blog-ideas-manager.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.4 blog ideas (`blog-ideas-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L159"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_5_projects_project_manager_tsx",
+      "label": "4.5 Projects (`project-manager.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.5 projects (`project-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L164"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_6_courses_chapters_course_manager_tsx",
+      "label": "4.6 Courses + chapters (`course-manager.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.6 courses + chapters (`course-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L168"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_7_snippets_snippet_manager_tsx",
+      "label": "4.7 Snippets (`snippet-manager.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.7 snippets (`snippet-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L173"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_8_comments_comment_manager_tsx_unreachable_in_nav",
+      "label": "4.8 Comments (`comment-manager.tsx`, unreachable in nav)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.8 comments (`comment-manager.tsx`, unreachable in nav)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L178"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_9_messages_message_manager_tsx",
+      "label": "4.9 Messages (`message-manager.tsx`)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4.9 messages (`message-manager.tsx`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L181"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "label": "4. Admin UI features (what the screens do)",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "4. Admin UI features (what the screens do)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. admin ui features (what the screens do)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L141"
     },
     {
       "id": "package_scripts",
@@ -930,7 +1122,7 @@
       "node_kind": "heading",
       "norm_label": "3. low-level design (lld) & solid class schemas",
       "source_file": ".project-architecture.md",
-      "source_location": "L27"
+      "source_location": "L28"
     },
     {
       "id": "project_architecture_codebase_blueprint_structural_graph",
@@ -1429,6 +1621,294 @@
       "file_type": "code",
       "norm_label": "page.tsx",
       "source_file": "src/app/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "label": "3. API by feature (server truth)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. api by feature (server truth)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_backup_restore_api_backup",
+      "label": "Backup / restore (`/api/backup`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "backup / restore (`/api/backup`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L128"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_blog_ideas_api_blog_ideas_id",
+      "label": "Blog ideas (`/api/blog-ideas`, `[id]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "blog ideas (`/api/blog-ideas`, `[id]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L64"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_blogs_api_blogs_api_blogs_id",
+      "label": "Blogs (`/api/blogs`, `/api/blogs/[id]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "blogs (`/api/blogs`, `/api/blogs/[id]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_comments_api_comments_id",
+      "label": "Comments (`/api/comments`, `[id]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "comments (`/api/comments`, `[id]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L91"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_courses_chapters_api_courses_courseid_courseid_chapters_chapterid",
+      "label": "Courses + chapters (`/api/courses`, `[courseId]`, `[courseId]/chapters`, `[chapterId]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "courses + chapters (`/api/courses`, `[courseid]`, `[courseid]/chapters`, `[chapterid]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L76"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_messages_api_contact_api_messages_id",
+      "label": "Messages (`/api/contact`, `/api/messages`, `[id]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "messages (`/api/contact`, `/api/messages`, `[id]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L98"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_misc",
+      "label": "Misc",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "misc",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L138"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_profile_site_settings_api_profile_api_settings",
+      "label": "Profile + site settings (`/api/profile`, `/api/settings`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "profile + site settings (`/api/profile`, `/api/settings`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L120"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_projects_api_projects_id",
+      "label": "Projects (`/api/projects`, `[id]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "projects (`/api/projects`, `[id]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L70"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_rag_api_ingest_api_chat",
+      "label": "RAG (`/api/ingest`, `/api/chat`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "rag (`/api/ingest`, `/api/chat`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L132"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_snippets_api_snippets_id",
+      "label": "Snippets (`/api/snippets`, `[id]`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "snippets (`/api/snippets`, `[id]`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L85"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_todos_api_todos_id_id_history",
+      "label": "Todos (`/api/todos`, `[id]`, `[id]/history`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "todos (`/api/todos`, `[id]`, `[id]/history`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L107"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_users_api_admin_users",
+      "label": "Users (`/api/admin-users`)",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "3. API by feature (server truth)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "users (`/api/admin-users`)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L114"
+    },
+    {
+      "id": "docs_portfolio_admin_spec",
+      "label": "PORTFOLIO-ADMIN-SPEC.md",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "portfolio-admin-spec.md",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_1_auth_today_custom_not_supabase_auth",
+      "label": "1.1 Auth today (custom, NOT Supabase Auth)",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.1 auth today (custom, not supabase auth)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_2_operation_log_audit",
+      "label": "1.2 Operation log (audit)",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.2 operation log (audit)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_3_shared_conventions",
+      "label": "1.3 Shared conventions",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.3 shared conventions",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_1_cross_cutting",
+      "label": "1. Cross-cutting",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. cross-cutting",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_2_tables_prisma_old_supabase_project",
+      "label": "2. Tables (Prisma, old Supabase project)",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. tables (prisma, old supabase project)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_5_new_admin_how_each_feature_maps_proposal_for_phase_1",
+      "label": "5. New admin: how each feature maps (proposal, for Phase 1)",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. new admin: how each feature maps (proposal, for phase 1)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L207"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_6_security_findings_in_bestportofolio",
+      "label": "6. Security findings in bestportofolio",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. security findings in bestportofolio",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L225"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_7_answers_gokul_2026_10_31",
+      "label": "7. Answers (Gokul, 2026-10-31)",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. answers (gokul, 2026-10-31)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L228"
+    },
+    {
+      "id": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "label": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "PORTFOLIO ADMIN SPEC (Phase 0, read-only)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "portfolio admin spec (phase 0, read-only)",
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
       "source_location": "L1"
     },
     {
@@ -2048,7 +2528,7 @@
       "node_kind": "heading",
       "norm_label": "blockers / requests to other repos",
       "source_file": "WORKLOG.md",
-      "source_location": "L25"
+      "source_location": "L27"
     },
     {
       "id": "worklog_current_state_2026_10_31",
@@ -2072,7 +2552,7 @@
       "node_kind": "heading",
       "norm_label": "decisions (gokul, 2026-10-31)",
       "source_file": "WORKLOG.md",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
       "id": "worklog_done",
@@ -2096,7 +2576,7 @@
       "node_kind": "heading",
       "norm_label": "in progress / next",
       "source_file": "WORKLOG.md",
-      "source_location": "L12"
+      "source_location": "L13"
     },
     {
       "id": "worklog_reminders",
@@ -2108,7 +2588,7 @@
       "node_kind": "heading",
       "norm_label": "reminders",
       "source_file": "WORKLOG.md",
-      "source_location": "L30"
+      "source_location": "L34"
     },
     {
       "id": "worklog_worklog_admin",
@@ -2209,6 +2689,7 @@
     {
       "id": "src_app_globals",
       "label": "src_app_globals",
+      "_origin": "semantic",
       "community": 5,
       "community_name": "layout.tsx",
       "external": true,
@@ -3234,6 +3715,435 @@
       "weight": 1.0
     },
     {
+      "source": "docs_portfolio_admin_spec",
+      "target": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_1_cross_cutting",
+      "target": "docs_portfolio_admin_spec_1_2_operation_log_audit",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_1_cross_cutting",
+      "target": "docs_portfolio_admin_spec_1_3_shared_conventions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_1_cross_cutting",
+      "target": "docs_portfolio_admin_spec_1_1_auth_today_custom_not_supabase_auth",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_todos_api_todos_id_id_history",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_users_api_admin_users",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_profile_site_settings_api_profile_api_settings",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_backup_restore_api_backup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_rag_api_ingest_api_chat",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_misc",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L138",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_blogs_api_blogs_api_blogs_id",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_blog_ideas_api_blog_ideas_id",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_projects_api_projects_id",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_courses_chapters_api_courses_courseid_courseid_chapters_chapterid",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_snippets_api_snippets_id",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_comments_api_comments_id",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "target": "docs_portfolio_admin_spec_messages_api_contact_api_messages_id",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_1_shell_login_roles_admin_page_tsx_admin_layout_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_2_dashboard_admin_dashboard_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_3_blogs_blog_manager_tsx_seo_preview_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_4_blog_ideas_blog_ideas_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_5_projects_project_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_6_courses_chapters_course_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_7_snippets_snippet_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_8_comments_comment_manager_tsx_unreachable_in_nav",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_9_messages_message_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_10_todos_todo_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_11_users_user_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L189",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_12_backup_backup_manager_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L192",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_13_settings_profile_settings_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_14_ai_chat_bot_rag_rag_settings_tsx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L199",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "target": "docs_portfolio_admin_spec_4_15_operation_logs_operation_logs_viewer_tsx_operation_logs_panel_tsx_is_dead",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L204",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_4_admin_ui_features_what_the_screens_do",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_5_new_admin_how_each_feature_maps_proposal_for_phase_1",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L207",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_6_security_findings_in_bestportofolio",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L225",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_7_answers_gokul_2026_10_31",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L228",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_2_tables_prisma_old_supabase_project",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_3_api_by_feature_server_truth",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_portfolio_admin_spec_portfolio_admin_spec_phase_0_read_only",
+      "target": "docs_portfolio_admin_spec_1_cross_cutting",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PORTFOLIO-ADMIN-SPEC.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
       "source": "docs_supabase_setup",
       "target": "docs_supabase_setup_supabase_setup_for_the_platform_owner_checklist_draft_sql",
       "relation": "contains",
@@ -3648,7 +4558,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".project-architecture.md",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -4055,7 +4965,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -4066,7 +4976,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -4077,7 +4987,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L25",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -4088,7 +4998,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "WORKLOG.md",
-      "source_location": "L30",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -4147,5 +5057,6 @@
       "weight": 1.0
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "8d455b11eafebbe51688da56dff6facd142f6d91"
 }

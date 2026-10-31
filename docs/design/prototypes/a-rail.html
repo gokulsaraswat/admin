@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Option A · Rail</title>
+<link rel="stylesheet" href="shared.css">
+<style>
+  .shell { display: grid; grid-template-columns: 56px 220px 1fr; height: 100vh; }
+  .rail { background: var(--sidebar); border-right: 1px solid var(--sidebar-border); display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 12px 0; }
+  .rail a { position: relative; display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--radius-lg); }
+  .rail a:hover { background: var(--sidebar-accent); }
+  .rail a[aria-current="true"]::before { content: ""; position: absolute; left: -8px; top: 10px; bottom: 10px; width: 3px; border-radius: 0 3px 3px 0; background: var(--app-accent); }
+  .rail .mark[data-off] { opacity: 0.45; }
+  .rail .spacer { flex: 1; }
+  .side { background: var(--sidebar); border-right: 1px solid var(--sidebar-border); padding: 14px 10px; display: flex; flex-direction: column; gap: 2px; overflow: auto; }
+  .side h2 { font-size: var(--text-base); font-weight: 600; margin: 0 8px 12px; display: flex; align-items: center; gap: 8px; }
+  .side a { display: flex; align-items: center; justify-content: space-between; height: 32px; padding: 0 8px; border-radius: var(--radius-md); color: var(--sidebar-foreground); }
+  .side a:hover { background: var(--sidebar-accent); }
+  .side a[aria-current="page"] { background: var(--sidebar-accent); font-weight: 500; }
+  .side a .n { color: var(--muted-foreground); font-variant-numeric: tabular-nums; font-size: var(--text-xs); }
+  .side .sep { height: 1px; background: var(--sidebar-border); margin: 10px 8px; }
+  main { overflow: auto; display: flex; flex-direction: column; }
+  header.page { display: flex; align-items: center; gap: 12px; padding: 16px 24px 12px; }
+  header.page h1 { font-size: var(--text-xl); font-weight: 600; margin: 0; flex: 1; }
+  .body { padding: 0 24px 24px; display: flex; flex-direction: column; gap: 12px; }
+  .mobile-top, .mobile-tabs { display: none; }
+  @media (max-width: 767px) {
+    .shell { grid-template-columns: 1fr; height: auto; min-height: 100vh; }
+    .rail, .side { display: none; }
+    .mobile-top { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--background); z-index: 5; }
+    .mobile-top b { flex: 1; font-size: var(--text-base); }
+    header.page { padding: 12px 16px 8px; }
+    .body { padding: 0 0 72px; gap: 8px; }
+    .body > .toolbar, .body > .chips-wrap { padding: 0 16px; }
+    .chips-wrap { overflow-x: auto; }
+    .chips { flex-wrap: nowrap; }
+    .mobile-tabs { display: grid; grid-template-columns: repeat(5, 1fr); position: fixed; bottom: 0; left: 0; right: 0; background: var(--background); border-top: 1px solid var(--border); padding-bottom: env(safe-area-inset-bottom); }
+    .mobile-tabs a { display: grid; justify-items: center; gap: 2px; padding: 8px 0; font-size: 11px; color: var(--muted-foreground); }
+    .mobile-tabs a[aria-current="page"] { color: var(--foreground); font-weight: 500; }
+    .mobile-tabs a[aria-current="page"] i { background: var(--app-accent); }
+    .mobile-tabs i { width: 18px; height: 4px; border-radius: 2px; background: transparent; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="rail" aria-label="Apps">
+    <a href="#" title="Overview"><span class="mark" data-app="platform">G</span></a>
+    <a href="#" aria-current="true" title="Portfolio"><span class="mark" data-app="portfolio">P</span></a>
+    <a href="#" title="Hub"><span class="mark" data-app="hub">H</span></a>
+    <a href="#" title="GSpace (not connected yet)"><span class="mark" data-app="gspace" data-off>S</span></a>
+    <a href="#" title="Studio (not connected yet)"><span class="mark" data-app="studio" data-off>M</span></a>
+    <a href="#" title="Gym (not connected yet)"><span class="mark" data-app="gym" data-off>Y</span></a>
+    <span class="spacer"></span>
+    <button class="btn ghost icon" data-theme title="Switch theme" aria-label="Switch theme">◐</button>
+  </nav>
+  <nav class="side" aria-label="Portfolio sections">
+    <h2><span class="mark sm" data-app="portfolio">P</span> Portfolio</h2>
+    <a href="#" aria-current="page">Posts <span class="n">9</span></a>
+    <a href="#">Projects <span class="n">14</span></a>
+    <a href="#">Courses <span class="n">3</span></a>
+    <a href="#">Snippets <span class="n">42</span></a>
+    <div class="sep"></div>
+    <a href="#">Messages <span class="n">4 unread</span></a>
+    <a href="#">Comments <span class="n">2 new</span></a>
+    <div class="sep"></div>
+    <a href="#">Chatbot</a>
+    <a href="#">Site settings</a>
+    <a href="#">Backup</a>
+    <div class="sep"></div>
+    <a href="#">People and roles</a>
+    <a href="#">Audit log</a>
+  </nav>
+  <main>
+    <div class="mobile-top">
+      <span class="mark sm" data-app="portfolio">P</span><b>Portfolio</b>
+      <button class="btn ghost icon" data-open-palette aria-label="Search">⌕</button>
+      <button class="btn ghost icon" data-theme aria-label="Switch theme">◐</button>
+    </div>
+    <header class="page">
+      <h1>Posts</h1>
+      <button class="btn hide-sm" data-open-palette>Search <span class="kbd">⌘K</span></button>
+      <button class="btn primary">New post</button>
+    </header>
+    <div class="body">
+      <div class="toolbar">
+        <input class="input grow" placeholder="Search posts" data-search aria-label="Search posts">
+      </div>
+      <div class="chips-wrap"><div class="chips" data-chips></div></div>
+      <div class="bulkbar" data-bulk>
+        <span data-count class="grow" style="flex:1"></span>
+        <button class="btn">Publish</button><button class="btn">Move to review</button><button class="btn">Delete</button>
+        <button class="btn" data-clear>Clear</button>
+      </div>
+      <table class="data">
+        <thead><tr><th style="width:36px"><input type="checkbox" class="check" data-all aria-label="Select all"></th><th>Title</th><th>Status</th><th class="hide-sm">Category</th><th class="hide-sm">Author</th><th>Updated</th></tr></thead>
+        <tbody data-rows></tbody>
+      </table>
+      <div class="cards" data-cards></div>
+    </div>
+  </main>
+</div>
+<nav class="mobile-tabs" aria-label="Sections">
+  <a href="#"><i></i>Apps</a>
+  <a href="#" aria-current="page"><i></i>Posts</a>
+  <a href="#"><i></i>Projects</a>
+  <a href="#"><i></i>Inbox</a>
+  <a href="#"><i></i>More</a>
+</nav>
+<aside class="option-note"><b>Option A · Rail</b><br>App rail + section sidebar. Like Supabase Studio / Linear. Try ⌘K, select rows, theme.<nav><a href="a-rail.html">A</a><a href="b-header.html">B</a><a href="c-split.html">C</a></nav></aside>
+<script src="shared.js"></script>
+</body>
+</html>

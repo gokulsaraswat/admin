@@ -11,7 +11,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Step 2 (2026-10-31): Phase 0 spec `docs/PORTFOLIO-ADMIN-SPEC.md` (data, API, UI per feature, mapping proposal, 11 questions). Key facts: old TOTP not implemented (nothing to migrate); roles/permissions never enforced server-side.
 
 ## In progress / next
-- Phase 1 design: IA, roles per screen (incl. delegated admin), mobile-first, component kit; 2-3 prototype options for Gokul. Full order: `.claude-session.json` sprint.todo_next.
+- Phase 1: `docs/DESIGN.md` drafted + 3 prototypes (`docs/design/prototypes/`: A rail, B header, C split). Waiting for Gokul to pick; then finalise DESIGN.md and start Phase 2a. Full order: `.claude-session.json` sprint.todo_next.
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).
