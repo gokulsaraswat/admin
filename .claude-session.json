@@ -26,10 +26,11 @@
       "Step 4 (2026-10-31): Phase 1 draft: docs/DESIGN.md (IA/routes, roles per screen incl. delegated admin, mobile, patterns, per-app accent colour) + 3 static prototypes on real tokens, checked in browser at 1280x800 and 375x812, light + dark (fixed textarea colour, chip wrap, split toolbar overflow).",
       "Step 5 (2026-10-31): Gokul picked layout Option A (Rail); DESIGN.md approved.",
       "Step 6 (2026-10-31): Phase 2a code: @supabase/ssr server client + src/proxy.ts (getClaims, redirects), /login (useActionState + server action signIn/signOut), (admin) rail shell (Option A) + Overview, theme toggle, per-app colours, @gokulsaraswat/config AppId. Build + lint clean. NOT runtime-verified: Supabase URL/anon key missing in .env.local.",
-      "Step 7 (2026-10-31): Phase 2a verified (see WORKLOG). Sign-in errors split: invalid_credentials vs unavailable (logged server-side)."
+      "Step 7 (2026-10-31): Phase 2a verified (see WORKLOG). Sign-in errors split: invalid_credentials vs unavailable (logged server-side).",
+      "Step 8 (2026-10-31): Phase 2b SQL drafted (roles, permission catalog, user_permissions, helpers, RLS, last-super-admin guard, 18 portfolio permissions) + rollback-only RLS test + bootstrap; verified in PGlite incl. mutation checks. Not applied."
     ],
     "todo_next": [
-      "Phase 2b: user_roles + per-app permissions (delegated admin: app admins manage their app's members/permissions) migration + RLS (show SQL first, max effort)",
+      "Phase 2b: Gokul approves SQL, runs migration + bootstrap + test in Supabase SQL editor; then app uses @gokulsaraswat/auth getUserRoles for the shell",
       "Phase 2c: app switcher (route group per app, lazy)",
       "Phase 2d: config.json publisher (public-config/hub/config.json)",
       "Later (own plan, ask Gokul): portfolio data migration to the new Supabase project; then portfolio sections (blogs first); MDX editor (needs @gokulsaraswat/mdx); re-invite AdminUsers + TOTP; remove old portfolio admin last"

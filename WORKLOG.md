@@ -13,7 +13,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 ## In progress / next
 - Phase 2a DONE (2026-10-31): login + session proxy + rail shell verified: signed-out -> /login, made-up account -> "Email or password is incorrect." (real Supabase reply), Gokul signed in (Overview) and out in his Chrome; login page checked at 375 px light/dark. Not seen by Claude: signed-in shell on phone (needs Gokul's session).
-- Next: Phase 2b `user_roles` + per-app permissions SQL + RLS (show SQL first).
+- Phase 2b SQL DRAFTED, NOT APPLIED: `supabase/migrations/20261031120000_roles_permissions.sql` + `supabase/tests/roles_rls_test.sql` + `supabase/bootstrap_super_admin.sql`. Verified in PGlite (Postgres in Node) with a minimal `auth` stand-in: migration + tests pass with and without a real super admin; 2 mutations (wrong expectation, weakened policy) correctly fail. Waiting for Gokul's approval, then he runs migration -> bootstrap -> test in the SQL editor.
 
 ## Decisions (Gokul, 2026-10-31)
 - Order: repo kit -> Phase 0 spec -> Phase 1 design -> Phase 2 build (platform-only slices before portfolio data).

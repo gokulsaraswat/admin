@@ -22,7 +22,8 @@ DATA LAYER (decided): admin = supabase-js + RLS (not Prisma).
 7. Also create a GitHub token (classic) with `read:packages` and set env `NODE_AUTH_TOKEN` locally for installing `@gokulsaraswat/*` (see platform/docs/CONTRACTS.md `.npmrc`).
 8. Optional: authorize the Supabase connector in Claude (`/mcp` in an interactive Claude terminal) so a chat can inspect the schema. Claude cannot do the sign-in itself.
 
-## DRAFT SQL (review with Gokul; run in the SQL editor or as a migration in the admin repo)
+## DRAFT SQL (SUPERSEDED 2026-10-31)
+Replaced by `supabase/migrations/20261031120000_roles_permissions.sql` (roles + per-app permissions + RLS + last-super-admin guard), `supabase/tests/roles_rls_test.sql` and `supabase/bootstrap_super_admin.sql`. Storage policies for the config bucket move to the config-publisher slice (2d), without the public "select" policy (public buckets serve files without it; that policy only enables listing). Original draft kept below for history.
 ```sql
 create table if not exists public.user_roles (
   user_id uuid not null references auth.users(id) on delete cascade,
