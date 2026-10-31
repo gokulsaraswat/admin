@@ -3,7 +3,7 @@
 Master status of all repos: platform/docs/WORKLOG.md. Update this file after every step.
 
 ## Current state (2026-10-31)
-- Repo kit done: Next.js 16.4.3 + React 19.3 + Tailwind v4 placeholder app, `@gokulsaraswat/ui` 0.1.0 tokens wired, Node 24 pinned, CI (lint + build), docs. Clean install + lint + build pass locally.
+- Repo kit done: Next.js 16.4.3 + React 19.3 + Tailwind v4 placeholder app, `@gokulsaraswat/ui` 0.1.0 tokens wired, Node 24 pinned, CI (lint + build), docs. Clean install + lint + build pass locally; CI green on first push (run 41213102925).
 - Not built: Supabase client/login, `user_roles` SQL (draft only in docs/SUPABASE-SETUP.md, not applied), app switcher, sections, config publisher. Not deployed to Vercel.
 
 ## Done
@@ -24,7 +24,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 ## Blockers / requests to other repos
 - platform (master CONTRACTS.md, Hub `config.json`): record bucket `public-config`, path `hub/config.json` (agreed 2026-10-31). Admin does not edit platform.
-- Gokul (GitHub UI): for each package `@gokulsaraswat/ui`, `config`, `auth`: Package settings > Manage Actions access > add repo `admin` (read), so CI's `GITHUB_TOKEN` can install them.
+- Gokul (GitHub UI, needs repo admin): set repo description, topics, branch protection on main.
 - Gokul: replace the token in `.env.local` with a classic token scoped to `read:packages` ONLY (current one has full account scopes), no quotes; revoke the old one. Use the new one for Vercel.
 
 ## Reminders

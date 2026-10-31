@@ -25,7 +25,7 @@ rm -rf node_modules .next && npm ci && npm run lint && npm run build
 - Not deployed yet.
 
 ## CI
-`.github/workflows/ci.yml`: `npm ci`, lint, build on Node from `.nvmrc`. Installs `@gokulsaraswat/*` with `GITHUB_TOKEN`; each package must grant this repo read access (package settings > Manage Actions access).
+`.github/workflows/ci.yml`: `npm ci`, lint, build on Node from `.nvmrc`. Installs `@gokulsaraswat/*` with `GITHUB_TOKEN` (`packages: read`); verified green. If it ever fails with 403, grant this repo read access under each package's Manage Actions access.
 
 ## Docs
 `CLAUDE.md` (agent rules), `AGENTS.md`, `WORKLOG.md`, `.claude-session.json`, `docs/CONTRACTS.md`, `docs/ARCHITECTURE.md`, `docs/SUPABASE-SETUP.md`, `COLLABORATORS.md`, `SECURITY.md`.
