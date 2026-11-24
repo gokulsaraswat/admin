@@ -72,8 +72,8 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793465032.0469916,
-    "seen": 1793465034.742412,
+    "mtime": 1795524375.015025,
+    "seen": 1795524376.888319,
     "ast_hash": "a1d2ef58cb8686045e80dd0295ec10cb",
     "semantic_hash": ""
   },
@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "docs/master/PLANNING-CHAT-PROMPT.md": {
-    "mtime": 1793454046.3373892,
-    "seen": 1793459058.3532329,
-    "ast_hash": "5821d9afb394931392d2754b92801e3b",
+    "mtime": 1794890824.6360762,
+    "seen": 1795524376.88833,
+    "ast_hash": "e2d6a7f6b0addce53706a9157b9b402f",
     "semantic_hash": ""
   },
   "docs/master/PROMPTS.md": {
@@ -156,9 +156,9 @@
     "semantic_hash": ""
   },
   "docs/master/WORKLOG.md": {
-    "mtime": 1793457855.2953362,
-    "seen": 1793459058.353235,
-    "ast_hash": "1f450ae872bfd18870c92df1fc1d6b36",
+    "mtime": 1794890824.6304126,
+    "seen": 1795524376.8883321,
+    "ast_hash": "6874184053579d33863c151bcdfcfea7",
     "semantic_hash": ""
   },
   "docs/PORTFOLIO-ADMIN-SPEC.md": {
@@ -417,6 +417,18 @@
     "mtime": 1793464996.8254607,
     "seen": 1793465034.742034,
     "ast_hash": "c69473ca05e097ab405c8009aa849136",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/20261031130000_public_config_bucket.sql": {
+    "mtime": 1793464811.375449,
+    "seen": 1795524376.888313,
+    "ast_hash": "07f648e8b1034aed121bc6f229e9ee34",
+    "semantic_hash": ""
+  },
+  "supabase/tests/public_config_test.sql": {
+    "mtime": 1793464835.4967475,
+    "seen": 1795524376.888314,
+    "ast_hash": "3ee92eb5ef2d380b21b56eae2040b686",
     "semantic_hash": ""
   }
 }

@@ -1,17 +1,17 @@
-# Graph Report - admin  (2026-10-31)
+# Graph Report - admin  (2026-11-24)
 
 ## Corpus Check
-- 68 files · ~30,254 words
+- 68 files · ~30,942 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 8 file(s) not represented in the graph (top: (none) 4, .css 2, .example 1)
 
 ## Summary
-- 354 nodes · 475 edges · 29 communities (23 shown, 6 thin omitted)
+- 359 nodes · 480 edges · 29 communities (23 shown, 6 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 8 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6c5a4716`
+- Built from commit: `95cd8fe7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -33,20 +33,20 @@
 - shared.js
 - Codebase Blueprint & Structural Graph
 - sync-architecture.sh
-- next
+- login/actions.ts
 - AGENTS.md: admin
 - pull_request_template.md
 - COLLABORATORS.md
 - PLANNING-CHAT-PROMPT.md
 - SECURITY.md
-- apps.ts
+- placeholders.tsx
 - 3. API by feature (server truth)
 - DESIGN (Phase 1, for Gokul's approval before any app code)
-- shell.tsx
+- apps.ts
 - dependencies
 
 ## God Nodes (most connected - your core abstractions)
-1. `WORKLOG` - 19 edges
+1. `WORKLOG` - 20 edges
 2. `4. Admin UI features (what the screens do)` - 16 edges
 3. `compilerOptions` - 16 edges
 4. `next` - 14 edges
@@ -58,16 +58,16 @@
 10. `REPO SECTIONS` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Hub `config.json` publish location (agreed with Gokul 2026-10-31)` --references--> `HubConfig()`  [INFERRED]
-  docs/CONTRACTS.md → src/app/(admin)/hub/config/page.tsx
 - `LLD` --references--> `createClient()`  [INFERRED]
   docs/ARCHITECTURE.md → src/lib/supabase/server.ts
-- `LLD` --references--> `Sidebar()`  [INFERRED]
-  docs/ARCHITECTURE.md → src/components/shell/sidebar.tsx
 - `LLD` --references--> `CurrentUser()`  [INFERRED]
   docs/ARCHITECTURE.md → src/components/shell/current-user.tsx
 - `LLD` --references--> `MobileMenu()`  [INFERRED]
   docs/ARCHITECTURE.md → src/components/shell/mobile-menu.tsx
+- `LLD` --references--> `NavLink()`  [INFERRED]
+  docs/ARCHITECTURE.md → src/components/shell/nav-link.tsx
+- `LLD` --references--> `Sidebar()`  [INFERRED]
+  docs/ARCHITECTURE.md → src/components/shell/sidebar.tsx
 
 ## Import Cycles
 - None detected.
@@ -75,8 +75,8 @@
 ## Communities (29 total, 6 thin omitted)
 
 ### Community 0 - "WORKLOG"
-Cohesion: 0.08
-Nodes (23): Agreed order, Architecture (agreed 2026-10-31), Cleanup scan: `/cleanscan` (Claude slash command), Commit + push everything: `/gitmd` (Claude slash command), Current focus, Decisions, Dropped, Far later (+15 more)
+Cohesion: 0.07
+Nodes (28): Agreed order, Architecture (agreed 2026-10-31), Cleanup scan: `/cleanscan` (Claude slash command), Commit + push everything: `/gitmd` (Claude slash command), Current focus, Decisions, Dropped, Far later (+20 more)
 
 ### Community 1 - "package.json"
 Cohesion: 0.06
@@ -99,8 +99,8 @@ Cohesion: 0.29
 Nodes (5): src_app_globals, geistMono, geistSans, metadata, themeScript
 
 ### Community 6 - "load.ts"
-Cohesion: 0.16
-Nodes (16): @gokulsaraswat/config, ref_server_only, HubConfig(), publishHubConfig(), PublishState, HUB_CONFIG_BUCKET, HUB_CONFIG_PATH, HubConfigEditor() (+8 more)
+Cohesion: 0.13
+Nodes (22): Hub `config.json` publish location (agreed with Gokul 2026-10-31), @gokulsaraswat/config, @supabase/ssr, HubConfig(), publishHubConfig(), PublishState, HUB_CONFIG_BUCKET, HUB_CONFIG_PATH (+14 more)
 
 ### Community 7 - "admin"
 Cohesion: 0.22
@@ -111,8 +111,8 @@ Cohesion: 0.25
 Nodes (7): Blockers / requests to other repos, Current state (2026-10-31), Decisions (Gokul, 2026-10-31), Done, In progress / next, Reminders, WORKLOG: admin
 
 ### Community 9 - "Owns (Supabase, new platform project)"
-Cohesion: 0.29
-Nodes (6): CONTRACTS: admin, Expects (packages), Hub `config.json` publish location (agreed with Gokul 2026-10-31), Owns (Supabase, new platform project), TO BE UPDATED, `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)
+Cohesion: 0.33
+Nodes (5): CONTRACTS: admin, Expects (packages), Owns (Supabase, new platform project), TO BE UPDATED, `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)
 
 ### Community 10 - "Kickoff prompt: admin"
 Cohesion: 0.33
@@ -127,8 +127,8 @@ Cohesion: 0.33
 Nodes (5): Decision: which project (UPDATED 2026-10-31, supersedes "reuse portfolio's"), DRAFT SQL (SUPERSEDED 2026-10-31), Env vars (admin/.env.example must list these; values only in .env.local / Vercel), Gokul does in the Supabase dashboard (no secrets in chat), Supabase setup for the platform (owner checklist + DRAFT SQL)
 
 ### Community 13 - "4. Admin UI features (what the screens do)"
-Cohesion: 0.08
-Nodes (25): 1.1 Auth today (custom, NOT Supabase Auth), 1.2 Operation log (audit), 1.3 Shared conventions, 1. Cross-cutting, 2. Tables (Prisma, old Supabase project), 4.10 Todos (`todo-manager.tsx`), 4.11 Users (`user-manager.tsx`), 4.12 Backup (`backup-manager.tsx`) (+17 more)
+Cohesion: 0.12
+Nodes (16): 4.10 Todos (`todo-manager.tsx`), 4.11 Users (`user-manager.tsx`), 4.12 Backup (`backup-manager.tsx`), 4.13 Settings (`profile-settings.tsx`), 4.14 AI chat bot / RAG (`rag-settings.tsx`), 4.15 Operation logs (`operation-logs-viewer.tsx`; `operation-logs-panel.tsx` is dead), 4.1 Shell, login, roles (`admin/page.tsx`, `admin-layout.tsx`), 4.2 Dashboard (`admin-dashboard.tsx`) (+8 more)
 
 ### Community 14 - "shared.js"
 Cohesion: 0.24
@@ -142,48 +142,48 @@ Nodes (4): 1. High-Level Design (HLD) Topology, 2. Current Target Directory Tree
 Cohesion: 0.70
 Nodes (3): edge(), node(), sync-architecture.sh script
 
-### Community 17 - "next"
-Cohesion: 0.15
-Nodes (13): nextConfig, next, @supabase/ssr, signIn(), SignInState, signOut(), LoginForm(), metadata (+5 more)
+### Community 17 - "login/actions.ts"
+Cohesion: 0.27
+Nodes (6): signIn(), SignInState, signOut(), LoginForm(), metadata, CurrentUserProps
 
-### Community 23 - "apps.ts"
-Cohesion: 0.20
-Nodes (11): @gokulsaraswat/auth, HubHome(), PortfolioHome(), portfolio, AppHome(), EmptySection(), AppMeta, AppSection (+3 more)
+### Community 23 - "placeholders.tsx"
+Cohesion: 0.24
+Nodes (7): HubHome(), PortfolioHome(), portfolio, AppHome(), EmptySection(), AppSection, getApp()
 
 ### Community 24 - "3. API by feature (server truth)"
-Cohesion: 0.14
-Nodes (14): 3. API by feature (server truth), Backup / restore (`/api/backup`), Blog ideas (`/api/blog-ideas`, `[id]`), Blogs (`/api/blogs`, `/api/blogs/[id]`), Comments (`/api/comments`, `[id]`), Courses + chapters (`/api/courses`, `[courseId]`, `[courseId]/chapters`, `[chapterId]`), Messages (`/api/contact`, `/api/messages`, `[id]`), Misc (+6 more)
+Cohesion: 0.08
+Nodes (23): 1.1 Auth today (custom, NOT Supabase Auth), 1.2 Operation log (audit), 1.3 Shared conventions, 1. Cross-cutting, 2. Tables (Prisma, old Supabase project), 3. API by feature (server truth), 5. New admin: how each feature maps (proposal, for Phase 1), 6. Security findings in bestportofolio (+15 more)
 
 ### Community 25 - "DESIGN (Phase 1, for Gokul's approval before any app code)"
 Cohesion: 0.22
 Nodes (8): 1. Product, 2. Visual system, 3. Information architecture (routes), 4. Roles per screen (delegated admin, per spec answers), 5. Mobile (mobile-first), 6. Patterns (shared component kit, shadcn/ui style, copied into `src/components/ui`), 7. Layout options (pick one; prototypes), DESIGN (Phase 1, for Gokul's approval before any app code)
 
-### Community 26 - "shell.tsx"
-Cohesion: 0.10
-Nodes (23): ARCHITECTURE: admin, HLD, LLD, react, Overview(), AppMark(), AppMarkProps, bg (+15 more)
+### Community 26 - "apps.ts"
+Cohesion: 0.08
+Nodes (29): ARCHITECTURE: admin, HLD, LLD, nextConfig, @gokulsaraswat/auth, next, react, ref_server_only (+21 more)
 
 ### Community 28 - "dependencies"
 Cohesion: 0.22
 Nodes (9): dependencies, @gokulsaraswat/auth, @gokulsaraswat/config, @gokulsaraswat/ui, next, react, react-dom, @supabase/ssr (+1 more)
 
 ## Knowledge Gaps
-- **196 isolated node(s):** `1. High-Level Design (HLD) Topology`, `2. Current Target Directory Tree`, `3. Low-Level Design (LLD) & SOLID Class Schemas`, `1. Product`, `2. Visual system` (+191 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 226 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **200 isolated node(s):** `Planning Chat: resume prompt`, `URGENT (Gokul only)`, `Where each repo stands`, `Requests waiting for the `platform` repo (collected from repo logs; platform chat applies, planning chat syncs)`, `GitHub / sync status (2026-11-14)` (+195 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 230 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `next` to `package.json`, `shell.tsx`, `app/layout.tsx`, `apps.ts`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **Why does `react` connect `shell.tsx` to `package.json`, `apps.ts`, `next`, `load.ts`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
-- **Why does `@gokulsaraswat/config` connect `load.ts` to `package.json`, `apps.ts`?**
+- **Why does `next` connect `apps.ts` to `package.json`, `app/layout.tsx`, `load.ts`, `login/actions.ts`, `placeholders.tsx`?**
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **Why does `react` connect `apps.ts` to `package.json`, `login/actions.ts`, `load.ts`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
-- **What connects `1. High-Level Design (HLD) Topology`, `2. Current Target Directory Tree`, `3. Low-Level Design (LLD) & SOLID Class Schemas` to the rest of the system?**
-  _196 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `@gokulsaraswat/config` connect `load.ts` to `package.json`, `apps.ts`?**
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **What connects `Planning Chat: resume prompt`, `URGENT (Gokul only)`, `Where each repo stands` to the rest of the system?**
+  _200 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `WORKLOG` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
