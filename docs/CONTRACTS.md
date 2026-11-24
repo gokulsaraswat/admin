@@ -13,6 +13,10 @@ Also: `@supabase/ssr` 0.12.x, `@supabase/supabase-js` 2.118.x.
 
 Install: `.npmrc` with `${NODE_AUTH_TOKEN}` (read:packages).
 
+## Expects (Supabase Auth settings)
+- Providers: email/password and Google (same Google OAuth provider GSpace uses).
+- Redirect URLs allow-list: `http://localhost:3001/auth/callback` and the production admin `https://<admin domain>/auth/callback`. Route `GET /auth/callback?code=...&next=/path` exchanges the code; `next` must be a relative path starting with `/`.
+
 ## Owns (Supabase, new platform project)
 ### `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)
 | Table | Columns | Rules |
@@ -40,6 +44,8 @@ RPCs (security definer, `authenticated` only):
 - `request_access(p_app text) returns access_requests`: pending member request for the caller; returns the existing row unchanged if any. Errors: 42501 not signed in, 22023 unknown app.
 - `decide_access_request(p_id uuid, p_approve boolean, p_role text default 'member') returns access_requests`: caller must be admin of the request's app; `p_role='admin'` needs super admin. Approve upserts `user_roles` and sets `approved`; deny sets `denied` (not allowed once approved). App admins cannot change an existing admin row. Errors: P0002 not found / not your app, 42501 not allowed, 22023 bad input.
 Test: `supabase/tests/access_requests_test.sql` (rolls back).
+- `list_app_members(p_app text) returns table (user_id uuid, role text, email text, name text, created_at timestamptz)` (SQL: `supabase/migrations/20261125130000_app_members.sql`, NOT APPLIED yet): security definer, stable, `authenticated` only; caller must be admin of `p_app` (or super admin), else 42501. Rows: `user_roles` of `p_app` + super admins without a row there (role `super_admin`), email/name from `auth.users` (`full_name`, else `name`). Ordered by role rank, then email. Test: `supabase/tests/app_members_test.sql` (rolls back).
+- Remove a member: client `delete from user_roles where user_id = $1 and app = $2` (no RPC). RLS: app admin deletes only `member` rows of their app, super admin any row; anything else deletes 0 rows. Last super admin protected by trigger. The user's `access_requests` row stays `approved`.
 
 ### Hub `config.json` publish location (agreed with Gokul 2026-10-31)
 Supabase Storage public bucket `public-config`, object `hub/config.json`. Shape = `@gokulsaraswat/config` `HubConfig` (v1). Writes: super admins only. Not created yet.

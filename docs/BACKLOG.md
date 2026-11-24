@@ -17,6 +17,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
 | ADM-F-001 | Invite-only access requests: `access_requests` table, `request_access` / `decide_access_request` RPCs, /access-requests page | P1 | blocked | needs: Gokul applies `20261125120000_access_requests.sql` + runs `supabase/tests/access_requests_test.sql`; blocks: GSpace sign-in gate | SQL + page committed 2026-11-25 (feat(access-requests)). SQL + test verified locally in PGlite with 5 mutation checks. Contract in platform/docs/CONTRACTS.md. Not runtime-checked in the browser (migration not applied). |
+| ADM-F-003 | App members with emails: `list_app_members(app)` RPC for app admins; remove member = delete `user_roles` row | P1 | blocked | needs: Gokul applies `20261125130000_app_members.sql` + runs `supabase/tests/app_members_test.sql`; blocks: GSpace members screen | SQL + test 2026-11-25 (feat(auth): Google sign-in + list_app_members). PGlite: all 3 tests pass, 6 mutation checks caught. Contract in platform/docs/CONTRACTS.md. No admin UI for members yet (add when needed). |
 
 ## Ideas (unscoped, not committed to)
 | ID | Idea | Pri | Status | Needs/Blocks | Notes |
@@ -30,3 +31,4 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Done (recent)
 | ID | Title | Commit | Date |
 |---|---|---|---|
+| ADM-F-002 | Google sign-in on /login (`signInWithGoogle` + `/auth/callback`), password form kept | feat(auth): Google sign-in + list_app_members | 2026-11-25 |

@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { CallbackError } from "./callback-error";
+import { GoogleButton } from "./google-button";
 import { LoginForm } from "./login-form";
 
 export const metadata: Metadata = { title: "Sign in · Admin" };
@@ -13,6 +16,15 @@ export default function LoginPage() {
             <h1 className="text-lg font-semibold">Admin</h1>
             <p className="text-sm text-muted-foreground">Sign in to manage your apps.</p>
           </div>
+        </div>
+        <Suspense>
+          <CallbackError />
+        </Suspense>
+        <GoogleButton />
+        <div className="my-5 flex items-center gap-3 text-xs text-muted-foreground">
+          <span className="h-px flex-1 bg-border" />
+          or use email
+          <span className="h-px flex-1 bg-border" />
         </div>
         <LoginForm />
         <p className="mt-6 text-xs text-muted-foreground">Accounts are invite-only. Ask a super admin for access.</p>

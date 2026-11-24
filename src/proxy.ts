@@ -4,7 +4,7 @@ import { supabaseEnv } from "@/lib/supabase/env";
 
 /**
  * Refreshes the Supabase session cookie on every request and sends signed-out
- * visitors to /login. Pages still check the session themselves; RLS is the real gate.
+ * visitors to /login (except `/auth/*`, the OAuth return). Pages still check the session themselves; RLS is the real gate.
  */
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -24,8 +24,9 @@ export async function proxy(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const signedIn = Boolean(data?.claims);
   const onLogin = request.nextUrl.pathname === "/login";
+  const authRoute = request.nextUrl.pathname.startsWith("/auth/");
 
-  if (signedIn === onLogin) {
+  if (!authRoute && signedIn === onLogin) {
     const target = request.nextUrl.clone();
     target.pathname = signedIn ? "/" : "/login";
     target.search = "";

@@ -1,5 +1,6 @@
 "use server";
 
+import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
@@ -19,6 +20,27 @@ export async function signIn(_prev: SignInState, formData: FormData): Promise<Si
   }
 
   redirect("/");
+}
+
+async function requestOrigin(): Promise<string> {
+  const h = await headers();
+  const origin = h.get("origin");
+  if (origin) return origin;
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  return `${h.get("x-forwarded-proto") ?? "https"}://${host}`;
+}
+
+export async function signInWithGoogle(): Promise<SignInState> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: "google",
+    options: { redirectTo: `${await requestOrigin()}/auth/callback?next=/` },
+  });
+  if (error || !data.url) {
+    console.error("signInWithGoogle failed:", error?.code, error?.message);
+    return { error: "Google sign-in is unavailable right now. Try again in a minute." };
+  }
+  redirect(data.url);
 }
 
 export async function signOut() {
