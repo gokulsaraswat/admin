@@ -31,4 +31,4 @@ rm -rf node_modules .next && npm ci && npm run lint && npm run build
 `CLAUDE.md` (agent rules), `AGENTS.md`, `WORKLOG.md`, `.claude-session.json`, `docs/CONTRACTS.md`, `docs/ARCHITECTURE.md`, `docs/SUPABASE-SETUP.md`, `COLLABORATORS.md`, `SECURITY.md`.
 
 ## License
-All rights reserved. See `LICENSE`.
+All rights reserved. See `LICENSE`
