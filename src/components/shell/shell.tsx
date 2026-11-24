@@ -4,6 +4,7 @@ import { CurrentUser } from "@/components/shell/current-user";
 import { MobileMenu } from "@/components/shell/mobile-menu";
 import { Rail } from "@/components/shell/rail";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { platformLinks } from "@/lib/platform-nav";
 import { getSession } from "@/lib/session";
 
 /** Rail + phone top bar. Each area (platform, portfolio, hub...) renders its own sidebar inside `children`. */
@@ -30,7 +31,7 @@ export async function Shell({ children }: { children: ReactNode }) {
       <Rail apps={session.apps} />
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="sticky top-0 z-10 flex items-center gap-2 border-b border-border bg-background px-3 py-2 md:hidden">
-          <MobileMenu apps={session.apps} />
+          <MobileMenu apps={session.apps} platformLinks={platformLinks(session)} />
           <span className="flex-1" />
           <ThemeToggle />
           {user}

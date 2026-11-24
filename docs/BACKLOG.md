@@ -16,6 +16,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Features
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
+| ADM-F-001 | Invite-only access requests: `access_requests` table, `request_access` / `decide_access_request` RPCs, /access-requests page | P1 | blocked | needs: Gokul applies `20261125120000_access_requests.sql` + runs `supabase/tests/access_requests_test.sql`; blocks: GSpace sign-in gate | SQL + page committed 2026-11-25 (feat(access-requests)). SQL + test verified locally in PGlite with 5 mutation checks. Contract in platform/docs/CONTRACTS.md. Not runtime-checked in the browser (migration not applied). |
 
 ## Ideas (unscoped, not committed to)
 | ID | Idea | Pri | Status | Needs/Blocks | Notes |
@@ -24,7 +25,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Tech debt
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
-| ADM-D-001 | node_modules incomplete (typescript, tailwindcss, @gokulsaraswat/* missing) so typecheck/build cannot run; no typecheck script | P2 | open | | Seen 2026-11-25. Fix: `NODE_AUTH_TOKEN=$(gh auth token) npm ci`; optionally add "typecheck": "tsc --noEmit". |
+| ADM-D-001 | node_modules incomplete (typescript, tailwindcss, @gokulsaraswat/* missing) so typecheck/build cannot run; no typecheck script | P2 | open | | Seen 2026-11-25. Fix: `NODE_AUTH_TOKEN=$(gh auth token) npm ci`; optionally add "typecheck": "tsc --noEmit". 2026-11-25: that `npm ci` restored node_modules locally; tsc, lint, build pass. Typecheck script still missing. |
 
 ## Done (recent)
 | ID | Title | Commit | Date |
