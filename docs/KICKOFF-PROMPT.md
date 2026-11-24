@@ -66,3 +66,54 @@ DESIGN DECISION (Gokul, 2026-10-31): the portfolio's admin UI is static and was 
 FIRST read admin/docs/SUPABASE-SETUP.md (owner checklist + DRAFT SQL for user_roles, RLS, config bucket; review the SQL with me before applying).
 ANSWERED by Gokul (2026-10-31): look = SHOW ME 2-3 prototype options and I pick; mobile = fully responsive, mobile-first; features = he uses ALMOST ALL of the portfolio admin (blogs + ideas, courses, projects, snippets, comments, messages, users, todos, backups, logs, RAG settings, and more): keep all in the spec, drop nothing without asking.
 Questions to ask me first: reference dashboards I like, Supabase project + keys setup (I create the project; never ask me to paste secrets in chat), migration of existing AdminUser rows + TOTP, config.json bucket/path, admin domain/Vercel project name.
+
+## UI UPGRADE ADD-ON (TODO, backlog ADM-I-001; master: platform/docs/PROMPTS.md)
+Use only when Gokul asks for the UI/motion upgrade. Paste after SHARED BLOCK + REPO SECTION.
+
+```text
+UI UPGRADE: presentation layer only, zero regression. TODO, not started (backlog: PLT-I-001, ADM-I-001, MOB-I-001, PRT-I-001).
+
+Real topology (verified 2026-11-25):
+- platform: shared @gokulsaraswat/{ui,config,auth}. READ-ONLY for this task.
+- admin: Next 16 + Supabase Auth. The ONE role-aware admin; "super admin" is a role (user_roles app='*'), not a separate app.
+- gokulmobilize: Astro 7 hub PWA at /apps + Capacitor Android.
+- bestportofolio: Next 16 public site + the AI chatbot (Gemini + Supabase vector search) + its own cookie-session admin. There is NO separate chatbot repo.
+- Out of scope: GSpace, Markdown-studio (no shared packages), gokul-omni-converter (Python desktop).
+
+RULE 1: ZERO REGRESSION AND CONTRACT PRESERVATION
+1. Do NOT alter API contracts: route paths, methods, status codes, request/response shapes. This includes:
+   - POST /api/chat: JSON { messages: [{ role, content }] } in; text/plain streamed chunks out (NOT SSE; the widget reads them with getReader()); 400 when messages is not a non-empty array.
+   - GET /api/chat-status -> { enabled }.
+   - The anonymous rate limits in bestportofolio/src/proxy.ts.
+2. Shared packages are read-only: no change to exports, props, or CSS variable names in @gokulsaraswat/*. Restyle with app-level overrides of the tokens in the consuming repo's own CSS.
+3. Preserve business logic and auth: state, data hooks, validation, role checks, env var names, and
+   - admin: src/proxy.ts, src/lib/session.ts, route-group layouts, src/features/hub/config/* (actions, load), supabase/;
+   - bestportofolio: signed-cookie session, requireAdmin, Prisma access;
+   - hub config.json contract: bucket public-config, path hub/config.json, shape in @gokulsaraswat/config.
+4. Additive only: styling, layout, typography, CSS/Tailwind, motion. Wrap existing logic in upgraded UI components; never rewrite data fetching.
+
+RULE 2: WORKFLOW PER CHANGE
+1. Map dependencies of every file you plan to touch (which repos consume it).
+2. Propose the plan first: exact files, and confirm no API contract, shared type, auth flow or env var changes. Wait for approval (always when more than one repo is touched).
+3. One repo at a time. Proposed order (not yet confirmed by Gokul): gokulmobilize (pilot) -> bestportofolio (site, then chat widget, then its admin) -> admin.
+4. Verify after every repo with that repo's own commands (below); fix before moving on. Commit/push only per RULES.md section 2, after verification passes.
+5. Ask before adding any dependency beyond the ones listed below.
+
+VISUAL AND MOTION STANDARDS
+- Clean typography, layered surface depth, hardware-accelerated motion only (transform, opacity). Use the existing tokens (--motion-ease-enter/-exit, --motion-duration-*); respect prefers-reduced-motion.
+- Admin dashboards (admin repo and bestportofolio's admin panel): high-density, fast, scannable; subtle micro-interactions, crisp tables, no heavy or distracting animation, no smooth-scroll hijack.
+- User-facing views (portfolio site, hub): richer hero/scroll motion; chat widget streaming polish (typing indicator, chunk fade-in) without touching the fetch/stream code.
+
+Animation libraries installed 2026-11-25 (public npm, not yet used anywhere):
+- admin: motion, @formkit/auto-animate
+- gokulmobilize: motion, @formkit/auto-animate
+- bestportofolio: gsap, @gsap/react, lenis, @formkit/auto-animate; keeps its existing framer-motion ^12 (same engine as `motion`; import from 'framer-motion', do not add `motion` alongside it).
+```
+
+```text
+Repo: admin.
+- Prerequisite (ADM-D-001): node_modules lacks typescript, tailwindcss and @gokulsaraswat/*. Run `NODE_AUTH_TOKEN=$(gh auth token) npm ci` first, or nothing can be verified.
+- Verify: `npm run lint && npx tsc --noEmit && npm run build` (no typecheck script exists).
+- Scope: src/components/*, src/app/globals.css, src/features/hub/config/{editor,tile-row}.tsx presentation only. Dense tables and rails; motion limited to micro-interactions (`motion`, @formkit/auto-animate for list reorders).
+- Do not touch src/proxy.ts, src/lib/session.ts, src/lib/supabase/*, src/features/hub/config/{actions,load}.ts, supabase/.
+```

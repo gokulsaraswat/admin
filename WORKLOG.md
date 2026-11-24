@@ -7,6 +7,7 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Not built: Supabase client/login, `user_roles` SQL (draft only in docs/SUPABASE-SETUP.md, not applied), app switcher, sections, config publisher. Not deployed to Vercel.
 
 ## Done
+- 2026-11-25: UI/motion upgrade queued as TODO only (no source changes). Prompt added to docs/KICKOFF-PROMPT.md; backlog item added; animation libs installed but unused (see backlog). ADM-I-001, ADM-D-001.
 - Step 6 (2026-10-31): Phase 2a code (see current state).
 - Step 1 (2026-10-31): repo kit. See `.claude-session.json` sprint.done[0].
 - Step 2 (2026-10-31): Phase 0 spec `docs/PORTFOLIO-ADMIN-SPEC.md` (data, API, UI per feature, mapping proposal, 11 questions). Key facts: old TOTP not implemented (nothing to migrate); roles/permissions never enforced server-side.
