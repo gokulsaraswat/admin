@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   ".project-architecture.md": {
-    "mtime": 1793464568.9431584,
-    "seen": 1793464570.0443242,
-    "ast_hash": "4403b027f772dd170fc0fa46b321b435",
+    "mtime": 1793465032.0469916,
+    "seen": 1793465034.742412,
+    "ast_hash": "a1d2ef58cb8686045e80dd0295ec10cb",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -174,9 +174,9 @@
     "semantic_hash": ""
   },
   "docs/DESIGN.md": {
-    "mtime": 1793460529.459614,
-    "seen": 1793460535.0252008,
-    "ast_hash": "8ccd695493f0bccd844d2cc12f30074e",
+    "mtime": 1793465028.4842465,
+    "seen": 1793465034.7426078,
+    "ast_hash": "fe176260726fc66841e407bbe6882c4c",
     "semantic_hash": ""
   },
   "docs/design/prototypes/a-rail.html": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "src/app/(admin)/hub/config/page.tsx": {
-    "mtime": 1793464361.1484966,
-    "seen": 1793464566.73103,
-    "ast_hash": "c4afb7179f88a6a1ec0d2be22dd0f0f0",
+    "mtime": 1793464997.6234295,
+    "seen": 1793465034.741347,
+    "ast_hash": "d5dd6606f441be48186d0aa20ffb6551",
     "semantic_hash": ""
   },
   "src/app/(admin)/hub/layout.tsx": {
@@ -387,6 +387,36 @@
     "mtime": 1793464308.3658772,
     "seen": 1793464566.731303,
     "ast_hash": "508869540b2aff5fdd9717808608fbdf",
+    "semantic_hash": ""
+  },
+  "src/features/hub/config/actions.ts": {
+    "mtime": 1793464967.41612,
+    "seen": 1793465034.7420318,
+    "ast_hash": "c944eb2a4bc8da858a0c30f9b3bbb14a",
+    "semantic_hash": ""
+  },
+  "src/features/hub/config/constants.ts": {
+    "mtime": 1793464967.8492386,
+    "seen": 1793465034.7420318,
+    "ast_hash": "445275fd5bbc03ed7b8aa1fc61dfc7fd",
+    "semantic_hash": ""
+  },
+  "src/features/hub/config/editor.tsx": {
+    "mtime": 1793465005.2891505,
+    "seen": 1793465034.742033,
+    "ast_hash": "5bfde5b5ad8165263a0ba4eb1caea3d7",
+    "semantic_hash": ""
+  },
+  "src/features/hub/config/load.ts": {
+    "mtime": 1793464968.1393464,
+    "seen": 1793465034.742034,
+    "ast_hash": "eef1ba79ba59eb3267e83180e3d6bd48",
+    "semantic_hash": ""
+  },
+  "src/features/hub/config/tile-row.tsx": {
+    "mtime": 1793464996.8254607,
+    "seen": 1793465034.742034,
+    "ast_hash": "c69473ca05e097ab405c8009aa849136",
     "semantic_hash": ""
   }
 }

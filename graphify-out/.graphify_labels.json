@@ -5,7 +5,7 @@
   "3": "REPO SECTIONS",
   "4": "🤖 System Architecture & Co-Worker Protocol",
   "5": "app/layout.tsx",
-  "6": "devDependencies",
+  "6": "load.ts",
   "7": "admin",
   "8": "WORKLOG: admin",
   "9": "Owns (Supabase, new platform project)",
@@ -26,5 +26,6 @@
   "24": "3. API by feature (server truth)",
   "25": "DESIGN (Phase 1, for Gokul's approval before any app code)",
   "26": "shell.tsx",
-  "27": "error.tsx"
+  "27": "error.tsx",
+  "28": "dependencies"
 }
