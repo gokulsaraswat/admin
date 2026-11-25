@@ -1,7 +1,7 @@
 # AGENTS.md: admin
 
 Read in order: CLAUDE.md, WORKLOG.md, .claude-session.json, docs/CONTRACTS.md, docs/ARCHITECTURE.md, docs/KICKOFF-PROMPT.md.
-Master docs: platform/docs/ (WORKLOG, CONTRACTS, REPO-KIT, PROMPTS) at github.com/gokulsaraswat/platform.
+Master docs: platform/docs/ (WORKLOG, CONTRACTS, REPO-KIT, PROMPTS) at github.com/gokulsaraswat/platform; index: docs/PLATFORM-DOCS.md.
 Rules: ask when unsure, never invent names (`[REQ_CONTEXT]`), small steps, update WORKLOG.md each step, never push to main as a collaborator.
 
 <!-- BEGIN:nextjs-agent-rules -->
