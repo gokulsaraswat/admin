@@ -2,6 +2,10 @@
 
 Master status of all repos: platform/docs/WORKLOG.md. Update this file after every step.
 
+## Upgrade program (2026-11-25, phases A-C; REPO-UPGRADE-AGENT-RULES at the workspace root)
+- Phase A: `docs/FEATURES.md` = every route, page, server action, RPC/table call with the role needed (UI check vs database check) and how to verify, plus the baseline: `npm ci` 48 s (0 vulnerabilities), build cold 23.7 s / warm 18-20 s, lint 0 problems, `tsc --noEmit` 0 errors, SQL tests 5/5 in local PGlite (in-memory, no network), per-route client JS 172.8-207.7 KB gzip (shared 167.3 KB; `/hub/config` alone loads the editor + zod). ARCHITECTURE/CONTRACTS: hub config editor + Storage rule were described as "not built" / "super admins only" (stale), fixed.
+- Local machine note: an old `next dev -p 3001` (started 03:39 by the sign-in chat) held two native modules open, so `npm ci` could not delete them. They were moved, not deleted, to the git-ignored `out/_locked-by-dev-server/` and `npm ci` then succeeded. Stop that dev server and delete `out/_locked-by-dev-server/` when convenient.
+
 ## Current state (2026-10-31)
 - Repo kit done: Next.js 16.4.3 + React 19.3 + Tailwind v4 placeholder app, `@gokulsaraswat/ui` 0.1.0 tokens wired, Node 24 pinned, CI (lint + build), docs. Clean install + lint + build pass locally; CI green on first push (run 41213102925).
 - Not built: Supabase client/login, `user_roles` SQL (draft only in docs/SUPABASE-SETUP.md, not applied), app switcher, sections, config publisher. Not deployed to Vercel.

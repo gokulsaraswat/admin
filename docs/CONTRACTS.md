@@ -48,7 +48,7 @@ Test: `supabase/tests/access_requests_test.sql` (rolls back).
 - Remove a member: client `delete from user_roles where user_id = $1 and app = $2` (no RPC). RLS: app admin deletes only `member` rows of their app, super admin any row; anything else deletes 0 rows. Last super admin protected by trigger. The user's `access_requests` row stays `approved`.
 
 ### Hub `config.json` publish location (agreed with Gokul 2026-10-31)
-Supabase Storage public bucket `public-config`, object `hub/config.json`. Shape = `@gokulsaraswat/config` `HubConfig` (v1). Writes: super admins only. Not created yet.
+Supabase Storage public bucket `public-config`, object `hub/config.json`. Shape = `@gokulsaraswat/config` `HubConfig` (v1). Writes (Storage RLS): `has_permission('<first folder>', 'config.edit')`, i.e. hub admins, super admins and members granted `hub` `config.edit`. Public read via the public URL, no listing. SQL: `supabase/migrations/20261031130000_public_config_bucket.sql` (NOT APPLIED yet), test `supabase/tests/public_config_test.sql`. Editor: `/hub/config`.
 
 ### TO BE UPDATED
 `content(app, slug, body)` and `app_config(app, key, value jsonb)` shapes, routes per app section, base path (admin has none so far).

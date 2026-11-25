@@ -24,7 +24,9 @@ Browser --> Vercel (Next.js 16 App Router, project gokul-admin)
                           linkProvider, returns via /auth/callback?next=/account), Unlink with confirm (unlinkProvider; disabled
                           for the last one). Linked from the platform nav and the user's email in the sidebar/top bar
     portfolio/            AppArea guard + Portfolio sidebar; page = section list; [section] = empty states (9, prerendered)
-    hub/                  AppArea guard + Hub sidebar; config/ = empty state (2d builds it)
+    hub/                  AppArea guard + Hub sidebar; config/ = tiles editor (src/features/hub/config: load.ts
+                          has_permission('hub','config.edit') + Storage download, client editor.tsx + tile-row.tsx, server action
+                          publishHubConfig -> Storage upload public-config/hub/config.json; bucket SQL NOT APPLIED)
     error.tsx             retry boundary
   src/app/robots.ts       disallow all
         |
@@ -49,3 +51,4 @@ Browser --> Vercel (Next.js 16 App Router, project gokul-admin)
 - Apps list: `src/lib/apps.ts` typed from `@gokulsaraswat/config` `AppId` (minus `admin`); colours `--app-<id>` in `globals.css` -> Tailwind `bg-app-<id>`.
 - Styling: Tailwind v4 + `@gokulsaraswat/ui` tokens; dark = class `dark` on `<html>`, toggled by `ThemeToggle` (localStorage `theme`).
 - `docs/design/prototypes/`: static HTML prototypes (not built, not linted).
+- Feature inventory (every route, action, RPC, role, how to verify) and the speed baseline: `docs/FEATURES.md`.

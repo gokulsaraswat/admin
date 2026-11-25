@@ -27,7 +27,7 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Tech debt
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
-| ADM-D-001 | node_modules incomplete (typescript, tailwindcss, @gokulsaraswat/* missing) so typecheck/build cannot run; no typecheck script | P2 | open | | Seen 2026-11-25. Fix: `NODE_AUTH_TOKEN=$(gh auth token) npm ci`; optionally add "typecheck": "tsc --noEmit". 2026-11-25: that `npm ci` restored node_modules locally; tsc, lint, build pass. Typecheck script still missing. |
+| ADM-D-001 | node_modules incomplete (typescript, tailwindcss, @gokulsaraswat/* missing) so typecheck/build cannot run; no typecheck script | P2 | open | | Seen 2026-11-25. Fix: `NODE_AUTH_TOKEN=$(gh auth token) npm ci`; optionally add "typecheck": "tsc --noEmit". 2026-11-25: that `npm ci` restored node_modules locally; tsc, lint, build pass. Typecheck script still missing. 2026-11-25 phase A baseline in docs/FEATURES.md (npm ci clean, 0 vulnerabilities). |
 
 ## Done (recent)
 | ID | Title | Commit | Date |
