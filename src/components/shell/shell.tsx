@@ -20,7 +20,9 @@ export async function Shell({ children }: { children: ReactNode }) {
         <div className="w-full max-w-sm">
           <h1 className="text-lg font-semibold">You don&apos;t have access to any app yet</h1>
           <p className="mt-2 text-sm text-muted-foreground">Ask a super admin to add you to an app. Then sign in again.</p>
-          <div className="mt-6">{user}</div>
+          <div className="mt-6">
+            <CurrentUser email={session.email} superAdmin={session.superAdmin} accountLink={false} />
+          </div>
         </div>
       </main>
     );

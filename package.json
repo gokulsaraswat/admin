@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.11.0",
-    "@gokulsaraswat/auth": "^0.1.0",
-    "@gokulsaraswat/config": "^0.1.0",
+    "@gokulsaraswat/auth": "^0.2.0",
+    "@gokulsaraswat/config": "^0.2.0",
     "@gokulsaraswat/ui": "^0.1.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.119.2",

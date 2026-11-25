@@ -6,22 +6,22 @@ What this repo exposes and expects. Master: platform/docs/CONTRACTS.md (the mast
 | Package | Version | Used for |
 |---|---|---|
 | `@gokulsaraswat/ui` | ^0.1.0 | `tokens.css` + `tailwind.css` imported in `src/app/globals.css` |
-| `@gokulsaraswat/config` | 0.1.0 | `AppId` for the app list (`src/lib/apps.ts`) |
-| `@gokulsaraswat/auth` | 0.1.0 | `getUserRoles`, `hasRole`, `isSuperAdmin` in `src/lib/session.ts` |
+| `@gokulsaraswat/config` | ^0.2.0 | `AppId` for the app list (`src/lib/apps.ts`, incl. `converter`), `AccessRequest` (`src/features/access-requests/types.ts`) |
+| `@gokulsaraswat/auth` | ^0.2.0 | `getUserRoles`, `hasRole`, `isSuperAdmin` (`src/lib/session.ts`); `AUTH_PROVIDERS`, `isAuthProviderId`, `signInWithProvider` (login), `listIdentities`, `linkProvider`, `unlinkProvider`, `IdentityError` (`src/features/account/`) |
 
 Also: `@supabase/ssr` 0.12.x, `@supabase/supabase-js` 2.118.x.
 
 Install: `.npmrc` with `${NODE_AUTH_TOKEN}` (read:packages).
 
 ## Expects (Supabase Auth settings)
-- Providers: email/password and Google (same Google OAuth provider GSpace uses).
-- Redirect URLs allow-list: `http://localhost:3001/auth/callback` and the production admin `https://<admin domain>/auth/callback`. Route `GET /auth/callback?code=...&next=/path` exchanges the code; `next` must be a relative path starting with `/`.
+- Providers: email/password, Google and GitHub (one Supabase project for every app; master: platform/docs/CONTRACTS.md "Shared sign-in"). "Allow manual linking" must be on for /account.
+- Redirect URLs allow-list: `http://localhost:3001/auth/callback` and the production admin `https://<admin domain>/auth/callback`. Route `GET /auth/callback?code=...&next=/path` exchanges the code (sign-in `next=/`, linking `next=/account`); `next` must be a relative path starting with `/`. Provider errors (`?error_code=`) go to `/login?error=oauth`, or `/account?error=<code>` for linking (e.g. `identity_already_exists`).
 
 ## Owns (Supabase, new platform project)
 ### `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)
 | Table | Columns | Rules |
 |---|---|---|
-| `user_roles` | `user_id uuid` -> `auth.users` (cascade), `app text` (`*` or app id), `role text`, `created_at` | PK `(user_id, app)`; `super_admin` iff `app='*'` (matches master CONTRACTS) |
+| `user_roles` | `user_id uuid` -> `auth.users` (cascade), `app text` (`*` or app id; ids checked by `is_app_id()` once `20261125140000_app_converter.sql` is applied, which adds `converter`), `role text`, `created_at` | PK `(user_id, app)`; `super_admin` iff `app='*'` (matches master CONTRACTS) |
 | `permissions` | `app`, `key` (`<area>.view|edit|publish`), `label` | catalog, PK `(app, key)`, changed only by migrations; portfolio has 18 keys |
 | `user_permissions` | `user_id`, `app`, `permission`, `granted_by` (default caller), `created_at` | PK `(user_id, app, permission)`; FK `(user_id, app)` -> `user_roles` (cascade); FK `(app, permission)` -> `permissions` |
 
@@ -34,7 +34,7 @@ Invite-only access for every app. Master copy (what consumers such as GSpace cod
 |---|---|---|
 | `id` | uuid PK | `gen_random_uuid()` |
 | `user_id` | uuid -> `auth.users` (cascade) | requester |
-| `app` | text | `hub`, `admin`, `portfolio`, `gspace`, `studio`, `gym` |
+| `app` | text | `hub`, `admin`, `portfolio`, `gspace`, `studio`, `gym`; `converter` after `20261125140000_app_converter.sql` (NOT APPLIED; replaces the hardcoded lists in the checks and `request_access` with `is_app_id(text)`; test `supabase/tests/app_converter_test.sql`) |
 | `email`, `name` | text, text null | copied from `auth.users` (`email`; `raw_user_meta_data` `full_name` or `name`) |
 | `status` | text | `pending` (default), `approved`, `denied` |
 | `requested_role` | text | `member` (default) or `admin`; `request_access` always writes `member` |

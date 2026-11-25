@@ -11,5 +11,6 @@ export function platformLinks(session: Session | null): NavItem[] {
   if (session?.superAdmin || session?.roles.some((r) => r.role === "admin")) {
     links.push({ href: "/access-requests", label: "Access requests" });
   }
+  if (session) links.push({ href: "/account", label: "Connected accounts" });
   return links;
 }

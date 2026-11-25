@@ -8,6 +8,7 @@
   --app-gspace: oklch(0.58 0.2 300);
   --app-studio: oklch(0.72 0.15 75);
   --app-gym: oklch(0.62 0.19 30);
+  --app-converter: oklch(0.5 0.05 220);
 }
 
 @theme inline {
@@ -16,6 +17,7 @@
   --color-app-gspace: var(--app-gspace);
   --color-app-studio: var(--app-studio);
   --color-app-gym: var(--app-gym);
+  --color-app-converter: var(--app-converter);
 }
 
 body {

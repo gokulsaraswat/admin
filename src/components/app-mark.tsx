@@ -7,6 +7,7 @@ const bg: Record<ManagedAppId | "platform", string> = {
   gspace: "bg-app-gspace text-white",
   studio: "bg-app-studio text-black",
   gym: "bg-app-gym text-white",
+  converter: "bg-app-converter text-white",
 };
 
 interface AppMarkProps {

@@ -6,7 +6,7 @@ export function CallbackError() {
   if (useSearchParams().get("error") !== "oauth") return null;
   return (
     <p role="alert" className="mb-4 text-sm text-destructive">
-      Google sign-in did not finish. Try again.
+      Sign-in did not finish. Try again.
     </p>
   );
 }

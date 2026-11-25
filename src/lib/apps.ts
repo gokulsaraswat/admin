@@ -47,6 +47,7 @@ export const managedApps: readonly AppMeta[] = [
   { id: "gspace", name: "GSpace", mark: "S", ready: false, sections: [] },
   { id: "studio", name: "Studio", mark: "M", ready: false, sections: [] },
   { id: "gym", name: "Gym", mark: "Y", ready: false, sections: [] },
+  { id: "converter", name: "Converter", mark: "C", ready: false, sections: [] },
 ];
 
 export function getApp(id: ManagedAppId): AppMeta {

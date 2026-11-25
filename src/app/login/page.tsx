@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { CallbackError } from "./callback-error";
-import { GoogleButton } from "./google-button";
+import { ProviderButtons } from "./provider-buttons";
 import { LoginForm } from "./login-form";
 
 export const metadata: Metadata = { title: "Sign in · Admin" };
@@ -20,7 +20,7 @@ export default function LoginPage() {
         <Suspense>
           <CallbackError />
         </Suspense>
-        <GoogleButton />
+        <ProviderButtons />
         <div className="my-5 flex items-center gap-3 text-xs text-muted-foreground">
           <span className="h-px flex-1 bg-border" />
           or use email

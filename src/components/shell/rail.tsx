@@ -13,6 +13,7 @@ const bar: Record<ManagedAppId | "platform", string> = {
   gspace: "before:bg-app-gspace",
   studio: "before:bg-app-studio",
   gym: "before:bg-app-gym",
+  converter: "before:bg-app-converter",
 };
 
 export function Rail({ apps }: { apps: readonly AppMeta[] }) {
