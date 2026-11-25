@@ -27,9 +27,10 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Tech debt
 | ID | Title | Pri | Status | Needs/Blocks | Notes |
 |---|---|---|---|---|---|
-| ADM-D-001 | node_modules incomplete (typescript, tailwindcss, @gokulsaraswat/* missing) so typecheck/build cannot run; no typecheck script | P2 | open | | Seen 2026-11-25. Fix: `NODE_AUTH_TOKEN=$(gh auth token) npm ci`; optionally add "typecheck": "tsc --noEmit". 2026-11-25: that `npm ci` restored node_modules locally; tsc, lint, build pass. Typecheck script still missing. 2026-11-25 phase A baseline in docs/FEATURES.md (npm ci clean, 0 vulnerabilities). |
 
 ## Done (recent)
 | ID | Title | Commit | Date |
 |---|---|---|---|
+| ADM-D-001 | node_modules incomplete; no typecheck script (`npm ci` restores; `npm run typecheck` + `npm test` added) | fix(auth): keep the OAuth callback redirect on this origin | 2026-11-25 |
+| ADM-B-001 | OAuth callback `next` check passed `/<tab>/host` (URL parser strips tab/CR/LF -> `//host`, off-origin redirect after a successful code exchange; an invalid port there threw a 500). Now resolved + origin-compared; 6 `node:test` cases (old code fails 3) | fix(auth): keep the OAuth callback redirect on this origin | 2026-11-25 |
 | ADM-F-002 | Google sign-in on /login (`signInWithGoogle` + `/auth/callback`), password form kept | feat(auth): Google sign-in + list_app_members | 2026-11-25 |

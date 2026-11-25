@@ -64,7 +64,8 @@ Plain-language review of each: `docs/SQL-REVIEW.md`.
 | `npm run dev` / `npx next start -p 3001` | dev / production server (use :3001 for real Supabase calls) | - |
 | `npm run build` | production build (Turbopack, typechecks too) | 22 static pages, routes as above |
 | `npm run lint` | ESLint (next core-web-vitals + typescript + cross-app import ban) | 0 problems |
-| `npx tsc --noEmit` | typecheck | 0 errors |
+| `npm run typecheck` | `tsc --noEmit` | 0 errors |
+| `npm test` | `node --test` over `tests/*.test.mjs` (Node 24 strips TypeScript types; no test dependency) | all pass |
 | SQL tests | paste a test file into the Supabase SQL editor after its migration | one row "ALL ... PASSED" |
 
 ## Baseline (2026-11-25, Windows, Node 24.14.1, npm 11.11.0, Next.js 16.4.6)

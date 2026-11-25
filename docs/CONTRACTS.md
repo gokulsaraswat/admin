@@ -15,7 +15,7 @@ Install: `.npmrc` with `${NODE_AUTH_TOKEN}` (read:packages).
 
 ## Expects (Supabase Auth settings)
 - Providers: email/password, Google and GitHub (one Supabase project for every app; master: platform/docs/CONTRACTS.md "Shared sign-in"). "Allow manual linking" must be on for /account.
-- Redirect URLs allow-list: `http://localhost:3001/auth/callback` and the production admin `https://<admin domain>/auth/callback`. Route `GET /auth/callback?code=...&next=/path` exchanges the code (sign-in `next=/`, linking `next=/account`); `next` must be a relative path starting with `/`. Provider errors (`?error_code=`) go to `/login?error=oauth`, or `/account?error=<code>` for linking (e.g. `identity_already_exists`).
+- Redirect URLs allow-list: `http://localhost:3001/auth/callback` and the production admin `https://<admin domain>/auth/callback`. Route `GET /auth/callback?code=...&next=/path` exchanges the code (sign-in `next=/`, linking `next=/account`); `next` must be a path on the same origin: it is resolved against the request origin and anything that lands elsewhere (e.g. `//host`, or `/<tab>/host`, which the URL parser turns into `//host`) becomes `/` (`src/app/auth/callback/safe-next.ts`, `tests/safe-next.test.mjs`). Provider errors (`?error_code=`) go to `/login?error=oauth`, or `/account?error=<code>` for linking (e.g. `identity_already_exists`).
 
 ## Owns (Supabase, new platform project)
 ### `user_roles`, `permissions`, `user_permissions` (owned here; SQL: `supabase/migrations/20261031120000_roles_permissions.sql`, APPLIED 2026-10-31)

@@ -12,8 +12,8 @@ Browser --> Vercel (Next.js 16 App Router, project gokul-admin)
                           (@gokulsaraswat/auth signInWithProvider, PKCE verifier cookie, redirectTo <origin>/auth/callback?next=/)
                           -> Supabase -> provider; ?error=oauth shows a retry message;
                           email + password form -> server action signIn (supabase.auth.signInWithPassword); signOut
-  src/app/auth/callback/  GET route (sign-in and linking): exchangeCodeForSession(code) -> redirect to `next` (relative "/..." only,
-                          else /); no/bad code or ?error_code -> /login?error=oauth, or /account?error=<code> when next=/account.
+  src/app/auth/callback/  GET route (sign-in and linking): exchangeCodeForSession(code) -> redirect to `next` (same-origin path only, checked
+                          after URL parsing in safe-next.ts, else /); no/bad code or ?error_code -> /login?error=oauth, or /account?error=<code> when next=/account.
                           Signed-in users without roles get the Shell no-access screen
   src/app/(admin)/        Suspense -> Shell (src/components/shell/shell.tsx): getSession() -> rail with the user's apps,
                           platform sidebar, email + Super admin label; no roles -> no-access screen; error.tsx retry
@@ -51,4 +51,5 @@ Browser --> Vercel (Next.js 16 App Router, project gokul-admin)
 - Apps list: `src/lib/apps.ts` typed from `@gokulsaraswat/config` `AppId` (minus `admin`); colours `--app-<id>` in `globals.css` -> Tailwind `bg-app-<id>`.
 - Styling: Tailwind v4 + `@gokulsaraswat/ui` tokens; dark = class `dark` on `<html>`, toggled by `ThemeToggle` (localStorage `theme`).
 - `docs/design/prototypes/`: static HTML prototypes (not built, not linted).
+- Tests: `tests/*.test.mjs` with `node:test` (`npm test`, also in CI); they import the TypeScript sources directly (Node 24 type stripping), so tested modules must not use `@/` aliases or Next-only imports.
 - Feature inventory (every route, action, RPC, role, how to verify) and the speed baseline: `docs/FEATURES.md`.
