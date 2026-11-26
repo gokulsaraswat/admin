@@ -1,6 +1,44 @@
 # NEXT SESSION: context, prompt and plan (workspace root, not in git)
 
-Saved 2026-11-26. Read this first in the next chat.
+Saved 2026-11-26, updated 2026-11-27 (section 0 is the current state). Read this first in the next chat.
+
+## 0. HANDOFF STATE (2026-11-27, read this first; it overrides older lines below)
+
+**Decision by Gokul (2026-11-27): LOGIC first. Design (Signal, redesign branches) and the old->new data migration come LATER.**
+Everything below is pushed to `main` in each repo unless noted. SQL is never applied by an agent; npm releases need Gokul's OK; redesign branches are never merged without "merge".
+
+### Done since the last handoff (all pushed)
+| Repo | Commits | What |
+|---|---|---|
+| bestportofolio | 7e36f52, 0a347c6, c54c7b8, 9bf011a, abf416d, 5c6e827 | Phase B security: phone out of public profile + JSON-LD (PRT-B-004), no DB writes in public blog/snippet GETs (B-005), no chat prompt logging (B-006), robots.txt (B-007), chat config check without Gemini (`GET /api/chat/config`, B-008), F2 decision (B-009) |
+| bestportofolio | a5325c0, 8ee5a1f, e44f18a, 5e0dbdd, ff31231 | cookie banner removed (B-010), privacy text rewritten (B-011), Phase C: 18 + 21 unused deps removed and 30 unreferenced files deleted (C-001..003); Vercel deploy green |
+| admin | dd9639f, 7e210af, 69a5b54, 9720426 | `docs/SQL-REVIEW.md` (5 migrations reviewed, no blocking issue; notes 2/4/6 accepted), `(admin)/loading.tsx` skeleton, Phase C recheck (typecheck 0 errors, lint clean, tests 6/6, build 22/22 after `npm ci` + `next typegen`) |
+| GSpace (`Progress/`) | 8aa0f5d, cdb592f, 75d21ef | `docs/FEATURES.md` + baseline, backlog order fix, security fix: `escapeHtml`/`escapeJs` now escape quotes (GSP-B-005) |
+| gokulmobilize | 0d689e9 | Phase C step 1: SW precache 357.2 KB -> 134.9 KB (sign-in island cached at runtime), MOB-C-001 |
+| platform | e98edc5, bc8219b | status table in `docs/UPGRADE-PROGRAM.md`; `@gokulsaraswat/config` gets portfolio zod schemas (`packages/config/src/portfolio.ts`, tests 9/9). NOT released, NO changeset yet |
+
+### Pending, in this order (logic only)
+1. **platform: new package `@gokulsaraswat/mdx` v0.1** (Opus 5.5 **xhigh**; security-critical). Safe DB-stored MDX: NO import/export/JS expressions, component allow-list (Callout, CodeTabs, Figure, Embed with host allow-list, Steps, FileTree), lint + escape helpers, `body_format 'mdx'` contract (CONTRACTS P1). Needs a hostile-input test suite (script tags, `javascript:` links, `<iframe>` hosts, expressions `{...}`, ESM, JSX props with functions, huge input). Changeset only; release after Gokul's OK.
+2. **admin: portfolio SQL drafts** (Opus 5.5 **xhigh**; security-critical). From `platform/docs/CONTRACTS.md` "Portfolio data" P1-P7: new files `admin/supabase/migrations/<timestamp>_portfolio_*.sql` (tables, RLS, grants, RPCs, storage buckets, default rows) + rollback tests `admin/supabase/tests/portfolio_*_test.sql`, each marked NOT APPLIED, plus a plain-language review in `docs/SQL-REVIEW.md`. Reuse `has_app_role`, `has_permission`, `is_super_admin`. Run the 5 existing SQL tests style (PGlite) if available. Do not apply anything.
+3. **admin: portfolio admin section logic** after mdx is released (Opus high): server actions + validation using the config schemas; no migration script and no redesign yet.
+4. Then (LATER, not now): `astro` branch design (Signal), Astro rebuild, redesign branches (admin/GSpace/gokulmobilize/Markdown-studio/omni), old->new migration script.
+Gokul still owes: song list, real stat numbers (is 98% uptime right?), extra feature list. Ask only if blocking.
+
+### Where each task runs (Gokul, 2026-11-27)
+- **Other PC, Opus 5.5 / Fable high or xhigh** (the new chat): 1 mdx package, 2 admin portfolio SQL drafts, 3 admin portfolio section logic, and everything in "LATER" (Astro rebuild, redesigns, migration script). Orchestrator on Opus 5.5 high; xhigh for mdx + SQL; review pass after each.
+- **This Mac, Sonnet 5.5 (inline, medium/high)**: small and mechanical work only: bug fixes with evidence, docs, backlog, baselines, grep-proven cleanup, SW/perf tweaks, status updates. Do NOT start mdx, SQL or redesign here.
+
+### Machine and tooling gotchas (this Mac; a new PC may differ)
+- `npm` is aliased to `pmg npm` (SafeDep guard). Its proxy fails on GitHub Packages blobs (`SELF_SIGNED_CERT_IN_CHAIN`). Installs of `@gokulsaraswat/*` need the real npm: `NODE_AUTH_TOKEN="$(gh auth token)" command npm ci` with a `gh` account that has `read:packages`. Gokul approved this bypass for these repos on 2026-11-26. Never echo the token. `gh auth token -u gokulsaraswat` was not logged in here.
+- Bash `rm`, `git rm`, `git checkout -- <file>` and edits to permission settings are denied for agents. Ask Gokul to run deletes himself with the `!` prefix.
+- Reading `dist/` is denied; do not probe `.env*` files.
+- `next-env.d.ts` (bestportofolio) and `package-lock.json` (checkers-gym-management) show as modified from builds/other work: never commit them by accident; stage explicit paths.
+- Run `next typegen` (admin) after `npm ci` before `tsc`. `.project-architecture.md` diffs are hook output; leave unstaged.
+- Pushes: GSpace remote moved to github.com/gokulsaraswat/GSpace (old URL still redirects). A version-bump bot pushes to GSpace main: `git pull --rebase` before push.
+- Background `Agent` runs hit API 503s and `npm ci` blockers earlier; work was done inline instead. If agents are used, give each one repo and tell it not to read `.env*`.
+
+### Do not touch
+Auth/sign-in code (sign-in session owns it), `@gokulsaraswat/auth`, Markdown-studio (own session), gokul-omni-converter (paused, `stash@{0}`), GSpace `src/files` and `stash@{0}`, any applied-SQL, any release.
 
 ## 1. Paste this as the first message of the new chat
 ```
@@ -8,13 +46,12 @@ You are the orchestrator for my repos in this folder (platform, bestportofolio, 
 gokul-omni-converter; Markdown-studio is owned by its own session). First read, in order: NEXT-SESSION.md,
 REPO-UPGRADE-PROGRESS.md (tail), REPO-UPGRADE-AGENT-RULES.md, PORTFOLIO-ADMIN-ASTRO-PLAN.md, platform/docs/UPGRADE-PROGRAM.md,
 platform/docs/DESIGN-BRIEF.md. Then run git status + git log -5 in every repo and tell me anything not yours.
-Continue the plan in NEXT-SESSION.md section 3, priority: admin, bestportofolio, GSpace, gokulmobilize, then platform
-packages, then omni. Use one background agent per repo (each told to read REPO-UPGRADE-AGENT-RULES.md), stop only for
+Continue with NEXT-SESSION.md section 0 "Pending, in this order" (logic first; design and migration later), then section 3 for the rest. Use one background agent per repo (each told to read REPO-UPGRADE-AGENT-RULES.md), stop only for
 real blockers. Never apply SQL, never release npm packages or merge redesign branches without my OK. Commit + push each
 unit and update WORKLOG.md + platform/docs/UPGRADE-PROGRAM.md. Coordinate with other sessions via SendMessage
 (sign-in session owns auth code; Markdown-studio session owns Markdown-studio).
 ```
-Model: Opus 5.5 high (admin: xhigh). gokulmobilize + GSpace agents can use Sonnet 5.5 high to save limit.
+Model: Opus 5.5 high; mdx + portfolio SQL drafts: xhigh. gokulmobilize + GSpace agents can use Sonnet 5.5 high to save limit.
 
 ## 2. Context in 12 lines
 - Goal: every repo gets A inventory, B bugs, C speed, D real redesign (branch, merge only on "merge"), E docs; nothing may break.
