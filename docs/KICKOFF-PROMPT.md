@@ -1,5 +1,7 @@
 # Kickoff prompt: admin
 
+> Upgrade program: for the current start prompt see `platform/docs/PROMPTS.md` ("CONTINUE THE UPGRADE PROGRAM") and `docs/upgrade-program/NEXT-SESSION.md` section 0.
+
 Master copy: platform/docs/PROMPTS.md (github.com/gokulsaraswat/platform). If they differ, the master wins.
 Use: new chat with this repo as working directory. Paste SHARED BLOCK + REPO SECTION. Collaborators also paste the ADD-ON.
 
