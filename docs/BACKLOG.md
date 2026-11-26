@@ -31,6 +31,8 @@ Status: open, doing, blocked, done, dropped. Cross-repo: `needs:` waits on, `blo
 ## Done (recent)
 | ID | Title | Commit | Date |
 |---|---|---|---|
+| ADM-B-003 | SQL security review of all 5 migrations: no blocking issue, 7 optional notes in `docs/SQL-REVIEW.md` | docs(sql): review of the admin migrations | 2026-11-26 |
+| ADM-B-002 | No page loading state: only the shell had a Suspense fallback | feat(admin): loading skeleton for admin pages | 2026-11-26 |
 | ADM-D-001 | node_modules incomplete; no typecheck script (`npm ci` restores; `npm run typecheck` + `npm test` added) | fix(auth): keep the OAuth callback redirect on this origin | 2026-11-25 |
 | ADM-B-001 | OAuth callback `next` check passed `/<tab>/host` (URL parser strips tab/CR/LF -> `//host`, off-origin redirect after a successful code exchange; an invalid port there threw a 500). Now resolved + origin-compared; 6 `node:test` cases (old code fails 3) | fix(auth): keep the OAuth callback redirect on this origin | 2026-11-25 |
 | ADM-F-002 | Google sign-in on /login (`signInWithGoogle` + `/auth/callback`), password form kept | feat(auth): Google sign-in + list_app_members | 2026-11-25 |
