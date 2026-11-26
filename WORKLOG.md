@@ -54,3 +54,5 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 - Supabase keys live in `admin/.env` (git-ignored; Gokul's choice), `.env.local` is empty.
 - `npm audit`: 16 moderate, all dev-only (minimatch via eslint plugins). Revisit when eslint-config-next updates.
 - SQL review points for the `user_roles` slice: last-super-admin lock-out guard; drop storage "public read" policy (lets anyone list the bucket; public buckets serve files without it); revoke `execute` on `is_super_admin()` from public/anon; `(select auth.uid())` in policies; add per-app role helper for `content`/`app_config`.
+
+- 2026-11-26 Upgrade program: status of all 7 repos and how to resume is in platform/docs/UPGRADE-PROGRAM.md (read it first).
