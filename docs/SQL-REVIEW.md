@@ -33,5 +33,8 @@ Notes:
 - `is_app_id()` replaces the hard-coded lists; constraints only widen. `request_access` keeps the same checks. Existing rows stay valid.
 - Note 7: the function must keep `execute` for `public` (check constraints call it as the inserting role); do not add a revoke later.
 
-## Open for Gokul
-Decide notes 2, 4 and 6 (all optional). Applying the four unapplied files is still Gokul's step in the SQL editor, in file-name order.
+## Decisions (2026-11-26, Gokul: "you decide")
+- Note 2 (no audit trail for role changes): accepted for now; add an audit table in a new migration when the portfolio admin section needs it (the Logs section is planned there).
+- Note 4 (`request_access` for someone who already has a role): accepted; no escalation is possible and the request is only noise. Revisit with the access-requests UI polish.
+- Note 6 (app admins see super-admin emails in `list_app_members`): accepted as intended: an admin needs to know who the super admins are to ask for access changes.
+No fix migration is written. Applying the four unapplied files is still Gokul's step in the SQL editor, in file-name order.

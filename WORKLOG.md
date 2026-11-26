@@ -57,3 +57,4 @@ Master status of all repos: platform/docs/WORKLOG.md. Update this file after eve
 
 - 2026-11-26 Upgrade program: status of all 7 repos and how to resume is in platform/docs/UPGRADE-PROGRAM.md (read it first).
 - 2026-11-26 Phase B (part): ADM-B-003 SQL review of 5 migrations written to docs/SQL-REVIEW.md (no blocking issue, nothing applied); ADM-B-002 `src/app/(admin)/loading.tsx` skeleton (tokens only, reduced-motion safe). Local `node_modules` still has `@gokulsaraswat/auth` 0.1.0, so `npm run typecheck` shows pre-existing errors (isAuthProviderId, signInWithProvider, `/account` route type); none come from the new file. Needs `npm ci` with a GitHub Packages token.
+- 2026-11-26 SQL-REVIEW notes 2, 4, 6 decided (accept, no fix migration); see docs/SQL-REVIEW.md "Decisions".
